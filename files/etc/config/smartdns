@@ -1,0 +1,146 @@
+
+config smartdns
+	option enabled '1'
+	option server_name 'HomeLedeDNS'
+	option port '6053'
+	option prefetch_domain '1'
+	option server_group 'mainland'
+	option seconddns_port '7053'
+	option seconddns_no_speed_check '0'
+	option seconddns_no_rule_addr '0'
+	option seconddns_no_rule_nameserver '0'
+	option seconddns_no_rule_ipset '0'
+	option seconddns_no_rule_soa '0'
+	option seconddns_no_cache '0'
+	option coredump '0'
+	option seconddns_server_group 'overseas'
+	option redirect 'none'
+	option cache_size '1536'
+	option serve_expired '1'
+	option rr_ttl '3600'
+	option rr_ttl_min '2400'
+	option rr_ttl_max '86400'
+	option tcp_server '1'
+	option seconddns_tcp_server '1'
+	option seconddns_no_dualstack_selection '0'
+	option force_aaaa_soa '0'
+	option ipv6_server '1'
+	option dualstack_ip_selection '1'
+
+config server
+	option type 'udp'
+	option name 'CN-DNSPOD #1'
+	option ip '119.29.29.29'
+	option enabled '1'
+	option server_group 'bootstrap'
+	option blacklist_ip '0'
+	option addition_arg '-exclude-default-group -check-edns'
+
+config server
+	option type 'udp'
+	option name 'CN-ALI #1'
+	option ip '223.5.5.5'
+	option enabled '1'
+	option server_group 'bootstrap'
+	option blacklist_ip '0'
+	option addition_arg '-exclude-default-group -check-edns'
+
+config server
+	option type 'udp'
+	option name 'CN-114DNS #1'
+	option ip '114.114.114.114'
+	option enabled '1'
+	option server_group 'bootstrap'
+	option blacklist_ip '0'
+	option addition_arg '-exclude-default-group -check-edns'
+
+config server
+	option type 'udp'
+	option name 'CN-BAIDU'
+	option ip '180.76.76.76'
+	option enabled '1'
+	option server_group 'bootstrap'
+	option blacklist_ip '0'
+	option addition_arg '-exclude-default-group -check-edns'
+
+config server
+	option server_group 'mainland'
+	option enabled '1'
+	option blacklist_ip '0'
+	option name 'CN-ADV ALI DOH'
+	option ip 'https://dns.alidns.com/dns-query'
+	option type 'https'
+	option addition_arg '-check-edns'
+
+config server
+	option server_group 'mainland'
+	option enabled '1'
+	option blacklist_ip '0'
+	option name 'CN-ADV DNSPOD DOH'
+	option ip 'https://doh.pub/dns-query'
+	option type 'https'
+	option addition_arg '-check-edns'
+
+config server
+	option server_group 'mainland'
+	option enabled '1'
+	option blacklist_ip '0'
+	option name 'CN-ADV 360DNS DOH'
+	option ip 'https://doh.360.cn/dns-query'
+	option type 'https'
+	option addition_arg '-check-edns'
+
+config server
+	option server_group 'mainland'
+	option enabled '1'
+	option blacklist_ip '0'
+	option name 'CN-ADV CFIEC DOH'
+	option ip 'https://dns.cfiec.net/dns-query'
+	option type 'https'
+	option addition_arg '-check-edns'
+
+config server
+	option enabled '0'
+	option name 'OS-Google DNS #1'
+	option server_group 'overseas'
+	option blacklist_ip '0'
+	option type 'https'
+	option ip 'https://dns.google/dns-query'
+	option addition_arg '-exclude-default-group -check-edns'
+
+config server
+	option enabled '0'
+	option name 'OS-CloudFlare #1'
+	option type 'https'
+	option server_group 'overseas'
+	option blacklist_ip '0'
+	option ip 'https://cloudflare-dns.com/dns-query'
+	option addition_arg '-exclude-default-group -check-edns'
+
+config server
+	option enabled '0'
+	option name 'OS-Quad9 #1'
+	option type 'https'
+	option ip 'https://dns.quad9.net/dns-query'
+	option server_group 'overseas'
+	option blacklist_ip '0'
+	option addition_arg '-exclude-default-group -check-edns'
+
+config server
+	option enabled '0'
+	option name 'OS-Google DNS #1 TLS'
+	option type 'tls'
+	option server_group 'overseas'
+	option blacklist_ip '0'
+	option ip '8.8.8.8'
+	option addition_arg '-exclude-default-group -check-edns'
+
+config server
+	option enabled '0'
+	option name 'OS-Quad9 #2 TLS'
+	option ip '149.112.112.112'
+	option type 'tls'
+	option server_group 'overseas'
+	option blacklist_ip '0'
+	option addition_arg '-exclude-default-group -check-edns'
+

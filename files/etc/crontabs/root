@@ -1,0 +1,2 @@
+0 1 * * * [ -x /etc/chinadns-ng/updateChinadns-ngConfig.sh ] && /etc/chinadns-ng/updateChinadns-ngConfig.sh > /dev/null 2>&1 &
+0 7 * * * chmod 755 /etc/updateGEOConfig.sh && [ -x /etc/updateGEOConfig.sh ] && /etc/updateGEOConfig.sh > /dev/null 2>1& &
