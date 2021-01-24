@@ -34,7 +34,7 @@ dns:
   bootstrap_dns:
   - 1.1.1.1
   all_servers: false
-  fastest_addr: false
+  fastest_addr: true
   allowed_clients:
   - 10.0.0.0/8
   - 172.16.0.0/12
