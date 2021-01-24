@@ -26,6 +26,9 @@ config smartdns
 	option force_aaaa_soa '0'
 	option ipv6_server '1'
 	option dualstack_ip_selection '1'
+	list old_redirect 'none'
+	list old_port '6053'
+	list old_enabled '1'
 
 config server
 	option type 'udp'
@@ -100,6 +103,42 @@ config server
 	option addition_arg '-check-edns'
 
 config server
+	option enabled '1'
+	option name 'CN-ADV ALI DOT'
+	option ip 'dns.alidns.com'
+	option type 'tls'
+	option server_group 'mainland'
+	option blacklist_ip '0'
+	option addition_arg '-check-edns'
+
+config server
+	option enabled '1'
+	option ip 'doh.pub'
+	option type 'tls'
+	option server_group 'mainland'
+	option blacklist_ip '0'
+	option addition_arg '-check-edns'
+	option name 'CN-ADV DNSPOD DOT'
+
+config server
+	option enabled '1'
+	option ip 'dot.360.cn'
+	option type 'tls'
+	option server_group 'mainland'
+	option blacklist_ip '0'
+	option addition_arg '-check-edns'
+	option name 'CN-ADV 360DNS DOT'
+
+config server
+	option enabled '1'
+	option name 'CN-ADV CFIEC DOT'
+	option ip 'dns.cfiec.net'
+	option type 'tls'
+	option server_group 'mainland'
+	option blacklist_ip '0'
+	option addition_arg '-check-edns'
+
+config server
 	option enabled '0'
 	option name 'OS-Google DNS #1'
 	option server_group 'overseas'
@@ -143,4 +182,3 @@ config server
 	option server_group 'overseas'
 	option blacklist_ip '0'
 	option addition_arg '-exclude-default-group -check-edns'
-
