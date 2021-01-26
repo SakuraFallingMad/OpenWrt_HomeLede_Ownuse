@@ -33,8 +33,10 @@ dns:
   upstream_dns_file: ""
   bootstrap_dns:
   - 1.1.1.1
-  all_servers: false
-  fastest_addr: true
+  - 8.8.8.8
+  - 9.9.9.10
+  all_servers: true
+  fastest_addr: false
   allowed_clients:
   - 10.0.0.0/8
   - 172.16.0.0/12
