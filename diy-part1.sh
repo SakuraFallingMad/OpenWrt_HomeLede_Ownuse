@@ -33,6 +33,7 @@ disablePkgsList="
 ./package/lean/v2ray 
 ./package/lean/v2ray-plugin 
 ./package/lean/xray 
+./package/lean/luci-app-jd-dailybonus 
 ./feeds/packages/net/miniupnpd 
 ./feeds/packages/net/mwan3 
 ./feeds/packages/utils/ttyd 
