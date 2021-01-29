@@ -76,7 +76,7 @@ tls:
   certificate_path: ""
   private_key_path: ""
 filters:
-- enabled: false
+- enabled: true
   url: https://adguardteam.github.io/AdGuardSDNSFilter/Filters/filter.txt
   name: AdGuard Simplified Domain Names filter
   id: 1
@@ -88,30 +88,14 @@ filters:
   url: https://easylist-downloads.adblockplus.org/easylist.txt
   name: EasyList
   id: 1589591825
-- enabled: false
-  url: https://www.malwaredomainlist.com/hostslist/hosts.txt
-  name: MalwareDomainList.com Hosts List
-  id: 4
-- enabled: false
+- enabled: true
   url: https://adaway.org/hosts.txt
   name: AdAway
   id: 2
 - enabled: false
-  url: https://hosts-file.net/ad_servers.txt
-  name: hpHosts - Ad and Tracking servers only
-  id: 3
-- enabled: false
   url: https://raw.githubusercontent.com/vokins/yhosts/master/data/tvbox.txt
   name: tvbox
   id: 1575018007
-- enabled: false
-  url: https://hosts.nfz.moe/full/hosts
-  name: neoHosts full
-  id: 1575618240
-- enabled: false
-  url: https://hosts.nfz.moe/basic/hosts
-  name: neoHosts basic
-  id: 1575618241
 - enabled: false
   url: http://sbc.io/hosts/hosts
   name: StevenBlack host basic
