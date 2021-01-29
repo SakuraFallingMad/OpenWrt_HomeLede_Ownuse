@@ -1,12 +1,4 @@
 #!/bin/sh
-# v2ray geosite
-curl -L --connect-timeout 20 --retry 5 --retry-all-errors --retry-delay 5 -o /usr/share/v2ray/geosite.dat "https://github.com/Loyalsoldier/v2ray-rules-dat/releases/latest/download/geosite.dat" -S
-# pause a while
-sleep 5
-# v2ray geoip
-curl -L --connect-timeout 20 --retry 5 --retry-all-errors --retry-delay 5 -o /usr/share/v2ray/geoip.dat "https://github.com/Loyalsoldier/v2ray-rules-dat/releases/latest/download/geoip.dat" -S
-# pause a while
-sleep 5
 # xray geosite
 curl -L --connect-timeout 20 --retry 5 --retry-all-errors --retry-delay 5 -o /usr/share/xray/geosite.dat "https://github.com/Loyalsoldier/v2ray-rules-dat/releases/latest/download/geosite.dat" -S
 # pause a while
