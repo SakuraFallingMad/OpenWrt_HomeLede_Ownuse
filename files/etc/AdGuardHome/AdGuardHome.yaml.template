@@ -88,7 +88,7 @@ filters:
   url: https://easylist-downloads.adblockplus.org/easylist.txt
   name: EasyList
   id: 1589591825
-- enabled: true
+- enabled: false
   url: https://adaway.org/hosts.txt
   name: AdAway
   id: 2
@@ -96,7 +96,7 @@ filters:
   url: https://raw.githubusercontent.com/vokins/yhosts/master/data/tvbox.txt
   name: tvbox
   id: 1575018007
-- enabled: false
+- enabled: true
   url: http://sbc.io/hosts/hosts
   name: StevenBlack host basic
   id: 1575618242
