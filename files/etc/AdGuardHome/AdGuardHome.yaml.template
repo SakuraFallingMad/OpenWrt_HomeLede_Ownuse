@@ -42,7 +42,7 @@ dns:
   - 192.168.0.0/16
   - 127.0.0.1
   - ::1
-  - fd00::/8
+  - fc00::/7
   disallowed_clients: []
   blocked_hosts: []
   cache_size: 1536
