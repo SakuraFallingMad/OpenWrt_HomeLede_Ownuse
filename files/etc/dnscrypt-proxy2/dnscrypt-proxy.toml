@@ -127,7 +127,7 @@ keepalive = 30
 
 ## Load-balancing strategy: 'p2' (default), 'ph', 'first' or 'random'
 
-lb_strategy = 'p2'
+lb_strategy = 'ph'
 
 ## Set to `true` to constantly try to estimate the latency of all the resolvers
 ## and adjust the load-balancing parameters accordingly, or to `false` to disable.
@@ -773,3 +773,11 @@ skip_incompatible = false
     [static.'meganerd-doh-ipv4']
   # DoH server by MegaNerd.nl (IPv4) - https://meganerd.nl/encrypted-dns-server Hosted in Amsterdam (AMS1), The Netherlands. Non-logging, non-filtering, supports DNSSEC.
     stamp = 'sdns://AgcAAAAAAAAADjEzNi4yNDQuOTcuMTE0oD4aGg9sU_PpekktVwhLW5gHBZ7gV6sVBYdv2D_aPbg4IDKG_2WmX68yCF7qE4jDc4un43hzyQbM48Sii0zCpYmIFWNoZXdiYWNjYS5tZWdhbmVyZC5ubAQvZG9o'
+
+    [static.'jp.tiar.app-DNSCrypt']
+  # Non-Logging, Non-Filtering DNSCrypt server in Japan. No ECS, Support DNSSEC
+    stamp = 'sdns://AQcAAAAAAAAAEjE3Mi4xMDQuOTMuODA6MTQ0MyAyuHY-8b9lNqHeahPAzW9IoXnjiLaZpTeNbVs8TN9UUxsyLmRuc2NyeXB0LWNlcnQuanAudGlhci5hcHA'
+
+    [static.'jp.tiar.app-doh']
+  # Non-Logging, Non-Filtering DNS-over-HTTPS server in Japan. No ECS, Support DNSSEC
+    stamp = 'sdns://AgcAAAAAAAAADTE3Mi4xMDQuOTMuODCgPhoaD2xT8-l6SS1XCEtbmAcFnuBXqxUFh2_YP9o9uDggMob_ZaZfrzIIXuoTiMNzi6fjeHPJBszjxKKLTMKliYgLanAudGlhci5hcHAKL2Rucy1xdWVyeQ'
