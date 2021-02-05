@@ -86,32 +86,52 @@ tls:
 filters:
 - enabled: true
   url: https://adguardteam.github.io/AdGuardSDNSFilter/Filters/filter.txt
-  name: AdGuard Simplified Domain Names filter
-  id: 1
+  name: AdGuard DNS filter
+  id: 1612239544
 - enabled: true
-  url: https://cdn.jsdelivr.net/gh/privacy-protection-tools/anti-AD/anti-ad-easylist.txt
-  name: anti-AD(Adblock+neohosts+yhosts+cjxlist+adhlist)
-  id: 1577113202
-- enabled: false
-  url: https://easylist-downloads.adblockplus.org/easylist.txt
-  name: EasyList
-  id: 1589591825
-- enabled: false
   url: https://adaway.org/hosts.txt
-  name: AdAway
-  id: 2
-- enabled: false
-  url: https://raw.githubusercontent.com/vokins/yhosts/master/data/tvbox.txt
-  name: tvbox
-  id: 1575018007
+  name: AdAway Default Blocklist
+  id: 1612239545
 - enabled: true
-  url: http://sbc.io/hosts/hosts
-  name: StevenBlack host basic
-  id: 1575618242
-- enabled: false
-  url: http://sbc.io/hosts/alternates/fakenews-gambling-porn-social/hosts
-  name: StevenBlack host+fakenews + gambling + porn + social
-  id: 1575618243
+  url: https://someonewhocares.org/hosts/zero/hosts
+  name: Dan Pollock's List
+  id: 1612239546
+- enabled: true
+  url: https://raw.githubusercontent.com/DandelionSprout/adfilt/master/GameConsoleAdblockList.txt
+  name: Game Console Adblock List
+  id: 1612239547
+- enabled: true
+  url: https://raw.githubusercontent.com/Perflyst/PiHoleBlocklist/master/SmartTV-AGH.txt
+  name: Perflyst and Dandelion Sprout's Smart-TV Blocklist
+  id: 1612239548
+- enabled: true
+  url: https://pgl.yoyo.org/adservers/serverlist.php?hostformat=adblockplus&showintro=1&mimetype=plaintext
+  name: Peter Lowe's List
+  id: 1612239549
+- enabled: true
+  url: https://raw.githubusercontent.com/hoshsadiq/adblock-nocoin-list/master/hosts.txt
+  name: NoCoin Filter List
+  id: 1612239551
+- enabled: true
+  url: https://anti-ad.net/easylist.txt
+  name: 'CHN: anti-AD'
+  id: 1612239552
+- enabled: true
+  url: https://raw.githubusercontent.com/Spam404/lists/master/main-blacklist.txt
+  name: Spam404
+  id: 1612239553
+- enabled: true
+  url: https://raw.githubusercontent.com/durablenapkin/scamblocklist/master/adguard.txt
+  name: Scam Blocklist by DurableNapkin
+  id: 1612239554
+- enabled: true
+  url: https://raw.githubusercontent.com/mitchellkrogza/The-Big-List-of-Hacked-Malware-Web-Sites/master/hacked-domains.list
+  name: The Big List of Hacked Malware Web Sites
+  id: 1612239555
+- enabled: true
+  url: https://raw.githubusercontent.com/o0HalfLife0o/list/master/ad.txt
+  name: halflife
+  id: 1612239556
 whitelist_filters: []
 user_rules:
 - '@@||jd.com^'
