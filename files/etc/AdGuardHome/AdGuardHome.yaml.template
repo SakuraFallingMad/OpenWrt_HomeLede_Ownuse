@@ -53,9 +53,9 @@ dns:
   - fe80::/10
   disallowed_clients: []
   blocked_hosts: []
-  cache_size: 1536
-  cache_ttl_min: 2400
-  cache_ttl_max: 86400
+  cache_size: 0
+  cache_ttl_min: 0
+  cache_ttl_max: 0
   bogus_nxdomain: []
   aaaa_disabled: true
   enable_dnssec: false
