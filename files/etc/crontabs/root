@@ -1,4 +1,4 @@
 0 */6 * * * [ -x /etc/init.d/dnscrypt-proxy ] && /etc/init.d/dnscrypt-proxy restart > /dev/null 2>&1 &
 0 */6 * * * [ -x /etc/init.d/miniupnpd ] && /etc/init.d/miniupnpd restart > /dev/null 2>&1 &
 0 1 * * * [ -x /etc/chinadns-ng/updateChinadns-ngConfig.sh ] && /etc/chinadns-ng/updateChinadns-ngConfig.sh > /dev/null 2>&1 &
-0 7 * * * chmod 755 /etc/updateGEOConfig.sh && [ -x /etc/updateGEOConfig.sh ] && /etc/updateGEOConfig.sh > /dev/null 2>1& &
+0 7 * * * chmod 755 /etc/updateGEOConfig.sh && [ -x /etc/updateGEOConfig.sh ] && /etc/updateGEOConfig.sh > /dev/null 2>&1 &
