@@ -38,7 +38,6 @@ disablePkgsList="
 ./feeds/packages/utils/docker-compose 
 ./feeds/packages/net/miniupnpd 
 ./feeds/packages/net/mwan3 
-./feeds/packages/utils/ttyd 
 ./feeds/packages/utils/docker-ce 
 ./feeds/packages/utils/containerd 
 ./feeds/packages/utils/libnetwork 
@@ -49,7 +48,6 @@ disablePkgsList="
 ./feeds/packages/net/kcptun 
 ./feeds/packages/net/smartdns 
 ./feeds/packages/net/xtables-addons 
-./feeds/luci/applications/luci-app-upnp 
 ./feeds/luci/applications/luci-app-sqm
 "
 
