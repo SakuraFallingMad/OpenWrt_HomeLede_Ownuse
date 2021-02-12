@@ -143,6 +143,7 @@ user_rules:
 - '@@||alipay.com^'
 - '@@||bilibili.com^'
 - '@@/ad.dmm/$important'
+- '@@/ip.affiliate.dmm/$important'
 dhcp:
   enabled: false
   interface_name: ""
