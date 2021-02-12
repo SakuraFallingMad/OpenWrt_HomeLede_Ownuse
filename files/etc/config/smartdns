@@ -88,14 +88,6 @@ config server
 	option type 'https'
 
 config server
-	option server_group 'mainland'
-	option enabled '1'
-	option blacklist_ip '0'
-	option name 'CN-ADV CFIEC DOH'
-	option ip 'https://dns.cfiec.net/dns-query'
-	option type 'https'
-
-config server
 	option enabled '1'
 	option name 'CN-ADV ALI DOT'
 	option ip 'dns.alidns.com'
@@ -118,14 +110,6 @@ config server
 	option server_group 'mainland'
 	option blacklist_ip '0'
 	option name 'CN-ADV 360DNS DOT'
-
-config server
-	option enabled '1'
-	option name 'CN-ADV CFIEC DOT'
-	option ip 'dns.cfiec.net'
-	option type 'tls'
-	option server_group 'mainland'
-	option blacklist_ip '0'
 
 config server
 	option enabled '0'
