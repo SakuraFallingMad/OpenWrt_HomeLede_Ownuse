@@ -29,7 +29,7 @@ config smartdns
 
 config server
 	option type 'udp'
-	option name 'CN-DNSPOD #1'
+	option name 'CN-DNSPOD'
 	option ip '119.29.29.29'
 	option enabled '1'
 	option server_group 'bootstrap'
@@ -38,7 +38,7 @@ config server
 
 config server
 	option type 'udp'
-	option name 'CN-ALI #1'
+	option name 'CN-ALI'
 	option ip '223.5.5.5'
 	option enabled '1'
 	option server_group 'bootstrap'
@@ -47,7 +47,7 @@ config server
 
 config server
 	option type 'udp'
-	option name 'CN-114DNS #1'
+	option name 'CN-114DNS'
 	option ip '114.114.114.114'
 	option enabled '1'
 	option server_group 'bootstrap'
