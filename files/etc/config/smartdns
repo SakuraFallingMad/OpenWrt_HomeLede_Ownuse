@@ -20,15 +20,12 @@ config smartdns
 	option rr_ttl '3600'
 	option rr_ttl_min '2400'
 	option rr_ttl_max '86400'
-	option tcp_server '1'
 	option seconddns_tcp_server '1'
 	option seconddns_no_dualstack_selection '0'
-	option force_aaaa_soa '0'
-	option ipv6_server '1'
 	option dualstack_ip_selection '1'
-	list old_redirect 'none'
-	list old_port '6053'
-	list old_enabled '1'
+	option tcp_server '1'
+	option ipv6_server '1'
+	option force_aaaa_soa '1'
 
 config server
 	option type 'udp'
@@ -37,7 +34,7 @@ config server
 	option enabled '1'
 	option server_group 'bootstrap'
 	option blacklist_ip '0'
-	option addition_arg '-exclude-default-group -check-edns'
+	option addition_arg '-exclude-default-group'
 
 config server
 	option type 'udp'
@@ -46,7 +43,7 @@ config server
 	option enabled '1'
 	option server_group 'bootstrap'
 	option blacklist_ip '0'
-	option addition_arg '-exclude-default-group -check-edns'
+	option addition_arg '-exclude-default-group'
 
 config server
 	option type 'udp'
@@ -55,7 +52,7 @@ config server
 	option enabled '1'
 	option server_group 'bootstrap'
 	option blacklist_ip '0'
-	option addition_arg '-exclude-default-group -check-edns'
+	option addition_arg '-exclude-default-group'
 
 config server
 	option type 'udp'
@@ -64,7 +61,7 @@ config server
 	option enabled '1'
 	option server_group 'bootstrap'
 	option blacklist_ip '0'
-	option addition_arg '-exclude-default-group -check-edns'
+	option addition_arg '-exclude-default-group'
 
 config server
 	option server_group 'mainland'
@@ -73,7 +70,6 @@ config server
 	option name 'CN-ADV ALI DOH'
 	option ip 'https://dns.alidns.com/dns-query'
 	option type 'https'
-	option addition_arg '-check-edns'
 
 config server
 	option server_group 'mainland'
@@ -82,7 +78,6 @@ config server
 	option name 'CN-ADV DNSPOD DOH'
 	option ip 'https://doh.pub/dns-query'
 	option type 'https'
-	option addition_arg '-check-edns'
 
 config server
 	option server_group 'mainland'
@@ -91,7 +86,6 @@ config server
 	option name 'CN-ADV 360DNS DOH'
 	option ip 'https://doh.360.cn/dns-query'
 	option type 'https'
-	option addition_arg '-check-edns'
 
 config server
 	option server_group 'mainland'
@@ -100,7 +94,6 @@ config server
 	option name 'CN-ADV CFIEC DOH'
 	option ip 'https://dns.cfiec.net/dns-query'
 	option type 'https'
-	option addition_arg '-check-edns'
 
 config server
 	option enabled '1'
@@ -109,7 +102,6 @@ config server
 	option type 'tls'
 	option server_group 'mainland'
 	option blacklist_ip '0'
-	option addition_arg '-check-edns'
 
 config server
 	option enabled '1'
@@ -117,7 +109,6 @@ config server
 	option type 'tls'
 	option server_group 'mainland'
 	option blacklist_ip '0'
-	option addition_arg '-check-edns'
 	option name 'CN-ADV DNSPOD DOT'
 
 config server
@@ -126,7 +117,6 @@ config server
 	option type 'tls'
 	option server_group 'mainland'
 	option blacklist_ip '0'
-	option addition_arg '-check-edns'
 	option name 'CN-ADV 360DNS DOT'
 
 config server
@@ -136,7 +126,6 @@ config server
 	option type 'tls'
 	option server_group 'mainland'
 	option blacklist_ip '0'
-	option addition_arg '-check-edns'
 
 config server
 	option enabled '0'
@@ -145,7 +134,7 @@ config server
 	option blacklist_ip '0'
 	option type 'https'
 	option ip 'https://dns.google/dns-query'
-	option addition_arg '-exclude-default-group -check-edns'
+	option addition_arg '-exclude-default-group'
 
 config server
 	option enabled '0'
@@ -154,7 +143,7 @@ config server
 	option server_group 'overseas'
 	option blacklist_ip '0'
 	option ip 'https://cloudflare-dns.com/dns-query'
-	option addition_arg '-exclude-default-group -check-edns'
+	option addition_arg '-exclude-default-group'
 
 config server
 	option enabled '0'
@@ -163,7 +152,7 @@ config server
 	option ip 'https://dns.quad9.net/dns-query'
 	option server_group 'overseas'
 	option blacklist_ip '0'
-	option addition_arg '-exclude-default-group -check-edns'
+	option addition_arg '-exclude-default-group'
 
 config server
 	option enabled '0'
@@ -172,7 +161,7 @@ config server
 	option server_group 'overseas'
 	option blacklist_ip '0'
 	option ip '8.8.8.8'
-	option addition_arg '-exclude-default-group -check-edns'
+	option addition_arg '-exclude-default-group'
 
 config server
 	option enabled '0'
@@ -181,4 +170,4 @@ config server
 	option type 'tls'
 	option server_group 'overseas'
 	option blacklist_ip '0'
-	option addition_arg '-exclude-default-group -check-edns'
+	option addition_arg '-exclude-default-group'
