@@ -129,7 +129,7 @@ config server
 
 config server
 	option enabled '0'
-	option name 'OS-Google DNS #1'
+	option name 'OS-Google DNS'
 	option server_group 'overseas'
 	option blacklist_ip '0'
 	option type 'https'
@@ -138,7 +138,7 @@ config server
 
 config server
 	option enabled '0'
-	option name 'OS-CloudFlare #1'
+	option name 'OS-CloudFlare'
 	option type 'https'
 	option server_group 'overseas'
 	option blacklist_ip '0'
@@ -147,7 +147,7 @@ config server
 
 config server
 	option enabled '0'
-	option name 'OS-Quad9 #1'
+	option name 'OS-Quad9'
 	option type 'https'
 	option ip 'https://dns.quad9.net/dns-query'
 	option server_group 'overseas'
@@ -156,7 +156,7 @@ config server
 
 config server
 	option enabled '0'
-	option name 'OS-Google DNS #1 TLS'
+	option name 'OS-Google DNS TLS'
 	option type 'tls'
 	option server_group 'overseas'
 	option blacklist_ip '0'
@@ -165,7 +165,7 @@ config server
 
 config server
 	option enabled '0'
-	option name 'OS-Quad9 #2 TLS'
+	option name 'OS-Quad9 TLS'
 	option ip '149.112.112.112'
 	option type 'tls'
 	option server_group 'overseas'
