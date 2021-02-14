@@ -22,10 +22,10 @@ config smartdns
 	option rr_ttl_max '86400'
 	option seconddns_tcp_server '1'
 	option seconddns_no_dualstack_selection '0'
-	option dualstack_ip_selection '1'
 	option tcp_server '1'
-	option ipv6_server '1'
 	option force_aaaa_soa '1'
+	option dualstack_ip_selection '1'
+	option ipv6_server '1'
 
 config server
 	option type 'udp'
@@ -68,8 +68,11 @@ config server
 	option enabled '1'
 	option blacklist_ip '0'
 	option name 'CN-ADV ALI DOH'
-	option ip 'https://dns.alidns.com/dns-query'
 	option type 'https'
+	option ip 'https://dns.alidns.com/dns-query'
+	option tls_host_verify 'dns.alidns.com'
+	option host_name 'dns.alidns.com'
+	option http_host 'dns.alidns.com'
 
 config server
 	option server_group 'mainland'
@@ -78,6 +81,9 @@ config server
 	option name 'CN-ADV DNSPOD DOH'
 	option ip 'https://doh.pub/dns-query'
 	option type 'https'
+	option tls_host_verify 'doh.pub'
+	option host_name 'doh.pub'
+	option http_host 'doh.pub'
 
 config server
 	option server_group 'mainland'
@@ -86,6 +92,9 @@ config server
 	option name 'CN-ADV 360DNS DOH'
 	option ip 'https://doh.360.cn/dns-query'
 	option type 'https'
+	option tls_host_verify 'doh.360.cn'
+	option host_name 'doh.360.cn'
+	option http_host 'doh.360.cn'
 
 config server
 	option enabled '1'
@@ -94,6 +103,8 @@ config server
 	option type 'tls'
 	option server_group 'mainland'
 	option blacklist_ip '0'
+	option tls_host_verify 'dns.alidns.com'
+	option host_name 'dns.alidns.com'
 
 config server
 	option enabled '1'
@@ -102,6 +113,8 @@ config server
 	option server_group 'mainland'
 	option blacklist_ip '0'
 	option name 'CN-ADV DNSPOD DOT'
+	option tls_host_verify 'doh.pub'
+	option host_name 'doh.pub'
 
 config server
 	option enabled '1'
@@ -110,6 +123,8 @@ config server
 	option server_group 'mainland'
 	option blacklist_ip '0'
 	option name 'CN-ADV 360DNS DOT'
+	option tls_host_verify 'dot.360.cn'
+	option host_name 'dot.360.cn'
 
 config server
 	option enabled '0'
@@ -119,6 +134,9 @@ config server
 	option type 'https'
 	option ip 'https://dns.google/dns-query'
 	option addition_arg '-exclude-default-group'
+	option tls_host_verify 'dns.google'
+	option host_name 'dns.google'
+	option http_host 'dns.google'
 
 config server
 	option enabled '0'
@@ -128,6 +146,9 @@ config server
 	option blacklist_ip '0'
 	option ip 'https://cloudflare-dns.com/dns-query'
 	option addition_arg '-exclude-default-group'
+	option tls_host_verify 'cloudflare-dns.com'
+	option host_name 'cloudflare-dns.com'
+	option http_host 'cloudflare-dns.com'
 
 config server
 	option enabled '0'
@@ -137,6 +158,9 @@ config server
 	option server_group 'overseas'
 	option blacklist_ip '0'
 	option addition_arg '-exclude-default-group'
+	option tls_host_verify 'dns.quad9.net'
+	option host_name 'dns.quad9.net'
+	option http_host 'dns.quad9.net'
 
 config server
 	option enabled '0'
@@ -146,6 +170,8 @@ config server
 	option blacklist_ip '0'
 	option ip '8.8.8.8'
 	option addition_arg '-exclude-default-group'
+	option tls_host_verify 'dns.google'
+	option host_name 'dns.google'
 
 config server
 	option enabled '0'
@@ -155,3 +181,6 @@ config server
 	option server_group 'overseas'
 	option blacklist_ip '0'
 	option addition_arg '-exclude-default-group'
+	option tls_host_verify 'dns.quad9.net'
+	option host_name 'dns.quad9.net'
+
