@@ -24,7 +24,7 @@ git clone https://github.com/jerrykuku/luci-app-vssr.git ./package/lean/luci-app
 disablePkgsList="
 ./feeds/pw/chinadns-ng 
 ./feeds/pw/ipt2socks 
-./feeds/lienol/luci-app-ipsec-server 
+./feeds/lienol/luci-app-softethervpn 
 ./package/lean/luci-app-kodexplorer 
 ./package/lean/luci-lib-docker 
 ./package/lean/luci-app-dockerman 
