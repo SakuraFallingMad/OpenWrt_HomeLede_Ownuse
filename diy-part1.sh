@@ -35,6 +35,7 @@ disablePkgsList="
 ./package/lean/xray 
 ./package/lean/luci-app-jd-dailybonus 
 ./package/lean/luci-app-docker 
+./package/lean/softethervpn5 
 ./feeds/packages/utils/docker-compose 
 ./feeds/packages/net/miniupnpd 
 ./feeds/packages/net/mwan3 
@@ -48,6 +49,7 @@ disablePkgsList="
 ./feeds/packages/net/kcptun 
 ./feeds/packages/net/smartdns 
 ./feeds/packages/net/xtables-addons 
+./feeds/packages/net/softethervpn5 
 ./feeds/luci/applications/luci-app-sqm
 "
 
