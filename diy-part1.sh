@@ -62,7 +62,7 @@ function disableDulicatedPkg()
 	fi
 }
 
-./scripts/feeds update -a
+./scripts/feeds update -a -f
 
 for disablePkg in $disablePkgsList
 do
