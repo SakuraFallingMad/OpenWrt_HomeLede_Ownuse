@@ -70,7 +70,7 @@ do
 done
 
 ./scripts/feeds update -i
-./scripts/feeds install -a
+./scripts/feeds install -a -f
 
 if [ ! -f .config ];then
 cp defconfig .config
