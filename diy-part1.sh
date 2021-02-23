@@ -24,7 +24,6 @@ git clone https://github.com/jerrykuku/luci-app-vssr.git ./package/lean/luci-app
 disablePkgsList="
 ./feeds/pw/chinadns-ng 
 ./feeds/pw/ipt2socks 
-./feeds/lienol/luci-app-softethervpn 
 ./package/lean/luci-app-kodexplorer 
 ./package/lean/luci-lib-docker 
 ./package/lean/luci-app-dockerman 
@@ -36,6 +35,7 @@ disablePkgsList="
 ./package/lean/luci-app-jd-dailybonus 
 ./package/lean/luci-app-docker 
 ./package/lean/softethervpn5 
+./package/lean/luci-app-softethervpn 
 ./feeds/packages/utils/docker-compose 
 ./feeds/packages/net/miniupnpd 
 ./feeds/packages/net/mwan3 
