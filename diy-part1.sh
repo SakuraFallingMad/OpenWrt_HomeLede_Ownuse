@@ -36,7 +36,6 @@ disablePkgsList="
 ./package/lean/luci-app-jd-dailybonus 
 ./package/lean/luci-app-docker 
 ./package/lean/softethervpn5 
-./package/lean/luci-app-softethervpn 
 ./feeds/packages/utils/docker-compose 
 ./feeds/packages/net/miniupnpd 
 ./feeds/packages/net/mwan3 
