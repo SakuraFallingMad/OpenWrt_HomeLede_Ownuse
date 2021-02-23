@@ -62,7 +62,7 @@ function disableDulicatedPkg()
 	fi
 }
 
-./scripts/feeds update -a -f
+./scripts/feeds update -a
 
 for disablePkg in $disablePkgsList
 do
@@ -70,7 +70,7 @@ do
 done
 
 ./scripts/feeds update -i
-./scripts/feeds install -a -f
+./scripts/feeds install -a
 
 if [ ! -f .config ];then
 cp defconfig .config
