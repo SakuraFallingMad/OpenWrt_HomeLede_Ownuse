@@ -22,6 +22,7 @@ git clone https://github.com/jerrykuku/luci-app-vssr.git ./package/lean/luci-app
 
 # Add HomeLede prepareCompile.sh
 disablePkgsList="
+./feeds/xiaoqingfeng/softethervpn5
 ./feeds/pw/chinadns-ng 
 ./feeds/pw/ipt2socks 
 ./package/lean/luci-app-kodexplorer 
@@ -49,7 +50,6 @@ disablePkgsList="
 ./feeds/packages/net/kcptun 
 ./feeds/packages/net/smartdns 
 ./feeds/packages/net/xtables-addons 
-./feeds/packages/net/softethervpn5 
 ./feeds/luci/applications/luci-app-sqm
 "
 
