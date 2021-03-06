@@ -784,4 +784,4 @@ skip_incompatible = false
 
     [static.'moulticast-sg-ipv4']
   # Public | Non-filtering | Non-logging | DNSSEC aware | Hosted in Singapore | Operated by @herver (Github) | https://moulticast.net/dnscrypt/
-    stamp = 'sdns://AQcAAAAAAAAADTUxLjc5LjE1OC4xODMgL4fe2yQRI0ljCMe05zhSmeKGYz-izKVjyE040Ovq-gUdMi5kbnNjcnlwdC1jZXJ0Lm1vdWx0aWNhc3Qtc2c'
+    stamp = 'sdns://AQcAAAAAAAAAETUxLjc5LjE1OC4xODM6NDQzIC-H3tskESNJYwjHtOc4UpnihmM_osylY8hNONDr6voFHTIuZG5zY3J5cHQtY2VydC5tb3VsdGljYXN0LXNn'
