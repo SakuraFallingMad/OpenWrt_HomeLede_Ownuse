@@ -781,3 +781,7 @@ skip_incompatible = false
     [static.'jp.tiar.app-doh']
   # Non-Logging, Non-Filtering DNS-over-HTTPS server in Japan. No ECS, Support DNSSEC
     stamp = 'sdns://AgcAAAAAAAAADTE3Mi4xMDQuOTMuODCgPhoaD2xT8-l6SS1XCEtbmAcFnuBXqxUFh2_YP9o9uDggMob_ZaZfrzIIXuoTiMNzi6fjeHPJBszjxKKLTMKliYgLanAudGlhci5hcHAKL2Rucy1xdWVyeQ'
+
+    [static.'moulticast-sg-ipv4']
+  # Public | Non-filtering | Non-logging | DNSSEC aware | Hosted in Singapore | Operated by @herver (Github) | https://moulticast.net/dnscrypt/
+    stamp = 'sdns://AQcAAAAAAAAADTUxLjc5LjE1OC4xODMgL4fe2yQRI0ljCMe05zhSmeKGYz-izKVjyE040Ovq-gUdMi5kbnNjcnlwdC1jZXJ0Lm1vdWx0aWNhc3Qtc2c'
