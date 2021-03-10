@@ -762,10 +762,6 @@ skip_incompatible = false
   # Google DNS (anycast)
     stamp = 'sdns://AgUAAAAAAAAABzguOC44LjigHvYkz_9ea9O63fP92_3qVlRn43cpncfuZnUWbzAMwbkgdoAkR6AZkxo_AEMExT_cbBssN43Evo9zs5_ZyWnftEUKZG5zLmdvb2dsZQovZG5zLXF1ZXJ5'
   
-    [static.'nextdns.doh']
-  # NextDNS is a cloud-based private DNS service that gives you full control over what is allowed and what is blocked on the Internet. DNSSEC, Anycast, Non-logging, NoFilters https://www.nextdns.io/
-    stamp = 'sdns://AgcAAAAAAAAACjQ1LjkwLjI4LjCgPhoaD2xT8-l6SS1XCEtbmAcFnuBXqxUFh2_YP9o9uDggMob_ZaZfrzIIXuoTiMNzi6fjeHPJBszjxKKLTMKliYgOZG5zLm5leHRkbnMuaW8PL2Ruc2NyeXB0LXByb3h5'
-  
     [static.'meganerd.DNSCrypt']
   # meganerd of Netherlands
     stamp = 'sdns://AQcAAAAAAAAADjEzNi4yNDQuOTcuMTE0IPyq3HBOXuNgu6FO4pU71Si6CTV6kPD85NA6AThr_6tiGDIuZG5zY3J5cHQtY2VydC5tZWdhbmVyZA'
