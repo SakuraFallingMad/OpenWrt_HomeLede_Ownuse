@@ -122,7 +122,7 @@ keepalive = 30
 ## Using the `hinfo` option means that some responses will be lies.
 ## Unfortunately, the `hinfo` option appears to be required for Android 8+
 
-# blocked_query_response = 'refused'
+blocked_query_response = 'refused'
 
 
 ## Load-balancing strategy: 'p2' (default), 'ph', 'first' or 'random'
