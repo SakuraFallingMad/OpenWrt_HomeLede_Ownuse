@@ -151,7 +151,7 @@ config server
 	option enabled '1'
 	option name 'CN-ADV TUNA DOT'
 	option ip '101.6.6.6'
-	option type 'https'
+	option type 'tls'
 	option server_group 'mainland'
 	option blacklist_ip '0'
 	option tls_host_verify '101.6.6.6'
