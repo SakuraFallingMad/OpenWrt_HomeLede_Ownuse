@@ -64,6 +64,26 @@ config server
 	option addition_arg '-exclude-default-group'
 
 config server
+	option enabled '1'
+	option type 'udp'
+	option ip '101.6.6.6'
+	option server_group 'bootstrap'
+	option blacklist_ip '0'
+	option port '5353'
+	option addition_arg '-exclude-default-group'
+	option name 'CN-TUNA UDP'
+
+config server
+	option enabled '1'
+	option name 'CN-TUNA TCP'
+	option ip '101.6.6.6'
+	option type 'tcp'
+	option port '5353'
+	option server_group 'bootstrap'
+	option blacklist_ip '0'
+	option addition_arg '-exclude-default-group'
+
+config server
 	option server_group 'mainland'
 	option enabled '1'
 	option blacklist_ip '0'
@@ -116,6 +136,26 @@ config server
 	option blacklist_ip '0'
 	option name 'CN-ADV 360DNS DOT'
 	option tls_host_verify 'dot.360.cn'
+
+config server
+	option enabled '1'
+	option name 'CN-ADV TUNA DOH'
+	option ip 'https://101.6.6.6/dns-query'
+	option type 'https'
+	option blacklist_ip '0'
+	option tls_host_verify '101.6.6.6'
+	option server_group 'mainland'
+	option port '8443'
+
+config server
+	option enabled '1'
+	option name 'CN-ADV TUNA DOT'
+	option ip '101.6.6.6'
+	option type 'https'
+	option server_group 'mainland'
+	option blacklist_ip '0'
+	option tls_host_verify '101.6.6.6'
+	option port '8853'
 
 config server
 	option enabled '0'
