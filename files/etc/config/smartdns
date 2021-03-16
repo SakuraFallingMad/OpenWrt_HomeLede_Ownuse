@@ -9,7 +9,7 @@ config smartdns
 	option prefetch_domain '1'
 	option serve_expired '1'
 	option redirect 'none'
-	option cache_size '1536'
+	option cache_size '65536'
 	option rr_ttl '3600'
 	option rr_ttl_min '2400'
 	option rr_ttl_max '86400'
