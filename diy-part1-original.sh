@@ -33,6 +33,7 @@ disablePkgsList="
 ./package/lean/luci-app-docker 
 ./package/lean/softethervpn5 
 ./package/lean/luci-app-softethervpn 
+./package/lean/luci-app-netdata 
 ./feeds/packages/utils/docker-compose 
 ./feeds/packages/net/miniupnpd 
 ./feeds/packages/net/mwan3 
@@ -42,6 +43,7 @@ disablePkgsList="
 ./feeds/packages/utils/libnetwork 
 ./feeds/packages/utils/tini 
 ./feeds/packages/utils/runc 
+./feeds/packages/net/adguardhome 
 ./feeds/packages/net/dnscrypt-proxy2 
 ./feeds/packages/net/https-dns-proxy 
 ./feeds/packages/net/kcptun 
