@@ -95,7 +95,6 @@ jobs:
       run: |
         cd openwrt
         echo -e "$(nproc) thread compile"
-      #  make -j$(nproc) || make -j1 || make -j1 V=sc (Due to Host Agent maximum execution time)
         make -j$(nproc) V=sc || make -j1 V=sc
         echo "::set-output name=status::success"
         grep '^CONFIG_TARGET.*DEVICE.*=y' .config | sed -r 's/.*DEVICE_(.*)=y/\1/' > DEVICE_NAME
