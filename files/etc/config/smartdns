@@ -28,87 +28,97 @@ config smartdns
 	option coredump '1'
 
 config server
-	option type 'udp'
+	option enabled '1'
 	option name 'CN-DNSPOD'
 	option ip '119.29.29.29'
-	option enabled '1'
+	option type 'udp'
 	option server_group 'bootstrap'
 	option blacklist_ip '0'
 	option addition_arg '-exclude-default-group'
 
 config server
-	option type 'udp'
+	option enabled '1'
 	option name 'CN-ALI'
 	option ip '223.5.5.5'
-	option enabled '1'
+	option type 'udp'
 	option server_group 'bootstrap'
 	option blacklist_ip '0'
 	option addition_arg '-exclude-default-group'
 
 config server
-	option type 'udp'
+	option enabled '1'
 	option name 'CN-114DNS'
 	option ip '114.114.114.114'
-	option enabled '1'
+	option type 'udp'
 	option server_group 'bootstrap'
 	option blacklist_ip '0'
 	option addition_arg '-exclude-default-group'
 
 config server
-	option type 'udp'
+	option enabled '1'
 	option name 'CN-BAIDU'
 	option ip '180.76.76.76'
-	option enabled '1'
+	option type 'udp'
 	option server_group 'bootstrap'
 	option blacklist_ip '0'
 	option addition_arg '-exclude-default-group'
 
 config server
 	option enabled '1'
-	option type 'udp'
+	option name 'CN-TUNA UDP'
 	option ip '101.6.6.6'
+	option port '5353'
+	option type 'udp'
 	option server_group 'bootstrap'
 	option blacklist_ip '0'
-	option port '5353'
 	option addition_arg '-exclude-default-group'
-	option name 'CN-TUNA UDP'
 
 config server
 	option enabled '1'
 	option name 'CN-TUNA TCP'
 	option ip '101.6.6.6'
-	option type 'tcp'
 	option port '5353'
+	option type 'tcp'
 	option server_group 'bootstrap'
 	option blacklist_ip '0'
 	option addition_arg '-exclude-default-group'
 
 config server
-	option server_group 'mainland'
 	option enabled '1'
-	option blacklist_ip '0'
 	option name 'CN-ADV ALI DOH'
-	option type 'https'
 	option ip 'https://dns.alidns.com/dns-query'
+	option type 'https'
+	option server_group 'mainland'
+	option blacklist_ip '0'
 	option tls_host_verify 'dns.alidns.com'
 
 config server
-	option server_group 'mainland'
 	option enabled '1'
-	option blacklist_ip '0'
 	option name 'CN-ADV DNSPOD DOH'
 	option ip 'https://doh.pub/dns-query'
 	option type 'https'
+	option server_group 'mainland'
+	option blacklist_ip '0'
 	option tls_host_verify 'doh.pub'
 
 config server
-	option server_group 'mainland'
 	option enabled '1'
-	option blacklist_ip '0'
 	option name 'CN-ADV 360DNS DOH'
 	option ip 'https://doh.360.cn/dns-query'
 	option type 'https'
+	option server_group 'mainland'
+	option blacklist_ip '0'
 	option tls_host_verify 'doh.360.cn'
+
+config server
+	option enabled '1'
+	option name 'CN-ADV TUNA DOH'
+	option ip 'https://101.6.6.6/dns-query'
+	option port '8443'
+	option type 'https'
+	option blacklist_ip '0'
+	option tls_host_verify '101.6.6.6'
+	option server_group 'mainland'
 
 config server
 	option enabled '1'
@@ -121,81 +131,71 @@ config server
 
 config server
 	option enabled '1'
+	option name 'CN-ADV DNSPOD DOT'
 	option ip 'doh.pub'
 	option type 'tls'
 	option server_group 'mainland'
 	option blacklist_ip '0'
-	option name 'CN-ADV DNSPOD DOT'
 	option tls_host_verify 'doh.pub'
 
 config server
 	option enabled '1'
+	option name 'CN-ADV 360DNS DOT'
 	option ip 'dot.360.cn'
 	option type 'tls'
 	option server_group 'mainland'
 	option blacklist_ip '0'
-	option name 'CN-ADV 360DNS DOT'
 	option tls_host_verify 'dot.360.cn'
-
-config server
-	option enabled '1'
-	option name 'CN-ADV TUNA DOH'
-	option ip 'https://101.6.6.6/dns-query'
-	option type 'https'
-	option blacklist_ip '0'
-	option tls_host_verify '101.6.6.6'
-	option server_group 'mainland'
-	option port '8443'
 
 config server
 	option enabled '1'
 	option name 'CN-ADV TUNA DOT'
 	option ip '101.6.6.6'
+	option port '8853'
 	option type 'tls'
 	option server_group 'mainland'
 	option blacklist_ip '0'
 	option tls_host_verify '101.6.6.6'
-	option port '8853'
 
 config server
 	option enabled '0'
 	option name 'OS-Google DNS'
+	option ip 'https://dns.google/dns-query'
+	option type 'https'
 	option server_group 'overseas'
 	option blacklist_ip '0'
-	option type 'https'
-	option ip 'https://dns.google/dns-query'
-	option addition_arg '-exclude-default-group'
 	option tls_host_verify 'dns.google'
+	option addition_arg '-exclude-default-group'
 
 config server
 	option enabled '0'
 	option name 'OS-CloudFlare'
+	option ip 'https://cloudflare-dns.com/dns-query'
 	option type 'https'
 	option server_group 'overseas'
 	option blacklist_ip '0'
-	option ip 'https://cloudflare-dns.com/dns-query'
-	option addition_arg '-exclude-default-group'
 	option tls_host_verify 'cloudflare-dns.com'
+	option addition_arg '-exclude-default-group'
 
 config server
 	option enabled '0'
 	option name 'OS-Quad9'
-	option type 'https'
 	option ip 'https://dns.quad9.net/dns-query'
+	option type 'https'
 	option server_group 'overseas'
 	option blacklist_ip '0'
-	option addition_arg '-exclude-default-group'
 	option tls_host_verify 'dns.quad9.net'
+	option addition_arg '-exclude-default-group'
 
 config server
 	option enabled '0'
 	option name 'OS-Google DNS TLS'
+	option ip '8.8.8.8'
 	option type 'tls'
 	option server_group 'overseas'
 	option blacklist_ip '0'
-	option ip '8.8.8.8'
-	option addition_arg '-exclude-default-group'
 	option tls_host_verify 'dns.google'
+	option addition_arg '-exclude-default-group'
 
 config server
 	option enabled '0'
@@ -204,5 +204,5 @@ config server
 	option type 'tls'
 	option server_group 'overseas'
 	option blacklist_ip '0'
-	option addition_arg '-exclude-default-group'
 	option tls_host_verify 'dns.quad9.net'
+	option addition_arg '-exclude-default-group'
