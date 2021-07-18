@@ -132,11 +132,11 @@ config server
 config server
 	option enabled '1'
 	option name 'CN-ADV DNSPOD DOT'
-	option ip 'doh.pub'
+	option ip 'dot.pub'
 	option type 'tls'
 	option server_group 'mainland'
 	option blacklist_ip '0'
-	option tls_host_verify 'doh.pub'
+	option tls_host_verify 'dot.pub'
 
 config server
 	option enabled '1'
