@@ -103,6 +103,15 @@ config server
 
 config server
 	option enabled '1'
+	option name 'CN-ADV DNSPOD DOH'
+	option ip 'https://sm2.doh.pub/dns-query'
+	option type 'https'
+	option server_group 'mainland'
+	option blacklist_ip '0'
+	option tls_host_verify 'doh.pub'
+
+config server
+	option enabled '1'
 	option name 'CN-ADV 360DNS DOH'
 	option ip 'https://doh.360.cn/dns-query'
 	option type 'https'
