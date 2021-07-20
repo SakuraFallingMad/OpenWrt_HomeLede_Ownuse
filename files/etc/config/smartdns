@@ -64,7 +64,7 @@ config server
 	option addition_arg '-exclude-default-group'
 
 config server
-	option enabled '1'
+	option enabled '0'
 	option name 'CN-TUNA UDP'
 	option ip '101.6.6.6'
 	option port '5353'
@@ -74,7 +74,7 @@ config server
 	option addition_arg '-exclude-default-group'
 
 config server
-	option enabled '1'
+	option enabled '0'
 	option name 'CN-TUNA TCP'
 	option ip '101.6.6.6'
 	option port '5353'
@@ -103,7 +103,7 @@ config server
 
 config server
 	option enabled '1'
-	option name 'CN-ADV DNSPOD DOH'
+	option name 'CN-ADV DNSPOD SM2 DOH'
 	option ip 'https://sm2.doh.pub/dns-query'
 	option type 'https'
 	option server_group 'mainland'
@@ -120,7 +120,7 @@ config server
 	option tls_host_verify 'doh.360.cn'
 
 config server
-	option enabled '1'
+	option enabled '0'
 	option name 'CN-ADV TUNA DOH'
 	option ip 'https://101.6.6.6/dns-query'
 	option port '8443'
@@ -157,7 +157,7 @@ config server
 	option tls_host_verify 'dot.360.cn'
 
 config server
-	option enabled '1'
+	option enabled '0'
 	option name 'CN-ADV TUNA DOT'
 	option ip '101.6.6.6'
 	option port '8853'
