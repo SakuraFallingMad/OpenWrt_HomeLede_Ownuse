@@ -1,0 +1,203 @@
+bind_host: ##ROUTER_IP##
+bind_port: 3000
+beta_bind_port: 0
+users:
+- name: root
+  password: $2y$05$NXsf6fEZbU4eFmXOAmFSXe0Cdywzt6VPsk0vMJn/PLyGBfLXoIOVW
+auth_attempts: 5
+block_auth_min: 15
+http_proxy: ""
+language: ""
+rlimit_nofile: 0
+debug_pprof: false
+web_session_ttl: 720
+dns:
+  bind_hosts:
+  - 0.0.0.0
+  port: 53
+  statistics_interval: 1
+  querylog_enabled: false
+  querylog_file_enabled: true
+  querylog_interval: 1
+  querylog_size_memory: 1000
+  anonymize_client_ip: false
+  protection_enabled: true
+  blocking_mode: default
+  blocking_ipv4: ""
+  blocking_ipv6: ""
+  blocked_response_ttl: 30
+  parental_block_host: family-block.dns.adguard.com
+  safebrowsing_block_host: standard-block.dns.adguard.com
+  ratelimit: 0
+  ratelimit_whitelist: []
+  refuse_any: false
+  upstream_dns:
+  - 127.0.0.1:54
+  - '[::1]:54'
+  upstream_dns_file: ""
+  bootstrap_dns:
+  - 80.80.80.80:53
+  - 9.9.9.11:9953
+  - 80.80.81.81:53
+  - 149.112.112.11:9953
+  all_servers: false
+  fastest_addr: true
+  allowed_clients:
+  - 10.0.0.0/8
+  - 172.16.0.0/12
+  - 192.168.0.0/16
+  - 127.0.0.0/8
+  - fc00::/7
+  - fe80::/10
+  - ::1/128
+  disallowed_clients: []
+  blocked_hosts:
+  - version.bind
+  - id.server
+  - hostname.bind
+  cache_size: 65536
+  cache_ttl_min: 2400
+  cache_ttl_max: 86400
+  bogus_nxdomain: []
+  aaaa_disabled: false
+  enable_dnssec: false
+  edns_client_subnet: false
+  max_goroutines: 300
+  ipset: []
+  filtering_enabled: true
+  filters_update_interval: 1
+  parental_enabled: false
+  safesearch_enabled: false
+  safebrowsing_enabled: false
+  safebrowsing_cache_size: 1048576
+  safesearch_cache_size: 1048576
+  parental_cache_size: 1048576
+  cache_time: 30
+  rewrites: []
+  blocked_services: []
+  local_domain_name: lan
+  resolve_clients: true
+  local_ptr_upstreams:
+  - 127.0.0.1:54
+  - '[::1]:54'
+tls:
+  enabled: false
+  server_name: ""
+  force_https: false
+  port_https: 443
+  port_dns_over_tls: 853
+  port_dns_over_quic: 784
+  port_dnscrypt: 0
+  dnscrypt_config_file: ""
+  allow_unencrypted_doh: false
+  strict_sni_check: false
+  certificate_chain: ""
+  private_key: ""
+  certificate_path: ""
+  private_key_path: ""
+filters:
+- enabled: true
+  url: https://cdn.jsdelivr.net/gh/o0HalfLife0o/list@master/ad-pc.txt
+  name: halflife-list-pc
+  id: 1615989075
+- enabled: true
+  url: https://cdn.jsdelivr.net/gh/o0HalfLife0o/list@master/ad-edentw.txt
+  name: halflife-list-edentw
+  id: 1615989076
+- enabled: true
+  url: https://cdn.jsdelivr.net/gh/Perflyst/PiHoleBlocklist@master/SmartTV-AGH.txt
+  name: Perflyst and Dandelion Sprout's Smart-TV Blocklist
+  id: 1615989078
+- enabled: true
+  url: https://adaway.org/hosts.txt
+  name: AdAway Default Blocklist
+  id: 1615989079
+- enabled: true
+  url: https://cdn.jsdelivr.net/gh/DandelionSprout/adfilt@master/GameConsoleAdblockList.txt
+  name: Game Console Adblock List
+  id: 1615989080
+- enabled: true
+  url: https://cdn.jsdelivr.net/gh/Spam404/lists@master/main-blacklist.txt
+  name: Spam404
+  id: 1615989081
+- enabled: true
+  url: https://cdn.jsdelivr.net/gh/hoshsadiq/adblock-nocoin-list@master/hosts.txt
+  name: NoCoin Filter List
+  id: 1615989082
+- enabled: true
+  url: https://curben.gitlab.io/malware-filter/urlhaus-filter-agh-online.txt
+  name: Online Malicious URL Blocklist
+  id: 1615989083
+- enabled: true
+  url: https://cdn.jsdelivr.net/gh/neodevpro/neodevhost@master/adblocker
+  name: NEO DEV HOST
+  id: 1620532178
+- enabled: true
+  url: https://cdn.jsdelivr.net/gh/banbendalao/ADgk@master/ADgk.txt
+  name: ADgk手机去广告规则
+  id: 1620532179
+- enabled: true
+  url: https://anti-ad.net/easylist.txt
+  name: 'CHN: anti-AD'
+  id: 1620532180
+- enabled: true
+  url: https://www.i-dont-care-about-cookies.eu/abp/
+  name: I don't care about cookies隐私相关
+  id: 1620532181
+- enabled: true
+  url: https://cdn.jsdelivr.net/gh/AdguardTeam/FiltersRegistry@master/filters/filter_14_Annoyances/filter.txt
+  name: AdGuard Annoyances filter
+  id: 1620532182
+- enabled: true
+  url: https://cdn.jsdelivr.net/gh/AdguardTeam/FiltersRegistry@master/filters/filter_3_Spyware/filter.txt
+  name: AdGuard Tracking Protection filter
+  id: 1620532183
+- enabled: true
+  url: https://cdn.jsdelivr.net/gh/AdguardTeam/FiltersRegistry@master/filters/filter_11_Mobile/filter.txt
+  name: AdGuard Mobile Ads filter
+  id: 1620532184
+- enabled: true
+  url: https://cdn.jsdelivr.net/gh/AdguardTeam/FiltersRegistry@master/filters/filter_2_English/filter.txt
+  name: AdGuard Base filter
+  id: 1620532185
+- enabled: true
+  url: https://easylist.to/easylist/easyprivacy.txt
+  name: EasyPrivacy隐私相关
+  id: 1620532186
+whitelist_filters: []
+user_rules:
+- '@@||jd.com^'
+- '@@||etao.com^'
+- '@@||tongdun.net^'
+- '@@||taobao.com^'
+- '@@ii.gdt.qq.com^$important'
+- '@@||toutiao.com^'
+- '@@||alipay.com^'
+- '@@||bilibili.com^'
+- '@@/ad.dmm/'
+- '@@/ip.affiliate.dmm/'
+dhcp:
+  enabled: false
+  interface_name: ""
+  dhcpv4:
+    gateway_ip: ""
+    subnet_mask: ""
+    range_start: ""
+    range_end: ""
+    lease_duration: 0
+    icmp_timeout_msec: 1000
+    options: []
+  dhcpv6:
+    range_start: ""
+    lease_duration: 0
+    ra_slaac_only: false
+    ra_allow_slaac: false
+clients: []
+log_compress: false
+log_localtime: false
+log_max_backups: 0
+log_max_size: 100
+log_max_age: 3
+log_file: ""
+verbose: false
+schema_version: 10
