@@ -64,7 +64,7 @@ config server
 	option addition_arg '-exclude-default-group'
 
 config server
-	option enabled '0'
+	option enabled '1'
 	option name 'CN-TUNA UDP'
 	option ip '101.6.6.6'
 	option port '5353'
@@ -74,7 +74,7 @@ config server
 	option addition_arg '-exclude-default-group'
 
 config server
-	option enabled '0'
+	option enabled '1'
 	option name 'CN-TUNA TCP'
 	option ip '101.6.6.6'
 	option port '5353'
@@ -120,7 +120,7 @@ config server
 	option tls_host_verify 'doh.360.cn'
 
 config server
-	option enabled '0'
+	option enabled '1'
 	option name 'CN-ADV TUNA DOH'
 	option ip 'https://101.6.6.6/dns-query'
 	option port '8443'
@@ -157,7 +157,7 @@ config server
 	option tls_host_verify 'dot.360.cn'
 
 config server
-	option enabled '0'
+	option enabled '1'
 	option name 'CN-ADV TUNA DOT'
 	option ip '101.6.6.6'
 	option port '8853'
@@ -167,8 +167,8 @@ config server
 	option tls_host_verify '101.6.6.6'
 
 config server
-	option enabled '0'
-	option name 'OS-Google DNS'
+	option enabled '1'
+	option name 'OS-Google DNS DOH'
 	option ip 'https://dns.google/dns-query'
 	option type 'https'
 	option server_group 'overseas'
@@ -177,8 +177,8 @@ config server
 	option addition_arg '-exclude-default-group'
 
 config server
-	option enabled '0'
-	option name 'OS-CloudFlare'
+	option enabled '1'
+	option name 'OS-CloudFlare DNS DOH'
 	option ip 'https://cloudflare-dns.com/dns-query'
 	option type 'https'
 	option server_group 'overseas'
@@ -187,19 +187,19 @@ config server
 	option addition_arg '-exclude-default-group'
 
 config server
-	option enabled '0'
-	option name 'OS-Quad9'
-	option ip 'https://dns.quad9.net/dns-query'
+	option enabled '1'
+	option name 'OS-Quad9 DNS DOH'
+	option ip 'https://dns10.quad9.net/dns-query'
 	option type 'https'
 	option server_group 'overseas'
 	option blacklist_ip '0'
-	option tls_host_verify 'dns.quad9.net'
+	option tls_host_verify 'dns10.quad9.net'
 	option addition_arg '-exclude-default-group'
 
 config server
-	option enabled '0'
+	option enabled '1'
 	option name 'OS-Google DNS TLS'
-	option ip '8.8.8.8'
+	option ip 'dns.google'
 	option type 'tls'
 	option server_group 'overseas'
 	option blacklist_ip '0'
@@ -207,11 +207,21 @@ config server
 	option addition_arg '-exclude-default-group'
 
 config server
-	option enabled '0'
-	option name 'OS-Quad9 TLS'
-	option ip '149.112.112.112'
+	option enabled '1'
+	option name 'OS-CloudFlare DNS TLS'
+	option ip 'cloudflare-dns.com'
 	option type 'tls'
 	option server_group 'overseas'
 	option blacklist_ip '0'
-	option tls_host_verify 'dns.quad9.net'
+	option tls_host_verify 'cloudflare-dns.com'
+	option addition_arg '-exclude-default-group'
+
+config server
+	option enabled '1'
+	option name 'OS-Quad9 DNS TLS'
+	option ip 'dns10.quad9.net'
+	option type 'tls'
+	option server_group 'overseas'
+	option blacklist_ip '0'
+	option tls_host_verify 'dns10.quad9.net'
 	option addition_arg '-exclude-default-group'
