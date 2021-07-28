@@ -23,7 +23,7 @@ config smartdns
 	option seconddns_no_rule_ipset '0'
 	option seconddns_no_rule_soa '0'
 	option seconddns_no_dualstack_selection '0'
-	option seconddns_no_cache '0'
+	option seconddns_no_cache '1'
 	option force_aaaa_soa '0'
 	option coredump '1'
 
@@ -125,9 +125,9 @@ config server
 	option ip 'https://101.6.6.6/dns-query'
 	option port '8443'
 	option type 'https'
+	option server_group 'mainland'
 	option blacklist_ip '0'
 	option tls_host_verify '101.6.6.6'
-	option server_group 'mainland'
 
 config server
 	option enabled '1'
