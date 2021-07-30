@@ -1,2 +1,3 @@
-0 */6 * * * [ -x /etc/init.d/dnscrypt-proxy ] && /etc/init.d/dnscrypt-proxy restart > /dev/null 2>&1 &
-0 */6 * * * [ -x /etc/init.d/miniupnpd ] && /etc/init.d/miniupnpd restart > /dev/null 2>&1 &
+0 */8 * * * [ -x /etc/init.d/dnscrypt-proxy ] && /etc/init.d/dnscrypt-proxy restart > /dev/null 2>&1 &
+0 */8 * * * [ -x /etc/init.d/miniupnpd ] && /etc/init.d/miniupnpd restart > /dev/null 2>&1 &
+0 */8 * * * [ -x /etc/init.d/smartdns ] && /etc/init.d/smartdns restart > /dev/null 2>&1 &
