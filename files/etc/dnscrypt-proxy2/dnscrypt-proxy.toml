@@ -210,7 +210,7 @@ cert_refresh_delay = 240
 ##
 ## If more than one resolver is specified, they will be tried in sequence.
 
-fallback_resolvers = ['80.80.80.80:53', '9.9.9.11:9953', '80.80.81.81:53', '149.112.112.11:9953']
+fallback_resolvers = ['101.6.6.6:5353', '119.29.29.29:53']
 
 
 ## Always use the fallback resolver before the system DNS settings.
