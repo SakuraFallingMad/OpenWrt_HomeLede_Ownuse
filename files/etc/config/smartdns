@@ -121,16 +121,6 @@ config server
 
 config server
 	option enabled '1'
-	option name 'CN-ADV TUNA DOH'
-	option ip 'https://101.6.6.6/dns-query'
-	option port '8443'
-	option type 'https'
-	option server_group 'mainland'
-	option blacklist_ip '0'
-	option tls_host_verify '101.6.6.6'
-
-config server
-	option enabled '1'
 	option name 'CN-ADV ALI DOT'
 	option ip 'dns.alidns.com'
 	option type 'tls'
