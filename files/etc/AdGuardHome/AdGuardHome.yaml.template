@@ -4,8 +4,6 @@ beta_bind_port: 0
 users:
 - name: root
   password: $2y$05$NXsf6fEZbU4eFmXOAmFSXe0Cdywzt6VPsk0vMJn/PLyGBfLXoIOVW
-auth_attempts: 5
-block_auth_min: 15
 http_proxy: ""
 language: ""
 rlimit_nofile: 0
@@ -17,7 +15,6 @@ dns:
   port: 53
   statistics_interval: 1
   querylog_enabled: false
-  querylog_file_enabled: true
   querylog_interval: 1
   querylog_size_memory: 1000
   anonymize_client_ip: false
@@ -34,7 +31,6 @@ dns:
   upstream_dns:
   - 127.0.0.1:54
   - '[::1]:54'
-  upstream_dns_file: ""
   bootstrap_dns:
   - 80.80.80.80:53
   - 9.9.9.11:9953
@@ -51,10 +47,7 @@ dns:
   - fe80::/10
   - ::1/128
   disallowed_clients: []
-  blocked_hosts:
-  - version.bind
-  - id.server
-  - hostname.bind
+  blocked_hosts: []
   cache_size: 256
   cache_ttl_min: 0
   cache_ttl_max: 0
@@ -62,8 +55,6 @@ dns:
   aaaa_disabled: false
   enable_dnssec: false
   edns_client_subnet: false
-  max_goroutines: 300
-  ipset: []
   filtering_enabled: true
   filters_update_interval: 1
   parental_enabled: false
@@ -75,26 +66,8 @@ dns:
   cache_time: 30
   rewrites: []
   blocked_services: []
-  local_domain_name: lan
   resolve_clients: true
-  local_ptr_upstreams:
-  - 127.0.0.1:54
-  - '[::1]:54'
-tls:
-  enabled: false
-  server_name: ""
-  force_https: false
-  port_https: 443
-  port_dns_over_tls: 853
-  port_dns_over_quic: 784
-  port_dnscrypt: 0
-  dnscrypt_config_file: ""
-  allow_unencrypted_doh: false
-  strict_sni_check: false
-  certificate_chain: ""
-  private_key: ""
-  certificate_path: ""
-  private_key_path: ""
+  local_ptr_upstreams: []
 filters:
 - enabled: true
   url: https://cdn.jsdelivr.net/gh/o0HalfLife0o/list@master/ad-pc.txt
@@ -168,28 +141,7 @@ user_rules:
 - '@@||bilibili.com^'
 - '@@/ad.dmm/'
 - '@@/ip.affiliate.dmm/'
-dhcp:
-  enabled: false
-  interface_name: ""
-  dhcpv4:
-    gateway_ip: ""
-    subnet_mask: ""
-    range_start: ""
-    range_end: ""
-    lease_duration: 0
-    icmp_timeout_msec: 1000
-    options: []
-  dhcpv6:
-    range_start: ""
-    lease_duration: 0
-    ra_slaac_only: false
-    ra_allow_slaac: false
 clients: []
-log_compress: false
-log_localtime: false
-log_max_backups: 0
-log_max_size: 100
-log_max_age: 3
 log_file: ""
 verbose: false
 schema_version: 10
