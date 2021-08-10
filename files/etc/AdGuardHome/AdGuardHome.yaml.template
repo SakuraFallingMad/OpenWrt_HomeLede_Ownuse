@@ -36,8 +36,8 @@ dns:
   - 9.9.9.11:9953
   - 80.80.81.81:53
   - 149.112.112.11:9953
-  all_servers: true
-  fastest_addr: false
+  all_servers: false
+  fastest_addr: true
   allowed_clients:
   - 10.0.0.0/8
   - 172.16.0.0/12
