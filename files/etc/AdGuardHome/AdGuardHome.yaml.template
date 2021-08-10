@@ -4,11 +4,6 @@ beta_bind_port: 0
 users:
 - name: root
   password: $2y$05$NXsf6fEZbU4eFmXOAmFSXe0Cdywzt6VPsk0vMJn/PLyGBfLXoIOVW
-http_proxy: ""
-language: ""
-rlimit_nofile: 0
-debug_pprof: false
-web_session_ttl: 720
 dns:
   bind_hosts:
   - 0.0.0.0
@@ -16,18 +11,8 @@ dns:
   statistics_interval: 1
   querylog_enabled: false
   querylog_interval: 1
-  querylog_size_memory: 1000
-  anonymize_client_ip: false
   protection_enabled: true
-  blocking_mode: default
-  blocking_ipv4: ""
-  blocking_ipv6: ""
-  blocked_response_ttl: 30
-  parental_block_host: family-block.dns.adguard.com
-  safebrowsing_block_host: standard-block.dns.adguard.com
   ratelimit: 0
-  ratelimit_whitelist: []
-  refuse_any: false
   upstream_dns:
   - 127.0.0.1:54
   - '[::1]:54'
@@ -46,28 +31,12 @@ dns:
   - fc00::/7
   - fe80::/10
   - ::1/128
-  disallowed_clients: []
-  blocked_hosts: []
-  cache_size: 256
-  cache_ttl_min: 0
-  cache_ttl_max: 0
-  bogus_nxdomain: []
+  cache_size: 1048576
   aaaa_disabled: false
   enable_dnssec: false
   edns_client_subnet: false
   filtering_enabled: true
   filters_update_interval: 1
-  parental_enabled: false
-  safesearch_enabled: false
-  safebrowsing_enabled: false
-  safebrowsing_cache_size: 1048576
-  safesearch_cache_size: 1048576
-  parental_cache_size: 1048576
-  cache_time: 30
-  rewrites: []
-  blocked_services: []
-  resolve_clients: true
-  local_ptr_upstreams: []
 filters:
 - enabled: true
   url: https://cdn.jsdelivr.net/gh/o0HalfLife0o/list@master/ad-pc.txt
@@ -129,7 +98,6 @@ filters:
   url: https://cdn.jsdelivr.net/gh/AdguardTeam/FiltersRegistry@master/filters/filter_2_English/filter.txt
   name: AdGuard Base filter
   id: 1620532185
-whitelist_filters: []
 user_rules:
 - '@@||jd.com^'
 - '@@||etao.com^'
@@ -141,7 +109,4 @@ user_rules:
 - '@@||bilibili.com^'
 - '@@/ad.dmm/'
 - '@@/ip.affiliate.dmm/'
-clients: []
-log_file: ""
-verbose: false
 schema_version: 10
