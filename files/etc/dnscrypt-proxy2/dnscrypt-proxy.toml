@@ -127,7 +127,7 @@ blocked_query_response = 'refused'
 
 ## Load-balancing strategy: 'p2' (default), 'ph', 'first' or 'random'
 
-lb_strategy = 'random'
+lb_strategy = 'ph'
 
 ## Set to `true` to constantly try to estimate the latency of all the resolvers
 ## and adjust the load-balancing parameters accordingly, or to `false` to disable.
