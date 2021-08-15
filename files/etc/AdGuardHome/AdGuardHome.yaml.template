@@ -102,6 +102,10 @@ filters:
   url: https://raw.githubusercontent.com/banbendalao/ADgk/master/ADgk.txt
   name: adgk手机去广告规则
   id: 1628569201
+- enabled: true
+  url: https://www.i-dont-care-about-cookies.eu/abp/
+  name: I don't care about cookies
+  id: 1628569202
 user_rules:
 - '@@||jd.com^'
 - '@@||etao.com^'
