@@ -168,7 +168,7 @@ jobs:
       run: |
         echo "::set-output name=release_tag::$(date +"%Y.%m.%d-%H%M")"
         touch release.txt
-        echo "Custom HomeLede Mod OpenWrt For Non-docker And Non-multimedia User" >> release.txt
+        echo "Custom HomeLede Mod OpenWrt For Non-docker And Non-multimedia User Under 5.10.x Kernel" >> release.txt
         echo "Caution：Homeconnect Could Not Work In This Edition" >> release.txt
         echo "Enhanced: Adjust SmartDNS Configuration & Dnscrypt-proxy Configuration" >> release.txt
         echo "Current minorBug：ServerChan's Binary File Execution Permission Need To Be Manually Assigned" >> release.txt
