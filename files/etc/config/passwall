@@ -51,7 +51,6 @@ config global_rules
 	list gfwlist_url 'https://cdn.jsdelivr.net/gh/Loyalsoldier/v2ray-rules-dat@release/greatfire.txt'
 	list chnroute_url 'https://ispip.clang.cn/all_cn_cidr.txt'
 	list chnroute_url 'https://cdn.jsdelivr.net/gh/soffchen/GeoIP2-CN@release/CN-ip-cidr.txt'
-	list chnroute_url 'https://cdn.jsdelivr.net/gh/Hackl0us/GeoIP2-CN@release/CN-ip-cidr.txt'
 	list chnroute6_url 'https://ispip.clang.cn/all_cn_ipv6.txt'
 	list chnlist_url 'https://cdn.jsdelivr.net/gh/Loyalsoldier/v2ray-rules-dat@release/direct-list.txt'
 	list chnlist_url 'https://cdn.jsdelivr.net/gh/Loyalsoldier/v2ray-rules-dat@release/apple-cn.txt'
