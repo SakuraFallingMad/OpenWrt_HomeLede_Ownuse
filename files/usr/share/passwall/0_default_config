@@ -4,9 +4,10 @@ config global
 	option socks_enabled '0'
 	option tcp_node 'nil'
 	option udp_node 'nil'
-	option dns_mode 'pdnsd'
 	option up_china_dns 'default'
-	option dns_forward '127.0.0.1#7053'
+	option use_chnlist '0'
+	option homelede '1'
+	option use_tcp_node_resolve_dns '1'
 	option tcp_proxy_mode 'chnroute'
 	option udp_proxy_mode 'chnroute'
 	option localhost_tcp_proxy_mode 'default'
@@ -22,8 +23,8 @@ config global_haproxy
 
 config global_delay
 	option auto_on '0'
-	option start_daemon '0'
-	option start_delay '1'
+	option start_daemon '1'
+	option start_delay '60'
 
 config global_forwarding
 	option process '0'
@@ -31,13 +32,13 @@ config global_forwarding
 	option udp_no_redir_ports '80,443'
 	option tcp_redir_ports '22,25,53,143,465,587,993,995,80,443'
 	option udp_redir_ports '1:65535'
-	option accept_icmp '0'
-	option tcp_proxy_way 'redirect'
+	option accept_icmp '1'
+	option tcp_proxy_way 'tproxy'
 
 config global_other
 	option status 'big_icon show_check_port show_ip111'
 	option nodes_ping 'auto_ping tcping'
-	option ipv6_tproxy '0'
+	option ipv6_tproxy '1'
 
 config global_rules
 	option auto_update '0'
@@ -45,8 +46,8 @@ config global_rules
 	option chnroute_update '1'
 	option chnroute6_update '1'
 	option gfwlist_update '1'
-	option geosite_update '0'
-	option geoip_update '0'
+	option geosite_update '1'
+	option geoip_update '1'
 	list gfwlist_url 'https://cdn.jsdelivr.net/gh/YW5vbnltb3Vz/domain-list-community@release/gfwlist.txt'
 	list gfwlist_url 'https://cdn.jsdelivr.net/gh/Loyalsoldier/v2ray-rules-dat@release/greatfire.txt'
 	list chnroute_url 'https://ispip.clang.cn/all_cn_cidr.txt'
