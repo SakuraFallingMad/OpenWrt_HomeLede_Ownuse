@@ -170,6 +170,7 @@ jobs:
         echo "::set-output name=release_tag::$(date +"%Y.%m.%d-%H%M")"
         touch release.txt
         echo "Original HomeLede Edition" >> release.txt
+        echo "Modified kernel 5.10.x, Add Acpid, Without Any Compiling With Goproxy, Keep Only EFI Images" >> release.txt
         [ $UPLOAD_COWTRANSFER = true ] && echo "🔗 [Cowtransfer](${{ steps.cowtransfer.outputs.url }})" >> release.txt
         [ $UPLOAD_WETRANSFER = true ] && echo "🔗 [WeTransfer](${{ steps.wetransfer.outputs.url }})" >> release.txt
         echo "::set-output name=status::success"
