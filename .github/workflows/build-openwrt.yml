@@ -101,6 +101,7 @@ jobs:
       id: package
       run: |
         cd openwrt
+        echo -e 'CONFIG_DEVEL=y\nCONFIG_CCACHE=y' >> .config
         make defconfig
         make download -j8
         find dl -size -1024c -exec ls -l {} \;
@@ -168,7 +169,7 @@ jobs:
       run: |
         echo "::set-output name=release_tag::$(date +"%Y.%m.%d-%H%M")"
         touch release.txt
-        echo "Custom HomeLede Mod OpenWrt For Non-docker And Non-multimedia User Under 5.10.x Kernel" >> release.txt
+        echo "Custom HomeLede Mod OpenWrt For Non-docker And Non-multimedia User" >> release.txt
         echo "Caution：Homeconnect Could Not Work In This Edition" >> release.txt
         echo "Enhanced: Adjust SmartDNS Configuration & Dnscrypt-proxy Configuration" >> release.txt
         echo "From Now On, Only Release Efi Images" >> release.txt
