@@ -285,7 +285,7 @@ CONFIG_SIGNATURE_CHECK=y
 CONFIG_TESTING_KERNEL=y
 CONFIG_DISPLAY_SUPPORT=y
 CONFIG_BUILD_PATENTED=y
-CONFIG_BUILD_NLS=y
+# CONFIG_BUILD_NLS is not set
 CONFIG_SHADOW_PASSWORDS=y
 # CONFIG_CLEAN_IPKG is not set
 # CONFIG_IPK_FILES_CHECKSUMS is not set
@@ -4510,7 +4510,7 @@ CONFIG_PACKAGE_libid3tag=m
 # CONFIG_PACKAGE_libinotifytools is not set
 # CONFIG_PACKAGE_libinput is not set
 # CONFIG_PACKAGE_libintl is not set
-CONFIG_PACKAGE_libintl-full=y
+# CONFIG_PACKAGE_libintl-full is not set
 # CONFIG_PACKAGE_libipfs-http-client is not set
 # CONFIG_PACKAGE_libiw is not set
 CONFIG_PACKAGE_libiwinfo=y
