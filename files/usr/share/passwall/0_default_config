@@ -96,7 +96,7 @@ config auto_switch
 
 config shunt_rules 'AD'
 	option remarks 'AD'
-	option domain_list 'geosite:category-ads'
+	option domain_list 'geosite:category-ads-all'
 
 config shunt_rules 'BT'
 	option remarks 'BT'
