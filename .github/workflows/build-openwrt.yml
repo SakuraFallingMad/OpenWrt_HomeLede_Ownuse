@@ -172,7 +172,6 @@ jobs:
         echo "Caution：Homeconnect Could Not Work In This Edition" >> release.txt
         echo "Enhanced: Adjust SmartDNS Configuration & Dnscrypt-proxy Configuration" >> release.txt
         echo "From Now On, Only Release Efi Images" >> release.txt
-        echo "Current minorBug：Luci-app-sqm's Saving And Submitting Cannot Take Effect Immediately" >> release.txt
         [ $UPLOAD_COWTRANSFER = true ] && echo "🔗 [Cowtransfer](${{ steps.cowtransfer.outputs.url }})" >> release.txt
         [ $UPLOAD_WETRANSFER = true ] && echo "🔗 [WeTransfer](${{ steps.wetransfer.outputs.url }})" >> release.txt
         echo "::set-output name=status::success"
