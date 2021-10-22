@@ -106,15 +106,4 @@ filters:
   url: https://www.i-dont-care-about-cookies.eu/abp/
   name: I don't care about cookies
   id: 1628569202
-user_rules:
-- '@@||jd.com^'
-- '@@||etao.com^'
-- '@@||tongdun.net^'
-- '@@||taobao.com^'
-- '@@ii.gdt.qq.com^$important'
-- '@@||toutiao.com^'
-- '@@||alipay.com^'
-- '@@||bilibili.com^'
-- '@@/ad.dmm/'
-- '@@/ip.affiliate.dmm/'
 schema_version: 10
