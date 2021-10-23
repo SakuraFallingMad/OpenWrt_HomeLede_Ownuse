@@ -130,7 +130,7 @@ geosite:tvb'
 
 config shunt_rules 'China'
 	option remarks 'China'
-	option domain_list 'geosite:cn
-geosite:private'
-	option ip_list 'geoip:cn
-geoip:private'
+	option domain_list 'geosite:private
+geosite:cn'
+	option ip_list 'geoip:private
+geoip:cn'
