@@ -110,6 +110,7 @@ config shunt_rules 'Telegram'
 config shunt_rules 'YouTube'
 	option remarks 'YouTube'
 	option domain_list 'geosite:youtube'
+	option ip_list 'geoip:google'
 
 config shunt_rules 'Netflix'
 	option remarks 'Netflix'
