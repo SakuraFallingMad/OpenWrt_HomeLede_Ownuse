@@ -50,8 +50,6 @@ disablePkgsList="
 ./feeds/pw/ipt2socks 
 ./feeds/pw/microsocks
 ./feeds/pw/pdnsd-alt
-./feeds/pw/simple-obfs
-./feeds/pw/trojan
 ./feeds/xiaoqingfeng/luci-app-serverchan
 ./feeds/xiaoqingfeng/softethervpn5
 ./package/lean/luci-app-docker 
