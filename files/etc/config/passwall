@@ -4,8 +4,9 @@ config global
 	option socks_enabled '0'
 	option tcp_node 'nil'
 	option udp_node 'nil'
+	option dns_mode 'custom'
 	option up_china_dns 'default'
-	option homelede '1'
+	option custom_dns '127.0.0.1#7053'
 	option tcp_proxy_mode 'chnroute'
 	option udp_proxy_mode 'chnroute'
 	option localhost_tcp_proxy_mode 'default'
@@ -31,11 +32,11 @@ config global_forwarding
 	option udp_redir_ports '1:65535'
 	option accept_icmp '1'
 	option tcp_proxy_way 'tproxy'
+	option ipv6_tproxy '0'
 
 config global_other
 	option status 'big_icon show_check_port show_ip111'
 	option nodes_ping 'auto_ping tcping'
-	option ipv6_tproxy '1'
 
 config global_rules
 	option auto_update '0'
