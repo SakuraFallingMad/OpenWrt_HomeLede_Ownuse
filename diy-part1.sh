@@ -50,16 +50,8 @@ disablePkgsList="
 ./feeds/pw/ipt2socks 
 ./feeds/pw/microsocks 
 ./feeds/pw/pdnsd-alt 
-./feeds/xiaoqingfeng/luci-app-serverchan 
 ./feeds/xiaoqingfeng/shadowsocks-rust 
 ./feeds/xiaoqingfeng/softethervpn5 
-./package/lean/luci-app-docker 
-./package/lean/luci-app-jd-dailybonus 
-./package/lean/luci-app-kodexplorer 
-./package/lean/luci-app-netdata 
-./package/lean/luci-app-softethervpn 
-./package/lean/luci-lib-docker 
-./package/lean/luci-theme-argon 
 "
 
 function disableDulicatedPkg()
