@@ -46,11 +46,6 @@ disablePkgsList="
 ./feeds/packages/utils/runc 
 ./feeds/packages/utils/tini 
 ./feeds/pw/chinadns-ng 
-./feeds/pw/dns2socks 
-./feeds/pw/ipt2socks 
-./feeds/pw/microsocks 
-./feeds/pw/pdnsd-alt 
-./feeds/xiaoqingfeng/shadowsocks-rust 
 ./feeds/xiaoqingfeng/softethervpn5 
 "
 
