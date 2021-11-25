@@ -18,8 +18,8 @@ on:
         description: 'SSH connection to Actions'
         required: false
         default: 'false'
-#  schedule:
-#    - cron: 0 7 * * *
+  schedule:
+    - cron: 0 7 * * *
 
 env:
   REPO_URL: https://github.com/xiaoqingfengATGH/HomeLede.git
@@ -170,6 +170,7 @@ jobs:
         touch release.txt
         echo "Original HomeLede Edition" >> release.txt
         echo "Modified: Add Acpid, Without Any Compiling With Goproxy, Keep Only EFI Images" >> release.txt
+        echo "Modified: Replace HomeLede Modified Passwall Package to Original" >> release.txt
         [ $UPLOAD_COWTRANSFER = true ] && echo "🔗 [Cowtransfer](${{ steps.cowtransfer.outputs.url }})" >> release.txt
         [ $UPLOAD_WETRANSFER = true ] && echo "🔗 [WeTransfer](${{ steps.wetransfer.outputs.url }})" >> release.txt
         echo "::set-output name=status::success"
