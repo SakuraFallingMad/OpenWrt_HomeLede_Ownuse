@@ -139,7 +139,7 @@ keepalive = 30
 ## Randomly choose 1 of the fastest 2, half, n, 1 or all live servers by latency.
 ## The response quality still depends on the server itself.
 
-lb_strategy = 'p10'
+lb_strategy = 'p8'
 
 ## Set to `true` to constantly try to estimate the latency of all the resolvers
 ## and adjust the load-balancing parameters accordingly, or to `false` to disable.
@@ -664,36 +664,37 @@ cache_neg_max_ttl = 600
 
   ## An example of a remote source from https://github.com/DNSCrypt/dnscrypt-resolvers
 
-  # [sources.'public-resolvers']
-  #  urls = ['https://raw.githubusercontent.com/DNSCrypt/dnscrypt-resolvers/master/v3/public-resolvers.md', 'https://download.dnscrypt.info/resolvers-list/v3/public-resolvers.md', 'https://ipv6.download.dnscrypt.info/resolvers-list/v3/public-resolvers.md', 'https://download.dnscrypt.net/resolvers-list/v3/public-resolvers.md']
-  #  cache_file = 'public-resolvers.md'
-  #  minisign_key = 'RWQf6LRCGA9i53mlYecO4IzT51TGPpvWucNSCh1CBM0QTaLn73Y7GFO3'
-  #  refresh_delay = 72
-  #  prefix = ''
+    [sources.'public-resolvers']
+     urls = ['https://raw.githubusercontent.com/DNSCrypt/dnscrypt-resolvers/master/v3/public-resolvers.md', 'https://download.dnscrypt.info/resolvers-list/v3/public-resolvers.md', 'https://ipv6.download.dnscrypt.info/resolvers-list/v3/public-resolvers.md', 'https://download.dnscrypt.net/resolvers-list/v3/public-resolvers.md']
+     cache_file = 'public-resolvers.md'
+     minisign_key = 'RWQf6LRCGA9i53mlYecO4IzT51TGPpvWucNSCh1CBM0QTaLn73Y7GFO3'
+     refresh_delay = 72
+     prefix = ''
 
   ## Anonymized DNS relays
 
-  # [sources.'relays']
-  #  urls = ['https://raw.githubusercontent.com/DNSCrypt/dnscrypt-resolvers/master/v3/relays.md', 'https://download.dnscrypt.info/resolvers-list/v3/relays.md', 'https://ipv6.download.dnscrypt.info/resolvers-list/v3/relays.md', 'https://download.dnscrypt.net/resolvers-list/v3/relays.md']
-  #  cache_file = 'relays.md'
-  #  minisign_key = 'RWQf6LRCGA9i53mlYecO4IzT51TGPpvWucNSCh1CBM0QTaLn73Y7GFO3'
-  #  refresh_delay = 72
-  #  prefix = ''
+    [sources.'relays']
+     urls = ['https://raw.githubusercontent.com/DNSCrypt/dnscrypt-resolvers/master/v3/relays.md', 'https://download.dnscrypt.info/resolvers-list/v3/relays.md', 'https://ipv6.download.dnscrypt.info/resolvers-list/v3/relays.md', 'https://download.dnscrypt.net/resolvers-list/v3/relays.md']
+     cache_file = 'relays.md'
+     minisign_key = 'RWQf6LRCGA9i53mlYecO4IzT51TGPpvWucNSCh1CBM0QTaLn73Y7GFO3'
+     refresh_delay = 72
+     prefix = ''
 
   ## ODoH (Oblivious DoH) servers and relays
 
-  # [sources.'odoh-servers']
-  #   urls = ['https://raw.githubusercontent.com/DNSCrypt/dnscrypt-resolvers/master/v3/odoh-servers.md', 'https://download.dnscrypt.info/resolvers-list/v3/odoh-servers.md', 'https://ipv6.download.dnscrypt.info/resolvers-list/v3/odoh-servers.md', 'https://download.dnscrypt.net/resolvers-list/v3/odoh-servers.md']
-  #   cache_file = 'odoh-servers.md'
-  #   minisign_key = 'RWQf6LRCGA9i53mlYecO4IzT51TGPpvWucNSCh1CBM0QTaLn73Y7GFO3'
-  #   refresh_delay = 24
-  #   prefix = ''
-  # [sources.'odoh-relays']
-  #   urls = ['https://raw.githubusercontent.com/DNSCrypt/dnscrypt-resolvers/master/v3/odoh-relays.md', 'https://download.dnscrypt.info/resolvers-list/v3/odoh-relays.md', 'https://ipv6.download.dnscrypt.info/resolvers-list/v3/odoh-relays.md', 'https://download.dnscrypt.net/resolvers-list/v3/odoh-relays.md']
-  #   cache_file = 'odoh-relays.md'
-  #   minisign_key = 'RWQf6LRCGA9i53mlYecO4IzT51TGPpvWucNSCh1CBM0QTaLn73Y7GFO3'
-  #   refresh_delay = 24
-  #   prefix = ''
+    [sources.'odoh-servers']
+      urls = ['https://raw.githubusercontent.com/DNSCrypt/dnscrypt-resolvers/master/v3/odoh-servers.md', 'https://download.dnscrypt.info/resolvers-list/v3/odoh-servers.md', 'https://ipv6.download.dnscrypt.info/resolvers-list/v3/odoh-servers.md', 'https://download.dnscrypt.net/resolvers-list/v3/odoh-servers.md']
+      cache_file = 'odoh-servers.md'
+      minisign_key = 'RWQf6LRCGA9i53mlYecO4IzT51TGPpvWucNSCh1CBM0QTaLn73Y7GFO3'
+      refresh_delay = 24
+      prefix = ''
+
+    [sources.'odoh-relays']
+      urls = ['https://raw.githubusercontent.com/DNSCrypt/dnscrypt-resolvers/master/v3/odoh-relays.md', 'https://download.dnscrypt.info/resolvers-list/v3/odoh-relays.md', 'https://ipv6.download.dnscrypt.info/resolvers-list/v3/odoh-relays.md', 'https://download.dnscrypt.net/resolvers-list/v3/odoh-relays.md']
+      cache_file = 'odoh-relays.md'
+      minisign_key = 'RWQf6LRCGA9i53mlYecO4IzT51TGPpvWucNSCh1CBM0QTaLn73Y7GFO3'
+      refresh_delay = 24
+      prefix = ''
 
   ## Quad9
 
@@ -846,7 +847,7 @@ skip_incompatible = false
 ## Optional, local, static list of additional servers
 ## Mostly useful for testing your own servers.
 
-[static]
+## [static]
 
     [static.'nextdns-doh']
   # NextDNS is a cloud-based private DNS service that gives you full control over what is allowed and what is blocked on the Internet. DNSSEC, Anycast, Non-logging, NoFilters
@@ -854,7 +855,7 @@ skip_incompatible = false
 
     [static.'quad9-dnscrypt-ip4-nofilter-pri']
   # Quad9 (anycast) no-dnssec/no-log/no-filter 9.9.9.10 / 149.112.112.10
-    stamp = 'sdns://AQYAAAAAAAAADTkuOS45LjEwOjg0NDMgZ8hHuMh1jNEgJFVDvnVnRt803x2EwAuMRwNo34Idhj4ZMi5kbnNjcnlwdC1jZXJ0LnF1YWQ5Lm5ldA'
+    stamp = 'sdns://AQYAAAAAAAAAEzE0OS4xMTIuMTEyLjEwOjg0NDMgZ8hHuMh1jNEgJFVDvnVnRt803x2EwAuMRwNo34Idhj4ZMi5kbnNjcnlwdC1jZXJ0LnF1YWQ5Lm5ldA'
 
     [static.'quad9-doh-ip4-port443-nofilter-pri']
   # Quad9 (anycast) no-dnssec/no-log/no-filter 9.9.9.10 / 149.112.112.10
@@ -874,7 +875,7 @@ skip_incompatible = false
   
     [static.'meganerd-doh-ipv4']
   # DoH server by MegaNerd.nl (IPv4) - https://meganerd.nl/encrypted-dns-server Hosted in Amsterdam (AMS1), The Netherlands. Non-logging, non-filtering, supports DNSSEC.
-    stamp = 'sdns://AgcAAAAAAAAADjEzNi4yNDQuOTcuMTE0IEROvWe7g_iAezkh6TiskXi4gr1QqtsRIx8ETPXwjffOGWNoZXdiYWNjYS5tZWdhbmVyZC5ubDo0NDMEL2RvaA'
+    stamp = 'sdns://AgcAAAAAAAAADjEzNi4yNDQuOTcuMTE0oMwQYNOcgym2K2-8fQ1t-TCYabmB5-Y5LVzY-kCPTYDmIEROvWe7g_iAezkh6TiskXi4gr1QqtsRIx8ETPXwjffOGWNoZXdiYWNjYS5tZWdhbmVyZC5ubDo0NDMEL2RvaA'
 
     [static.'jp.tiar.app-DNSCrypt']
   # Non-Logging, Non-Filtering DNSCrypt server in Japan. No ECS, Support DNSSEC
@@ -882,7 +883,7 @@ skip_incompatible = false
 
     [static.'jp.tiar.app-doh']
   # Non-Logging, Non-Filtering DNS-over-HTTPS server in Japan. No ECS, Support DNSSEC
-    stamp = 'sdns://AgcAAAAAAAAADTE3Mi4xMDQuOTMuODCgMob_ZaZfrzIIXuoTiMNzi6fjeHPJBszjxKKLTMKliYigRE69Z7uD-IB7OSHpOKyReLiCvVCq2xEjHwRM9fCN984gzBBg05yDKbYrb7x9DW35MJhpuYHn5jktXNj6QI9NgOYLanAudGlhci5hcHAKL2Rucy1xdWVyeQ'
+    stamp = 'sdns://AgcAAAAAAAAADTE3Mi4xMDQuOTMuODCgzBBg05yDKbYrb7x9DW35MJhpuYHn5jktXNj6QI9NgOYgRE69Z7uD-IB7OSHpOKyReLiCvVCq2xEjHwRM9fCN984LanAudGlhci5hcHAKL2Rucy1xdWVyeQ'
 
     [static.'moulticast-sg-ipv4']
   # Public | Non-filtering | Non-logging | DNSSEC aware | Hosted in Singapore | Operated by @herver (Github) | https://moulticast.net/dnscrypt/
