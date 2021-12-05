@@ -81,11 +81,10 @@ config auto_switch
 	option retry_num '3'
 	option shunt_logic '1'
 
-	config nodes '696cd32c1d5149ee95fd1b3accbad6df'
+config nodes '696cd32c1d5149ee95fd1b3accbad6df'
 	option remarks '分流总节点'
 	option type 'Xray'
 	option protocol '_shunt'
-	option AD '_blackhole'
 	option BT '_direct'
 	option Telegram 'nil'
 	option YouTube 'nil'
@@ -94,10 +93,6 @@ config auto_switch
 	option China 'nil'
 	option default_node 'nil'
 	option domainStrategy 'IPIfNonMatch'
-
-config shunt_rules 'AD'
-	option remarks 'AD'
-	option domain_list 'geosite:category-ads-all'
 
 config shunt_rules 'BT'
 	option remarks 'BT'
@@ -111,7 +106,6 @@ config shunt_rules 'Telegram'
 config shunt_rules 'YouTube'
 	option remarks 'YouTube'
 	option domain_list 'geosite:youtube'
-	option ip_list 'geoip:google'
 
 config shunt_rules 'Netflix'
 	option remarks 'Netflix'
@@ -132,7 +126,5 @@ geosite:tvb'
 
 config shunt_rules 'China'
 	option remarks 'China'
-	option domain_list 'geosite:private
-geosite:cn'
-	option ip_list 'geoip:private
-geoip:cn'
+	option domain_list 'geosite:cn'
+	option ip_list 'geoip:cn'
