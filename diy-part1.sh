@@ -51,6 +51,7 @@ disablePkgsList="
 ./feeds/pw/microsocks/ 
 ./feeds/pw/pdnsd-alt/ 
 ./feeds/xiaoqingfeng/softethervpn5 
+./package/lean/luci-app-dockerman 
 "
 
 function disableDulicatedPkg()
