@@ -54,8 +54,6 @@ config global_rules
 	list chnroute6_url 'https://ispip.clang.cn/all_cn_ipv6.txt'
 	list chnroute6_url 'https://cdn.jsdelivr.net/gh/gaoyifan/china-operator-ip@ip-lists/china6.txt'
 	list chnlist_url 'https://cdn.jsdelivr.net/gh/Loyalsoldier/v2ray-rules-dat@release/direct-list.txt'
-	list chnlist_url 'https://cdn.jsdelivr.net/gh/Loyalsoldier/v2ray-rules-dat@release/apple-cn.txt'
-	list chnlist_url 'https://cdn.jsdelivr.net/gh/Loyalsoldier/v2ray-rules-dat@release/google-cn.txt'
 	option v2ray_location_asset '/usr/share/xray/'
 
 config global_app
