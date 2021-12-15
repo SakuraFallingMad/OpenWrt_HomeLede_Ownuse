@@ -33,7 +33,6 @@ disablePkgsList="
 ./feeds/packages/net/adguardhome 
 ./feeds/packages/net/dnscrypt-proxy2 
 ./feeds/packages/net/https-dns-proxy 
-./feeds/packages/net/kcptun 
 ./feeds/packages/net/miniupnpd 
 ./feeds/packages/net/mwan3 
 ./feeds/packages/net/smartdns 
@@ -46,10 +45,11 @@ disablePkgsList="
 ./feeds/packages/utils/runc 
 ./feeds/packages/utils/tini 
 ./feeds/pw/chinadns-ng 
-./feeds/pw/dns2socks/ 
-./feeds/pw/ipt2socks/ 
-./feeds/pw/microsocks/ 
-./feeds/pw/pdnsd-alt/ 
+./feeds/pw/dns2socks 
+./feeds/pw/ipt2socks 
+./feeds/pw/kcptun 
+./feeds/pw/microsocks 
+./feeds/pw/pdnsd-alt 
 ./feeds/xiaoqingfeng/softethervpn5 
 ./package/lean/luci-app-dockerman 
 "
