@@ -1,0 +1,10 @@
+cloudflare-dns.com
+opendns.com
+dns.google
+libredns.gr
+quad9.net
+adguard.com
+nextdns.io
+meganerd.nl
+jp.tiar.app
+moulticast.net

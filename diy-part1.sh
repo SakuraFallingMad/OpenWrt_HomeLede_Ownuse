@@ -23,16 +23,12 @@
 
 # Add HomeLede prepareCompile.sh
 disablePkgsList="
-./feeds/lienol/luci-app-guest-wifi 
-./feeds/lienol/luci-app-pppoe-relay 
-./feeds/lienol/luci-app-pptp-server 
-./feeds/lienol/luci-app-ramfree 
-./feeds/lienol/luci-app-verysync 
-./feeds/lienol/verysync 
+./feeds/lienol/luci-app-softethervpn 
 ./feeds/luci/applications/luci-app-sqm 
 ./feeds/packages/net/adguardhome 
 ./feeds/packages/net/dnscrypt-proxy2 
 ./feeds/packages/net/https-dns-proxy 
+./feeds/packages/net/kcptun 
 ./feeds/packages/net/miniupnpd 
 ./feeds/packages/net/mwan3 
 ./feeds/packages/net/smartdns 
@@ -45,13 +41,10 @@ disablePkgsList="
 ./feeds/packages/utils/runc 
 ./feeds/packages/utils/tini 
 ./feeds/pw/chinadns-ng 
-./feeds/pw/dns2socks 
-./feeds/pw/ipt2socks 
-./feeds/pw/kcptun 
-./feeds/pw/microsocks 
-./feeds/pw/pdnsd-alt 
+./feeds/xiaoqingfeng/ipt2socks-alt 
 ./feeds/xiaoqingfeng/softethervpn5 
 ./package/lean/luci-app-dockerman 
+./package/lean/luci-app-kodexplorer 
 "
 
 function disableDulicatedPkg()

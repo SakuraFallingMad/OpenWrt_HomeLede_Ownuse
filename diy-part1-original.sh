@@ -21,7 +21,6 @@
 disablePkgsList="
 ./feeds/pw/chinadns-ng 
 ./feeds/pw/ipt2socks 
-./feeds/pw/kcptun 
 ./feeds/lienol/luci-app-softethervpn 
 ./package/lean/luci-app-kodexplorer 
 ./package/lean/luci-lib-docker 
@@ -48,10 +47,11 @@ disablePkgsList="
 ./feeds/packages/net/adguardhome 
 ./feeds/packages/net/dnscrypt-proxy2 
 ./feeds/packages/net/https-dns-proxy 
+./feeds/packages/net/kcptun 
 ./feeds/packages/net/smartdns 
 ./feeds/packages/net/xtables-addons 
 ./feeds/packages/net/softethervpn5 
-./feeds/luci/applications/luci-app-sqm
+./feeds/luci/applications/luci-app-sqm 
 "
 
 function disableDulicatedPkg()

@@ -1,0 +1,8 @@
+ddns.softether-network.net
+nat-traversal.softether-network.net
+dns.alidns.com
+doh.360.cn
+doh.pub
+dot.360.cn
+dot.pub
+sm2.doh.pub
