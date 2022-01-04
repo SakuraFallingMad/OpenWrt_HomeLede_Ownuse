@@ -23,7 +23,6 @@
 
 # Add HomeLede prepareCompile.sh
 disablePkgsList="
-./feeds/lienol/luci-app-softethervpn 
 ./feeds/luci/applications/luci-app-sqm 
 ./feeds/packages/net/adguardhome 
 ./feeds/packages/net/dnscrypt-proxy2 
@@ -45,6 +44,7 @@ disablePkgsList="
 ./feeds/xiaoqingfeng/softethervpn5 
 ./package/lean/luci-app-dockerman 
 ./package/lean/luci-app-kodexplorer 
+./package/lean/luci-app-softethervpn 
 "
 
 function disableDulicatedPkg()
