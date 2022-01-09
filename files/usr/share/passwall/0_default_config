@@ -5,8 +5,10 @@ config global
 	option tcp_node 'nil'
 	option udp_node 'nil'
 	option dns_mode 'custom'
-	option up_china_dns 'default'
+	option up_china_dns '127.0.0.1#6093'
 	option custom_dns '127.0.0.1#7053'
+	option filter_gfwlist_ipv6 '0'
+	option filter_proxylist_ipv6 '0'
 	option tcp_proxy_mode 'chnroute'
 	option udp_proxy_mode 'chnroute'
 	option localhost_tcp_proxy_mode 'default'
@@ -119,12 +121,17 @@ geosite:hketgroup
 geosite:hkgolden
 geosite:hkopentv
 geosite:hkt
+geosite:now
 geosite:rthk
-geosite:tvb'
+geosite:tvb
+geosite:viu'
 
 config shunt_rules 'China'
 	option remarks 'China'
 	option domain_list 'geosite:cn
-geosite:apple-cn
-geosite:google-cn'
+geosite:geolocation-cn
+geosite:tld-cn
+geosite:apple@cn
+geosite:google@cn
+geosite:microsoft@cn'
 	option ip_list 'geoip:cn'
