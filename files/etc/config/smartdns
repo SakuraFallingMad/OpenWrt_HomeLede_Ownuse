@@ -33,7 +33,7 @@ config server
 	option ip '119.29.29.29'
 	option type 'udp'
 	option server_group 'bootstrap'
-	option blacklist_ip '0'
+	option blacklist_ip '1'
 	option addition_arg '-exclude-default-group'
 
 config server
@@ -42,7 +42,7 @@ config server
 	option ip '223.5.5.5'
 	option type 'udp'
 	option server_group 'bootstrap'
-	option blacklist_ip '0'
+	option blacklist_ip '1'
 	option addition_arg '-exclude-default-group'
 
 config server
@@ -51,7 +51,7 @@ config server
 	option ip '114.114.114.114'
 	option type 'udp'
 	option server_group 'bootstrap'
-	option blacklist_ip '0'
+	option blacklist_ip '1'
 	option addition_arg '-exclude-default-group'
 
 config server
@@ -60,7 +60,7 @@ config server
 	option ip '180.76.76.76'
 	option type 'udp'
 	option server_group 'bootstrap'
-	option blacklist_ip '0'
+	option blacklist_ip '1'
 	option addition_arg '-exclude-default-group'
 
 config server
@@ -70,7 +70,7 @@ config server
 	option port '5353'
 	option type 'udp'
 	option server_group 'bootstrap'
-	option blacklist_ip '0'
+	option blacklist_ip '1'
 	option addition_arg '-exclude-default-group'
 
 config server
@@ -80,7 +80,7 @@ config server
 	option port '5353'
 	option type 'tcp'
 	option server_group 'bootstrap'
-	option blacklist_ip '0'
+	option blacklist_ip '1'
 	option addition_arg '-exclude-default-group'
 
 config server
@@ -89,7 +89,7 @@ config server
 	option ip 'https://dns.alidns.com/dns-query'
 	option type 'https'
 	option server_group 'mainland'
-	option blacklist_ip '0'
+	option blacklist_ip '1'
 	option tls_host_verify 'dns.alidns.com'
 
 config server
@@ -98,7 +98,7 @@ config server
 	option ip 'https://doh.pub/dns-query'
 	option type 'https'
 	option server_group 'mainland'
-	option blacklist_ip '0'
+	option blacklist_ip '1'
 	option tls_host_verify 'doh.pub'
 
 config server
@@ -107,7 +107,7 @@ config server
 	option ip 'https://sm2.doh.pub/dns-query'
 	option type 'https'
 	option server_group 'mainland'
-	option blacklist_ip '0'
+	option blacklist_ip '1'
 	option tls_host_verify 'doh.pub'
 
 config server
@@ -116,7 +116,7 @@ config server
 	option ip 'https://doh.360.cn/dns-query'
 	option type 'https'
 	option server_group 'mainland'
-	option blacklist_ip '0'
+	option blacklist_ip '1'
 	option tls_host_verify 'doh.360.cn'
 
 config server
@@ -125,7 +125,7 @@ config server
 	option ip 'dns.alidns.com'
 	option type 'tls'
 	option server_group 'mainland'
-	option blacklist_ip '0'
+	option blacklist_ip '1'
 	option tls_host_verify 'dns.alidns.com'
 
 config server
@@ -134,7 +134,7 @@ config server
 	option ip 'dot.pub'
 	option type 'tls'
 	option server_group 'mainland'
-	option blacklist_ip '0'
+	option blacklist_ip '1'
 	option tls_host_verify 'dot.pub'
 
 config server
@@ -143,7 +143,7 @@ config server
 	option ip 'dot.360.cn'
 	option type 'tls'
 	option server_group 'mainland'
-	option blacklist_ip '0'
+	option blacklist_ip '1'
 	option tls_host_verify 'dot.360.cn'
 
 config server
@@ -153,7 +153,7 @@ config server
 	option port '8853'
 	option type 'tls'
 	option server_group 'mainland'
-	option blacklist_ip '0'
+	option blacklist_ip '1'
 	option tls_host_verify '101.6.6.6'
 
 config server
@@ -162,7 +162,7 @@ config server
 	option ip 'https://dns.google/dns-query'
 	option type 'https'
 	option server_group 'overseas'
-	option blacklist_ip '0'
+	option blacklist_ip '1'
 	option tls_host_verify 'dns.google'
 	option addition_arg '-exclude-default-group'
 
@@ -172,7 +172,7 @@ config server
 	option ip 'https://cloudflare-dns.com/dns-query'
 	option type 'https'
 	option server_group 'overseas'
-	option blacklist_ip '0'
+	option blacklist_ip '1'
 	option tls_host_verify 'cloudflare-dns.com'
 	option addition_arg '-exclude-default-group'
 
@@ -182,7 +182,7 @@ config server
 	option ip 'https://dns10.quad9.net/dns-query'
 	option type 'https'
 	option server_group 'overseas'
-	option blacklist_ip '0'
+	option blacklist_ip '1'
 	option tls_host_verify 'dns10.quad9.net'
 	option addition_arg '-exclude-default-group'
 
@@ -192,7 +192,7 @@ config server
 	option ip 'dns.google'
 	option type 'tls'
 	option server_group 'overseas'
-	option blacklist_ip '0'
+	option blacklist_ip '1'
 	option tls_host_verify 'dns.google'
 	option addition_arg '-exclude-default-group'
 
@@ -202,7 +202,7 @@ config server
 	option ip 'cloudflare-dns.com'
 	option type 'tls'
 	option server_group 'overseas'
-	option blacklist_ip '0'
+	option blacklist_ip '1'
 	option tls_host_verify 'cloudflare-dns.com'
 	option addition_arg '-exclude-default-group'
 
@@ -212,6 +212,6 @@ config server
 	option ip 'dns10.quad9.net'
 	option type 'tls'
 	option server_group 'overseas'
-	option blacklist_ip '0'
+	option blacklist_ip '1'
 	option tls_host_verify 'dns10.quad9.net'
 	option addition_arg '-exclude-default-group'
