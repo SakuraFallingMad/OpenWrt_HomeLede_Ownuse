@@ -90,7 +90,7 @@ config nodes '696cd32c1d5149ee95fd1b3accbad6df'
 	option TVB 'nil'
 	option China 'nil'
 	option default_node 'nil'
-	option domainStrategy 'IPIfNonMatch'
+	option domainStrategy 'IPOnDemand'
 
 config shunt_rules 'BT'
 	option remarks 'BT'
