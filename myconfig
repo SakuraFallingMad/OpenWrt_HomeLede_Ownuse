@@ -1642,7 +1642,7 @@ CONFIG_PACKAGE_libstdcpp=y
 CONFIG_PACKAGE_logd=y
 CONFIG_PACKAGE_mtd=y
 CONFIG_PACKAGE_netifd=y
-CONFIG_PACKAGE_nft-qos=y
+# CONFIG_PACKAGE_nft-qos is not set
 # CONFIG_PACKAGE_om-watchdog is not set
 CONFIG_PACKAGE_openwrt-keyring=y
 CONFIG_PACKAGE_opkg=y
@@ -4646,7 +4646,7 @@ CONFIG_PACKAGE_luci-app-mwan3=y
 CONFIG_PACKAGE_luci-app-netdata=y
 # CONFIG_PACKAGE_luci-app-nextdns is not set
 # CONFIG_PACKAGE_luci-app-nfs is not set
-CONFIG_PACKAGE_luci-app-nft-qos=y
+# CONFIG_PACKAGE_luci-app-nft-qos is not set
 # CONFIG_PACKAGE_luci-app-nginx-pingos is not set
 CONFIG_PACKAGE_luci-app-nlbwmon=y
 # CONFIG_PACKAGE_luci-app-noddos is not set
@@ -4924,9 +4924,6 @@ CONFIG_PACKAGE_luci-i18n-firewall-zh-cn=y
 CONFIG_PACKAGE_luci-i18n-mwan3-zh-cn=y
 # CONFIG_PACKAGE_luci-i18n-mwan3-zh-tw is not set
 CONFIG_PACKAGE_luci-i18n-netdata-zh-cn=y
-# CONFIG_PACKAGE_luci-i18n-nft-qos-es is not set
-CONFIG_PACKAGE_luci-i18n-nft-qos-zh-cn=y
-# CONFIG_PACKAGE_luci-i18n-nft-qos-zh-tw is not set
 # CONFIG_PACKAGE_luci-i18n-nlbwmon-ja is not set
 # CONFIG_PACKAGE_luci-i18n-nlbwmon-ru is not set
 CONFIG_PACKAGE_luci-i18n-nlbwmon-zh-cn=y
@@ -5304,7 +5301,7 @@ CONFIG_PACKAGE_miniupnpd=y
 # CONFIG_PACKAGE_miniupnpd-igdv1 is not set
 CONFIG_PACKAGE_natpmpc=y
 # CONFIG_PACKAGE_nftables-json is not set
-CONFIG_PACKAGE_nftables-nojson=y
+# CONFIG_PACKAGE_nftables-nojson is not set
 # CONFIG_PACKAGE_shorewall is not set
 # CONFIG_PACKAGE_shorewall-core is not set
 # CONFIG_PACKAGE_shorewall-lite is not set
