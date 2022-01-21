@@ -4,7 +4,7 @@ config global
 	option socks_enabled '0'
 	option tcp_node 'nil'
 	option udp_node 'nil'
-	option dns_mode 'udp'
+	option dns_mode 'pdnsd'
 	option dns_forward '127.0.0.1:7053'
 	option filter_proxy_ipv6 '0'
 	option tcp_proxy_mode 'chnroute'
@@ -83,6 +83,8 @@ config nodes '696cd32c1d5149ee95fd1b3accbad6df'
 	option remarks '分流总节点'
 	option type 'Xray'
 	option protocol '_shunt'
+	option ForceReject '_blackhole'
+	option ForceDirect '_direct'
 	option BT '_direct'
 	option Telegram 'nil'
 	option YouTube 'nil'
@@ -91,6 +93,45 @@ config nodes '696cd32c1d5149ee95fd1b3accbad6df'
 	option China 'nil'
 	option default_node 'nil'
 	option domainStrategy 'IPOnDemand'
+
+config shunt_rules 'ForceReject'
+	option remarks 'ForceReject'
+	option domain_list 'regexp:(.*\.||)(acl4ssr-sub)\.(github.io)
+regexp:(.*\.||)(beijingspring|chinaaffairs|chengmingmag|dafahao|dongtaiwang|epochweekly|epochtimes)\.(cn|org|com)
+regexp:(.*\.||)(beyondbenefit)\.(com)
+regexp:(.*\.||)(cloudtest)\.(cc)
+regexp:(.*\.||)(dafahao|minghui|dongtaiwang|epochtimes|ntdtv|falundafa|wujieliulan)\.(org|com|net)
+regexp:(.*\.||)(falundafa|ifjc|minghui|ntdtv|open|bannedboot|secretchina|tuidang|wujieliulan|zhuichaguoji)\.(cn|org|com)
+regexp:(.*\.||)(metatrader4|metatrader5|mql5)\.(org|com|net)
+regexp:(.*\.||)(netvigator|torproject)\.(cn|com|net|org)
+regexp:(\.| )360kan\.com
+regexp:(\.| )360safe\.com
+regexp:(\.| )360totalsecurity\.com
+regexp:(\.| )360\.(cn|com)
+regexp:(\.| )aboluowang\.com
+regexp:(\.| )gtv\.org
+regexp:(\.| )kingdomsalvation\.org
+regexp:(\.| )li-hongzhi-master\.org
+regexp:(\.| )qhimg\.com
+regexp:(\.| )qihoo\.com
+regexp:(\.| )so\.com
+regexp:(\.| )zhengwunet\.org
+regexp:(^.*\@)(guerrillamail|guerrillamailblock|sharklasers|grr|pokemail|spam4|bccto|chacuo|027168)\.(info|biz|com|de|net|org|me|la)
+regexp:\.minghui\.com
+regexp:\.minghui\.org'
+
+config shunt_rules 'ForceDirect'
+	option remarks 'ForceDirect'
+	option domain_list 'regexp:(.?)(xunlei|sandai|Thunder|XLLiveUD)(.)
+regexp:(Subject|HELO|SMTP)
+regexp:(torrent|\.torrent|peer_id=|announce|info_hash|get_peers|find_node|BitTorrent|announce_peer|protocol|announce\.php\?passkey=)
+regexp:(torrent|\.torrent|peer_id=|info_hash|get_peers|find_node|BitTorrent|announce_peer|announce\.php\?passkey=)
+regexp:ssh
+ddns.softether-network.net
+nat-traversal.softether-network.net
+checkip.synology.com
+checkipv6.synology.com
+ddns.synology.com'
 
 config shunt_rules 'BT'
 	option remarks 'BT'
