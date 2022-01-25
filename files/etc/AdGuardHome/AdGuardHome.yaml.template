@@ -47,7 +47,7 @@ dns:
   - fe80::/10
   - ff00::/8
   cache_size: 1048576
-  aaaa_disabled: false
+  aaaa_disabled: true
   enable_dnssec: false
   edns_client_subnet: false
   filtering_enabled: true
