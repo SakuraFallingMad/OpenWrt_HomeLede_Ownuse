@@ -13,8 +13,8 @@ config global
 	option localhost_udp_proxy_mode 'default'
 	option close_log_tcp '0'
 	option close_log_udp '0'
-	option loglevel 'warning'
-	option trojan_loglevel '2'
+	option loglevel 'error'
+	option trojan_loglevel '3'
 
 config global_haproxy
 	option balancing_enable '0'
@@ -32,7 +32,7 @@ config global_forwarding
 	option udp_redir_ports '1:65535'
 	option accept_icmp '1'
 	option tcp_proxy_way 'tproxy'
-	option ipv6_tproxy '0'
+	option ipv6_tproxy '1'
 	option route_only '1'
 
 config global_other
@@ -47,14 +47,12 @@ config global_rules
 	option gfwlist_update '1'
 	option geosite_update '1'
 	option geoip_update '1'
-	list gfwlist_url 'https://cdn.jsdelivr.net/gh/Loyalsoldier/v2ray-rules-dat@release/gfw.txt'
-	list gfwlist_url 'https://cdn.jsdelivr.net/gh/Loyalsoldier/v2ray-rules-dat@release/greatfire.txt'
-	list chnroute_url 'https://ispip.clang.cn/all_cn_cidr.txt'
-	list chnroute_url 'https://cdn.jsdelivr.net/gh/soffchen/GeoIP2-CN@release/CN-ip-cidr.txt'
-	list chnroute_url 'https://cdn.jsdelivr.net/gh/gaoyifan/china-operator-ip@ip-lists/china.txt'
+	list gfwlist_url 'https://cdn.jsdelivr.net/gh/YW5vbnltb3Vz/domain-list-community@release/gfwlist.txt'
+	list chnroute_url 'https://ispip.clang.cn/all_cn.txt'
 	list chnroute6_url 'https://ispip.clang.cn/all_cn_ipv6.txt'
-	list chnroute6_url 'https://cdn.jsdelivr.net/gh/gaoyifan/china-operator-ip@ip-lists/china6.txt'
-	list chnlist_url 'https://cdn.jsdelivr.net/gh/Loyalsoldier/v2ray-rules-dat@release/direct-list.txt'
+	list chnlist_url 'https://cdn.jsdelivr.net/gh/felixonmars/dnsmasq-china-list/accelerated-domains.china.conf'
+	list chnlist_url 'https://cdn.jsdelivr.net/gh/felixonmars/dnsmasq-china-list/apple.china.conf'
+	list chnlist_url 'https://cdn.jsdelivr.net/gh/felixonmars/dnsmasq-china-list/google.china.conf'
 	option v2ray_location_asset '/usr/share/v2ray/'
 
 config global_app
