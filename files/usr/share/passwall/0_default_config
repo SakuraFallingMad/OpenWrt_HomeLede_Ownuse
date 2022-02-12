@@ -168,8 +168,6 @@ geosite:viu'
 config shunt_rules 'China'
 	option remarks 'China'
 	option domain_list 'geosite:cn
-geosite:geolocation-cn
-geosite:tld-cn
 geosite:apple@cn
 geosite:google@cn
 geosite:microsoft@cn'
