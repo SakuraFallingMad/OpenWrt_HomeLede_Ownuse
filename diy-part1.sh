@@ -17,12 +17,11 @@
 #echo 'src-git helloworld https://github.com/fw876/helloworld' >>feeds.conf.default
 #echo 'src-git passwall https://github.com/xiaorouji/openwrt-passwall' >>feeds.conf.default
 
-# Add jerrykuku's vssr
-# git clone https://github.com/jerrykuku/lua-maxminddb.git ./package/lean/lua-maxminddb
-# git clone https://github.com/jerrykuku/luci-app-vssr.git ./package/lean/luci-app-vssr
-
 # Add HomeLede prepareCompile.sh
 disablePkgsList="
+./feeds/luci/applications/luci-app-dockerman 
+./feeds/luci/applications/luci-app-kodexplorer 
+./feeds/luci/applications/luci-app-softethervpn 
 ./feeds/luci/applications/luci-app-sqm 
 ./feeds/packages/net/adguardhome 
 ./feeds/packages/net/dnscrypt-proxy2 
@@ -42,9 +41,6 @@ disablePkgsList="
 ./feeds/pw/chinadns-ng 
 ./feeds/xiaoqingfeng/ipt2socks-alt 
 ./feeds/xiaoqingfeng/softethervpn5 
-./package/lean/luci-app-dockerman 
-./package/lean/luci-app-kodexplorer 
-./package/lean/luci-app-softethervpn 
 "
 
 function disableDulicatedPkg()
