@@ -5,10 +5,3 @@ nat-traversal.softether-network.net
 checkip.synology.com
 checkipv6.synology.com
 ddns.synology.com
-#dns
-dns.alidns.com
-doh.360.cn
-doh.pub
-dot.360.cn
-dot.pub
-sm2.doh.pub
