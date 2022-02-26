@@ -1,11 +1,6 @@
+#softethervpn ddns
+ddns.softether-network.net
+nat-traversal.softether-network.net
 checkip.synology.com
 checkipv6.synology.com
-ddns.softether-network.net
 ddns.synology.com
-dns.alidns.com
-doh.360.cn
-doh.pub
-dot.360.cn
-dot.pub
-nat-traversal.softether-network.net
-sm2.doh.pub
