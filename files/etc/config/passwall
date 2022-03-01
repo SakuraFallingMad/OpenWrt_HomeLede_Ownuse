@@ -39,7 +39,6 @@ config global_forwarding
 	option route_only '1'
 
 config global_other
-	option status 'big_icon show_check_port show_ip111'
 	option nodes_ping 'auto_ping tcping'
 
 config global_rules
