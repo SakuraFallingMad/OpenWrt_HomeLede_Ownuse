@@ -51,7 +51,7 @@ config global_rules
 	option geoip_update '1'
 	list gfwlist_url 'https://cdn.jsdelivr.net/gh/Loyalsoldier/v2ray-rules-dat@release/gfw.txt'
 	list gfwlist_url 'https://cdn.jsdelivr.net/gh/Loyalsoldier/v2ray-rules-dat@release/greatfire.txt'
-	list chnroute_url 'https://ispip.clang.cn/all_cn.txt'
+	list chnroute_url 'https://ispip.clang.cn/all_cn_cidr.txt'
 	list chnroute6_url 'https://ispip.clang.cn/all_cn_ipv6.txt'
 	list chnlist_url 'https://cdn.jsdelivr.net/gh/felixonmars/dnsmasq-china-list/accelerated-domains.china.conf'
 	list chnlist_url 'https://cdn.jsdelivr.net/gh/felixonmars/dnsmasq-china-list/apple.china.conf'
