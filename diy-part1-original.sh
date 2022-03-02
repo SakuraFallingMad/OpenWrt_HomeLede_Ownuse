@@ -41,7 +41,6 @@ disablePkgsList="
 ./feeds/packages/net/adguardhome 
 ./feeds/packages/net/dnscrypt-proxy2 
 ./feeds/packages/net/https-dns-proxy 
-./feeds/packages/net/kcptun 
 ./feeds/packages/net/smartdns 
 ./feeds/packages/net/xtables-addons 
 ./feeds/packages/net/softethervpn5 
