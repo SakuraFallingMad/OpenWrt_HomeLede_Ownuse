@@ -168,6 +168,7 @@ geosite:viu'
 config shunt_rules 'China'
 	option remarks 'China'
 	option domain_list 'geosite:cn
+geosite:jsdelivr@cn
 geosite:apple@cn
 geosite:google@cn
 geosite:microsoft@cn'
