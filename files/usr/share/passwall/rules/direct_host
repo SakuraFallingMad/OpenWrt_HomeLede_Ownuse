@@ -5,3 +5,5 @@ nat-traversal.softether-network.net
 checkip.synology.com
 checkipv6.synology.com
 ddns.synology.com
+#jsdelivr cdn
+cdn.jsdelivr.net
