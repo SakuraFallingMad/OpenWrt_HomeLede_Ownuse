@@ -127,11 +127,11 @@ regexp:(Subject|HELO|SMTP)
 regexp:(torrent|\.torrent|peer_id=|announce|info_hash|get_peers|find_node|BitTorrent|announce_peer|protocol|announce\.php\?passkey=)
 regexp:(torrent|\.torrent|peer_id=|info_hash|get_peers|find_node|BitTorrent|announce_peer|announce\.php\?passkey=)
 regexp:ssh
-ddns.softether-network.net
-nat-traversal.softether-network.net
-checkip.synology.com
-checkipv6.synology.com
-ddns.synology.com'
+domain:ddns.softether-network.net
+domain:nat-traversal.softether-network.net
+full:checkip.synology.com
+full:checkipv6.synology.com
+full:ddns.synology.com'
 
 config shunt_rules 'BT'
 	option remarks 'BT'
