@@ -49,7 +49,7 @@ dns:
   enable_dnssec: false
   edns_client_subnet: false
   filtering_enabled: true
-  filters_update_interval: 1
+  filters_update_interval: 12
   local_ptr_upstreams:
   - 127.0.0.1:54
   - '[::1]:54'
