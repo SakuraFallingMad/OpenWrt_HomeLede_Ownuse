@@ -160,15 +160,10 @@ geosite:hketgroup
 geosite:hkgolden
 geosite:hkopentv
 geosite:hkt
-geosite:now
 geosite:rthk
-geosite:tvb
-geosite:viu'
+geosite:tvb'
 
 config shunt_rules 'China'
 	option remarks 'China'
-	option domain_list 'geosite:cn
-geosite:apple@cn
-geosite:google@cn
-geosite:microsoft@cn'
+	option domain_list 'geosite:cn'
 	option ip_list 'geoip:cn'
