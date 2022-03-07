@@ -111,14 +111,6 @@ config server
 
 config server
 	option enabled '1'
-	option name 'CN-ADV iQDNS DOT'
-	option ip 'x.passcloud.xyz'
-	option type 'tls'
-	option server_group 'mainland'
-	option blacklist_ip '1'
-
-config server
-	option enabled '1'
 	option name 'OS-Google DNS DOH'
 	option ip 'https://8.8.8.8/dns-query'
 	option type 'https'
