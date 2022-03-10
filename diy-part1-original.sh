@@ -19,8 +19,8 @@
 
 # Add HomeLede prepareCompile.sh
 disablePkgsList="
-./feeds/pw/chinadns-ng 
-./feeds/pw/ipt2socks 
+./feeds/pw_packages/chinadns-ng 
+./feeds/pw_packages/ipt2socks 
 ./feeds/lienol/luci-app-softethervpn 
 ./feeds/luci/applications/luci-app-kodexplorer 
 ./feeds/luci/applications/luci-lib-docker 

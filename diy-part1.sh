@@ -37,7 +37,7 @@ disablePkgsList="
 ./feeds/packages/utils/libnetwork 
 ./feeds/packages/utils/runc 
 ./feeds/packages/utils/tini 
-./feeds/pw/chinadns-ng 
+./feeds/pw_packages/chinadns-ng 
 ./feeds/xiaoqingfeng/ipt2socks-alt 
 ./feeds/xiaoqingfeng/softethervpn5 
 "

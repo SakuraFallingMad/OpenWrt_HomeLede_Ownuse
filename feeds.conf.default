@@ -3,7 +3,8 @@ src-git luci https://github.com/xiaoqingfengATGH/feeds-luci
 src-git routing https://github.com/xiaoqingfengATGH/k5-feeds-routing
 src-git telephony https://github.com/xiaoqingfengATGH/k5-feeds-telephony
 src-git lienol https://github.com/homelede/openwrt-package.git
-src-git pw https://github.com/xiaorouji/openwrt-passwall.git
+src-git pw_packages https://github.com/xiaorouji/openwrt-passwall.git;packages
+src-git pw_luci https://github.com/xiaorouji/openwrt-passwall.git;luci
 src-git xiaoqingfeng https://github.com/xiaoqingfengATGH/feeds-xiaoqingfeng
 #src-git video https://github.com/openwrt/video.git
 #src-git targets https://github.com/openwrt/targets.git
