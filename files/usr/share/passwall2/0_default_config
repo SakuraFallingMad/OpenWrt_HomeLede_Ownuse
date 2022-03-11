@@ -2,22 +2,11 @@
 config global
 	option enabled '0'
 	option socks_enabled '0'
-	option tcp_node 'nil'
-	option udp_node 'nil'
-	option dns_mode 'pdnsd'
+	option node 'myshunt'
+	option dns_protocol 'tcp'
 	option dns_forward '127.0.0.1:7053'
-	option filter_proxy_ipv6 '0'
-	option tcp_proxy_mode 'chnroute'
-	option udp_proxy_mode 'chnroute'
-	option localhost_tcp_proxy_mode 'default'
-	option localhost_udp_proxy_mode 'default'
-	option close_log_tcp '0'
-	option close_log_udp '0'
+	option close_log '0'
 	option loglevel 'error'
-	option trojan_loglevel '3'
-
-config global_haproxy
-	option balancing_enable '0'
 
 config global_delay
 	option auto_on '0'
@@ -28,10 +17,6 @@ config global_forwarding
 	option process '0'
 	option tcp_no_redir_ports 'disable'
 	option udp_no_redir_ports '53'
-	option tcp_proxy_drop_ports 'disable'
-	option udp_proxy_drop_ports '80,443'
-	option tcp_redir_ports '22,25,53,143,465,587,853,993,995,80,443'
-	option udp_redir_ports '1:65535'
 	option accept_icmp '1'
 	option tcp_proxy_way 'tproxy'
 	option ipv6_tproxy '1'
@@ -43,24 +28,13 @@ config global_other
 
 config global_rules
 	option auto_update '0'
-	option chnlist_update '1'
-	option chnroute_update '1'
-	option chnroute6_update '1'
-	option gfwlist_update '1'
 	option geosite_update '1'
 	option geoip_update '1'
-	list gfwlist_url 'https://cdn.jsdelivr.net/gh/Loyalsoldier/v2ray-rules-dat@release/gfw.txt'
-	list gfwlist_url 'https://cdn.jsdelivr.net/gh/Loyalsoldier/v2ray-rules-dat@release/greatfire.txt'
-	list chnroute_url 'https://cdn.jsdelivr.net/gh/gaoyifan/china-operator-ip@ip-lists/china.txt'
-	list chnroute_url 'https://cdn.jsdelivr.net/gh/misakaio/chnroutes2@master/chnroutes.txt'
-	list chnroute6_url 'https://cdn.jsdelivr.net/gh/gaoyifan/china-operator-ip@ip-lists/china6.txt'
-	list chnlist_url 'https://cdn.jsdelivr.net/gh/felixonmars/dnsmasq-china-list/accelerated-domains.china.conf'
 	option v2ray_location_asset '/usr/share/v2ray/'
 
 config global_app
 	option v2ray_file '/usr/bin/v2ray'
 	option xray_file '/usr/bin/xray'
-	option trojan_go_file '/usr/bin/trojan-go'
 	option brook_file '/usr/bin/brook'
 	option hysteria_file '/usr/bin/hysteria'
 
@@ -93,9 +67,38 @@ config nodes 'myshunt'
 	option China 'nil'
 	option default_node 'nil'
 	option domainStrategy 'IPOnDemand'
+	option domainStrategy 'hybrid'
+
+config shunt_rules 'LAN'
+	option remarks 'LAN'
+	option network 'tcp,udp'
+	option ip_list '0.0.0.0/8
+10.0.0.0/8
+100.64.0.0/10
+127.0.0.0/8
+169.254.0.0/16
+172.16.0.0/12
+192.168.0.0/16
+224.0.0.0/4
+240.0.0.0/4'
+
+config shunt_rules 'Direct'
+	option remarks 'Direct'
+	option network 'tcp,udp'
+	option domain_list 'ddns.softether-network.net
+nat-traversal.softether-network.net
+checkip.synology.com
+checkipv6.synology.com
+ddns.synology.com'
+	option ip_list '1.12.12.12
+101.6.6.6
+120.53.53.53
+223.5.5.5
+223.6.6.6'
 
 config shunt_rules 'ForceReject'
 	option remarks 'ForceReject'
+	option network 'tcp,udp'
 	option domain_list 'regexp:(.*\.||)(acl4ssr-sub)\.(github.io)
 regexp:(.*\.||)(beijingspring|chinaaffairs|chengmingmag|dafahao|dongtaiwang|epochweekly|epochtimes)\.(cn|org|com)
 regexp:(.*\.||)(beyondbenefit)\.(com)
@@ -122,6 +125,7 @@ regexp:\.minghui\.org'
 
 config shunt_rules 'ForceDirect'
 	option remarks 'ForceDirect'
+	option network 'tcp,udp'
 	option domain_list 'regexp:(.?)(xunlei|sandai|Thunder|XLLiveUD)(.)
 regexp:(Subject|HELO|SMTP)
 regexp:(torrent|\.torrent|peer_id=|announce|info_hash|get_peers|find_node|BitTorrent|announce_peer|protocol|announce\.php\?passkey=)
@@ -131,23 +135,28 @@ regexp:ssh'
 config shunt_rules 'BT'
 	option remarks 'BT'
 	option protocol 'bittorrent'
+	option network 'tcp,udp'
 
 config shunt_rules 'Telegram'
 	option remarks 'Telegram'
+	option network 'tcp,udp'
 	option domain_list 'geosite:telegram'
 	option ip_list 'geoip:telegram'
 
 config shunt_rules 'YouTube'
 	option remarks 'YouTube'
+	option network 'tcp,udp'
 	option domain_list 'geosite:youtube'
 
 config shunt_rules 'Netflix'
 	option remarks 'Netflix'
+	option network 'tcp,udp'
 	option domain_list 'geosite:netflix'
 	option ip_list 'geoip:netflix'
 
 config shunt_rules 'TVB'
 	option remarks 'TVB'
+	option network 'tcp,udp'
 	option domain_list 'geosite:cabletv
 geosite:hkbn
 geosite:hkedcity
@@ -158,7 +167,37 @@ geosite:hkt
 geosite:rthk
 geosite:tvb'
 
+config shunt_rules 'Proxy'
+	option remarks 'Proxy'
+	option network 'tcp,udp'
+	option domain_list 'cloudflare-dns.com
+opendns.com
+dns.google
+libredns.gr
+quad9.net
+adguard.com
+nextdns.io
+meganerd.nl
+jp.tiar.app
+moulticast.net'
+	option ip_list '1.0.0.1
+1.1.1.1
+1.1.1.2
+116.202.176.26
+136.244.97.114
+149.112.112.10
+172.104.93.80
+176.103.130.130
+208.67.222.220
+208.67.222.222
+51.79.158.183
+8.8.4.4
+8.8.8.8
+9.9.9.10
+9.9.9.9'
+
 config shunt_rules 'China'
 	option remarks 'China'
+	option network 'tcp,udp'
 	option domain_list 'geosite:cn'
 	option ip_list 'geoip:cn'
