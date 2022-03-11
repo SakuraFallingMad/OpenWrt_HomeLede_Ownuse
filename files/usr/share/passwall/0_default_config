@@ -92,7 +92,7 @@ config nodes 'myshunt'
 	option TVB 'nil'
 	option China 'nil'
 	option default_node 'nil'
-	option domainStrategy 'IPIfNonMatch'
+	option domainStrategy 'IPOnDemand'
 
 config shunt_rules 'ForceReject'
 	option remarks 'ForceReject'
