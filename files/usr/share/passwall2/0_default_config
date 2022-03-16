@@ -19,7 +19,7 @@ config global_forwarding
 	option udp_no_redir_ports '53'
 	option accept_icmp '1'
 	option tcp_proxy_way 'tproxy'
-	option ipv6_tproxy '1'
+	option ipv6_tproxy '0'
 	option sniffing '1'
 	option route_only '0'
 
