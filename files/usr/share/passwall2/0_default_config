@@ -59,6 +59,7 @@ config nodes 'myshunt'
 	option protocol '_shunt'
 	option ForceReject '_blackhole'
 	option ForceDirect '_direct'
+	option AD '_blackhole'
 	option BT '_direct'
 	option Telegram 'nil'
 	option YouTube 'nil'
@@ -131,6 +132,11 @@ regexp:(Subject|HELO|SMTP)
 regexp:(torrent|\.torrent|peer_id=|announce|info_hash|get_peers|find_node|BitTorrent|announce_peer|protocol|announce\.php\?passkey=)
 regexp:(torrent|\.torrent|peer_id=|info_hash|get_peers|find_node|BitTorrent|announce_peer|announce\.php\?passkey=)
 regexp:ssh'
+
+config shunt_rules 'AD'
+	option remarks 'AD'
+	option network 'tcp,udp'
+	option domain_list 'geosite:category-ads-all'
 
 config shunt_rules 'BT'
 	option remarks 'BT'
