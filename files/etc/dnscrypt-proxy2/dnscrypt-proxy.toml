@@ -143,7 +143,7 @@ keepalive = 30
 ## Randomly choose 1 of the fastest 2, half, n, 1 or all live servers by latency.
 ## The response quality still depends on the server itself.
 
-lb_strategy = 'p9'
+lb_strategy = 'ph'
 
 ## Set to `true` to constantly try to estimate the latency of all the resolvers
 ## and adjust the load-balancing parameters accordingly, or to `false` to disable.
