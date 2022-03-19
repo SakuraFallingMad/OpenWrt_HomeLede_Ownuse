@@ -127,7 +127,9 @@ config shunt_rules 'ForceDirect'
 regexp:(Subject|HELO|SMTP)
 regexp:(torrent|\.torrent|peer_id=|announce|info_hash|get_peers|find_node|BitTorrent|announce_peer|protocol|announce\.php\?passkey=)
 regexp:(torrent|\.torrent|peer_id=|info_hash|get_peers|find_node|BitTorrent|announce_peer|announce\.php\?passkey=)
-regexp:ssh'
+regexp:ssh
+geosite:private'
+	option ip_list 'geoip:private'
 
 config shunt_rules 'AD'
 	option remarks 'AD'
