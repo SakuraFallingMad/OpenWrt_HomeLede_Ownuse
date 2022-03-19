@@ -24,7 +24,7 @@ config smartdns
 	option seconddns_no_dualstack_selection '0'
 	option seconddns_no_cache '1'
 	option force_aaaa_soa '0'
-	option coredump '1'
+	option coredump '0'
 
 config server
 	option enabled '1'
@@ -33,6 +33,7 @@ config server
 	option type 'https'
 	option server_group 'mainland'
 	option blacklist_ip '1'
+	option addition_arg '-check-edns'
 
 config server
 	option enabled '1'
@@ -41,6 +42,7 @@ config server
 	option type 'https'
 	option server_group 'mainland'
 	option blacklist_ip '1'
+	option addition_arg '-check-edns'
 
 config server
 	option enabled '1'
@@ -49,6 +51,7 @@ config server
 	option type 'https'
 	option server_group 'mainland'
 	option blacklist_ip '1'
+	option addition_arg '-check-edns'
 
 config server
 	option enabled '1'
@@ -57,15 +60,16 @@ config server
 	option type 'https'
 	option server_group 'mainland'
 	option blacklist_ip '1'
+	option addition_arg '-check-edns'
 
 config server
 	option enabled '1'
-	option name 'CN-ADV TUNA DOH'
-	option ip 'https://101.6.6.6/dns-query'
-	option port '8443'
+	option name 'CN-ADV iQDNS DOH'
+	option ip 'https://i.passcloud.xyz/dns-query'
 	option type 'https'
 	option server_group 'mainland'
 	option blacklist_ip '1'
+	option addition_arg '-check-edns'
 
 config server
 	option enabled '1'
@@ -74,6 +78,7 @@ config server
 	option type 'tls'
 	option server_group 'mainland'
 	option blacklist_ip '1'
+	option addition_arg '-check-edns'
 
 config server
 	option enabled '1'
@@ -82,6 +87,7 @@ config server
 	option type 'tls'
 	option server_group 'mainland'
 	option blacklist_ip '1'
+	option addition_arg '-check-edns'
 
 config server
 	option enabled '1'
@@ -90,6 +96,7 @@ config server
 	option type 'tls'
 	option server_group 'mainland'
 	option blacklist_ip '1'
+	option addition_arg '-check-edns'
 
 config server
 	option enabled '1'
@@ -98,66 +105,68 @@ config server
 	option type 'tls'
 	option server_group 'mainland'
 	option blacklist_ip '1'
+	option addition_arg '-check-edns'
 
 config server
 	option enabled '1'
-	option name 'CN-ADV TUNA DOT'
-	option ip '101.6.6.6'
-	option port '8853'
+	option name 'CN-ADV iQDNS DOT'
+	option ip 'i.passcloud.xyz'
+	option port '5432'
 	option type 'tls'
 	option server_group 'mainland'
 	option blacklist_ip '1'
+	option addition_arg '-check-edns'
 
 config server
-	option enabled '1'
+	option enabled '0'
 	option name 'OS-Google DNS DOH'
 	option ip 'https://8.8.8.8/dns-query'
 	option type 'https'
 	option server_group 'overseas'
 	option blacklist_ip '1'
-	option addition_arg '-exclude-default-group'
+	option addition_arg '-exclude-default-group -check-edns'
 
 config server
-	option enabled '1'
+	option enabled '0'
 	option name 'OS-CloudFlare DNS DOH'
 	option ip 'https://1.1.1.1/dns-query'
 	option type 'https'
 	option server_group 'overseas'
 	option blacklist_ip '1'
-	option addition_arg '-exclude-default-group'
+	option addition_arg '-exclude-default-group -check-edns'
 
 config server
-	option enabled '1'
+	option enabled '0'
 	option name 'OS-Quad9 DNS DOH'
 	option ip 'https://9.9.9.10/dns-query'
 	option type 'https'
 	option server_group 'overseas'
 	option blacklist_ip '1'
-	option addition_arg '-exclude-default-group'
+	option addition_arg '-exclude-default-group -check-edns'
 
 config server
-	option enabled '1'
+	option enabled '0'
 	option name 'OS-Google DNS TLS'
 	option ip '8.8.8.8'
 	option type 'tls'
 	option server_group 'overseas'
 	option blacklist_ip '1'
-	option addition_arg '-exclude-default-group'
+	option addition_arg '-exclude-default-group -check-edns'
 
 config server
-	option enabled '1'
+	option enabled '0'
 	option name 'OS-CloudFlare DNS TLS'
 	option ip '1.1.1.1'
 	option type 'tls'
 	option server_group 'overseas'
 	option blacklist_ip '1'
-	option addition_arg '-exclude-default-group'
+	option addition_arg '-exclude-default-group -check-edns'
 
 config server
-	option enabled '1'
+	option enabled '0'
 	option name 'OS-Quad9 DNS TLS'
 	option ip '9.9.9.10'
 	option type 'tls'
 	option server_group 'overseas'
 	option blacklist_ip '1'
-	option addition_arg '-exclude-default-group'
+	option addition_arg '-exclude-default-group -check-edns'
