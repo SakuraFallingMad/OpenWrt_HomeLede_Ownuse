@@ -12,6 +12,7 @@ CONFIG_DOCKER_STO_BTRFS=y
 CONFIG_DOCKER_STO_EXT4=y
 # CONFIG_FEED_homeclash is not set
 # CONFIG_FEED_infinityfreedom is not set
+# CONFIG_FEED_jerrykuku is not set
 # CONFIG_FEED_lienol is not set
 # CONFIG_FEED_pw2_luci is not set
 # CONFIG_FEED_pw_luci is not set
@@ -297,6 +298,7 @@ CONFIG_PACKAGE_luasocket=m
 CONFIG_PACKAGE_luci-app-airplay2=m
 CONFIG_PACKAGE_luci-app-aliddns=m
 CONFIG_PACKAGE_luci-app-aliyundrive-webdav=m
+CONFIG_PACKAGE_luci-app-argon-config=y
 CONFIG_PACKAGE_luci-app-arpbind=m
 CONFIG_PACKAGE_luci-app-autoreboot=m
 CONFIG_PACKAGE_luci-app-baidupcs-web=m
@@ -377,9 +379,9 @@ CONFIG_PACKAGE_luci-app-webadmin=m
 CONFIG_PACKAGE_luci-app-wrtbwmon=y
 CONFIG_PACKAGE_luci-app-xlnetacc=m
 CONFIG_PACKAGE_luci-app-zerotier=m
-CONFIG_PACKAGE_luci-compat=y
 CONFIG_PACKAGE_luci-i18n-airplay2-zh-cn=m
 CONFIG_PACKAGE_luci-i18n-aliyundrive-webdav-zh-cn=m
+CONFIG_PACKAGE_luci-i18n-argon-config-zh-cn=y
 CONFIG_PACKAGE_luci-i18n-arpbind-zh-cn=m
 CONFIG_PACKAGE_luci-i18n-autoreboot-zh-cn=m
 CONFIG_PACKAGE_luci-i18n-diskman-zh-cn=m
@@ -424,8 +426,9 @@ CONFIG_PACKAGE_luci-i18n-wrtbwmon-zh-cn=y
 CONFIG_PACKAGE_luci-i18n-xlnetacc-zh-cn=m
 CONFIG_PACKAGE_luci-i18n-zerotier-zh-cn=m
 CONFIG_PACKAGE_luci-lib-httpprotoutils=m
-CONFIG_PACKAGE_luci-theme-argon=y
+CONFIG_PACKAGE_luci-theme-argon-18.06=y
 CONFIG_PACKAGE_luci-theme-edge=y
+CONFIG_PACKAGE_luci-theme-material=y
 CONFIG_PACKAGE_lxc=m
 CONFIG_PACKAGE_lxc-attach=m
 CONFIG_PACKAGE_lxc-common=m

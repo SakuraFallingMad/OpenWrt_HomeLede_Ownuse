@@ -23,6 +23,7 @@ disablePkgsList="
 ./feeds/luci/applications/luci-app-kodexplorer 
 ./feeds/luci/applications/luci-app-softethervpn 
 ./feeds/luci/applications/luci-app-sqm 
+./feeds/luci/themes/luci-theme-argon 
 ./feeds/packages/net/adguardhome 
 ./feeds/packages/net/dnscrypt-proxy2 
 ./feeds/packages/net/https-dns-proxy 
@@ -39,6 +40,7 @@ disablePkgsList="
 ./feeds/packages/utils/tini 
 ./feeds/pw_packages/chinadns-ng 
 ./feeds/xiaoqingfeng/ipt2socks-alt 
+./feeds/xiaoqingfeng/luci-theme-argon 
 ./feeds/xiaoqingfeng/softethervpn5 
 "
 
