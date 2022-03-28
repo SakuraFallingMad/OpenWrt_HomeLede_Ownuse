@@ -94,6 +94,7 @@ config nodes 'myshunt'
 	option China 'nil'
 	option default_node 'nil'
 	option domainStrategy 'IPOnDemand'
+	option domainMatcher 'hybrid'
 
 config shunt_rules 'ForceReject'
 	option remarks 'ForceReject'

@@ -68,7 +68,7 @@ config nodes 'myshunt'
 	option China 'nil'
 	option default_node 'nil'
 	option domainStrategy 'IPOnDemand'
-	option domainStrategy 'hybrid'
+	option domainMatcher 'hybrid'
 
 config shunt_rules 'LAN'
 	option remarks 'LAN'
