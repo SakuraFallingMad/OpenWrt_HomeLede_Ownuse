@@ -153,6 +153,7 @@ jobs:
         echo "Custom HomeLede Mod OpenWrt For Non-docker And Non-multimedia User" >> release.txt
         echo "Caution：Homeconnect Could Not Work In This Edition" >> release.txt
         echo "Enhanced: Adjust SmartDNS Configuration & Dnscrypt-proxy Configuration" >> release.txt
+        echo "Enhanced: Add Some Drivers, Add Some Package" >> release.txt
         echo "::set-output name=status::success"
 
     - name: Upload firmware to release

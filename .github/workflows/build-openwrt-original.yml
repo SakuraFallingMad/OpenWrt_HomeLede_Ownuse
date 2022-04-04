@@ -150,8 +150,8 @@ jobs:
       run: |
         echo "::set-output name=release_tag::$(date +"%Y.%m.%d-%H%M")"
         touch release.txt
-        echo "Original HomeLede Edition" >> release.txt
-        echo "Modified: Add Acpid, Without Any Compiling With Goproxy" >> release.txt
+        echo "Original HomeLede Mod Edition" >> release.txt
+        echo "Modified: Add Acpid, Add Some Drivers,Add Passwall2, Without Any Compiling With Goproxy" >> release.txt
         echo "Enhanced: Adjust SmartDNS Configuration & Dnscrypt-proxy Configuration" >> release.txt
         echo "Modified: Replace HomeLede Modified Passwall Package to Original" >> release.txt
         echo "::set-output name=status::success"
