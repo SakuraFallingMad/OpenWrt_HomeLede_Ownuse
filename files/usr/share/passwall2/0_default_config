@@ -90,7 +90,6 @@ checkip.synology.com
 checkipv6.synology.com
 ddns.synology.com'
 	option ip_list '1.12.12.12
-101.6.6.6
 120.53.53.53
 223.5.5.5
 223.6.6.6'
@@ -198,6 +197,7 @@ moulticast.net'
 8.8.4.4
 8.8.8.8
 9.9.9.10
+9.9.9.11
 9.9.9.9'
 
 config shunt_rules 'China'
