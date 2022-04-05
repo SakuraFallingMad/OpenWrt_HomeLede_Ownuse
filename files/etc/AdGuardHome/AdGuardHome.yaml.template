@@ -17,7 +17,7 @@ dns:
   - 127.0.0.1:54
   - '[::1]:54'
   bootstrap_dns:
-  - 1.1.1.1:53
+  - 9.9.9.11:53
   - 8.8.8.8:53
   all_servers: false
   fastest_addr: true
