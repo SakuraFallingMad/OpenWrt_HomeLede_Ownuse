@@ -128,7 +128,7 @@ keepalive = 30
 ## Multiple networks can be listed; they will be randomly chosen.
 ## These networks don't have to match your actual networks.
 
-# edns_client_subnet = ['0.0.0.0/0', '2001:db8::/32']
+edns_client_subnet = ['0.0.0.0/0', '2001:db8::/32']
 
 
 ## Response for blocked queries. Options are `refused`, `hinfo` (default) or
@@ -136,7 +136,7 @@ keepalive = 30
 ## Using the `hinfo` option means that some responses will be lies.
 ## Unfortunately, the `hinfo` option appears to be required for Android 8+
 
-# blocked_query_response = 'refused'
+blocked_query_response = 'refused'
 
 
 ## Load-balancing strategy: 'p2' (default), 'ph', 'p<n>', 'first' or 'random'
@@ -314,7 +314,7 @@ log_files_max_backups = 1
 ## This makes things faster when there is no IPv6 connectivity, but can
 ## also cause reliability issues with some stub resolvers.
 
-block_ipv6 = true
+block_ipv6 = false
 
 
 ## Immediately respond to A and AAAA queries for host names without a domain name
