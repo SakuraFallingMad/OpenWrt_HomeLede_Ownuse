@@ -10,7 +10,7 @@ dns:
   port: 53
   statistics_interval: 1
   querylog_enabled: false
-  querylog_interval: 1
+  querylog_interval: 6h
   protection_enabled: true
   ratelimit: 0
   upstream_dns:
@@ -44,13 +44,16 @@ dns:
   - fc00::/7
   - fe80::/10
   - ff00::/8
-  cache_size: 4096
+  cache_size: 16384
+  cache_ttl_min: 2400
+  cache_ttl_max: 86400
+  cache_optimistic: true
   aaaa_disabled: true
   enable_dnssec: false
-  edns_client_subnet: false
+  edns_client_subnet: true
   filtering_enabled: true
-  filters_update_interval: 12
+  filters_update_interval: 1
   local_ptr_upstreams:
   - 127.0.0.1:54
   - '[::1]:54'
-schema_version: 10
+schema_version: 12
