@@ -128,7 +128,7 @@ keepalive = 30
 ## Multiple networks can be listed; they will be randomly chosen.
 ## These networks don't have to match your actual networks.
 
-edns_client_subnet = ['0.0.0.0/0', '2001:db8::/32']
+# edns_client_subnet = ['0.0.0.0/0', '2001:db8::/32']
 
 
 ## Response for blocked queries. Options are `refused`, `hinfo` (default) or

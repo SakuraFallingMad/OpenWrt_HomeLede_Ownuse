@@ -50,7 +50,7 @@ dns:
   cache_optimistic: true
   aaaa_disabled: true
   enable_dnssec: false
-  edns_client_subnet: true
+  edns_client_subnet: false
   filtering_enabled: true
   filters_update_interval: 1
   local_ptr_upstreams:
