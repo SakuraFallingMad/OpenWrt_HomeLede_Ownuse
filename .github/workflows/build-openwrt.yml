@@ -154,6 +154,7 @@ jobs:
         echo "Caution：Homeconnect Could Not Work In This Edition" >> release.txt
         echo "Enhanced: Adjust SmartDNS Configuration & Dnscrypt-proxy Configuration" >> release.txt
         echo "Enhanced: Add Some Drivers, Add Some Package" >> release.txt
+        echo "Note: Remove AAAA Filter On DNSMASQ If Enable IPV6" >> release.txt
         echo "::set-output name=status::success"
 
     - name: Upload firmware to release
