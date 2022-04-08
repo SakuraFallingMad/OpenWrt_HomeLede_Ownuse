@@ -352,6 +352,7 @@ CONFIG_PACKAGE_luci-app-diskman_INCLUDE_mdadm=y
 # CONFIG_PACKAGE_luci-app-homeconnect is not set
 # CONFIG_PACKAGE_luci-app-jd-dailybonus is not set
 CONFIG_PACKAGE_luci-app-netdata=y
+CONFIG_PACKAGE_luci-app-nft-qos=y
 CONFIG_PACKAGE_luci-app-ocserv=y
 CONFIG_PACKAGE_luci-app-passwall=y
 CONFIG_PACKAGE_luci-app-passwall2_INCLUDE_Brook=y
@@ -397,6 +398,7 @@ CONFIG_PACKAGE_luci-i18n-ddns-en=y
 CONFIG_PACKAGE_luci-i18n-diskman-zh-cn=y
 CONFIG_PACKAGE_luci-i18n-firewall-en=y
 CONFIG_PACKAGE_luci-i18n-netdata-zh-cn=y
+CONFIG_PACKAGE_luci-i18n-nft-qos-zh-cn=y
 CONFIG_PACKAGE_luci-i18n-passwall-zh-cn=y
 CONFIG_PACKAGE_luci-i18n-samba-en=y
 CONFIG_PACKAGE_luci-i18n-socat-zh-cn=y
@@ -425,6 +427,7 @@ CONFIG_PACKAGE_naiveproxy=y
 CONFIG_PACKAGE_nano=y
 CONFIG_PACKAGE_natpmpc=y
 CONFIG_PACKAGE_netdata=y
+CONFIG_PACKAGE_nft-qos=y
 CONFIG_PACKAGE_nftables-nojson=y
 # CONFIG_PACKAGE_node is not set
 CONFIG_PACKAGE_nspr=y
