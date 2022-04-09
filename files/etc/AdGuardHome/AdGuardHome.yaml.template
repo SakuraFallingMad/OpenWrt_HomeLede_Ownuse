@@ -56,4 +56,16 @@ dns:
   local_ptr_upstreams:
   - 127.0.0.1:54
   - '[::1]:54'
+filters:
+- enabled: true
+  url: https://raw.githubusercontent.com/Cats-Team/AdRules/main/dns.txt
+  name: AdRules (For DNS)
+  id: 1649153582
+whitelist_filters:
+- enabled: true
+  url: https://raw.githubusercontent.com/Cats-Team/AdRules/main/allow.txt
+  name: AdRules Allowlist
+  id: 1649153583
+user_rules:
+- '@@|ad.dmm$important'
 schema_version: 12
