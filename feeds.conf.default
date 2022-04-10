@@ -5,16 +5,15 @@ src-git telephony https://github.com/xiaoqingfengATGH/k5-feeds-telephony
 src-git pw_packages https://github.com/xiaorouji/openwrt-passwall.git;packages
 src-git pw_luci https://github.com/xiaorouji/openwrt-passwall.git;luci
 src-git pw2_luci https://github.com/xiaorouji/openwrt-passwall2.git
-src-git xiaoqingfeng https://github.com/xiaoqingfengATGH/feeds-xiaoqingfeng
 src-git jerrykuku https://github.com/jerrykuku/openwrt-package.git
 src-git lienol https://github.com/homelede/openwrt-package.git;main
+src-git xiaoqingfeng https://github.com/xiaoqingfengATGH/feeds-xiaoqingfeng
 # luci-theme-infinityfreedom
 src-git infinityfreedom https://github.com/xiaoqingfengATGH/luci-theme-infinityfreedom.git
 # homeclash
 src-git homeclash https://github.com/xiaoqingfengATGH/homeclash.git
 # strongswanInDocker
 src-git strongswanInDocker https://github.com/xiaoqingfengATGH/luci-app-strongswanInDocker.git
-
 #src-git video https://github.com/openwrt/video.git
 #src-git targets https://github.com/openwrt/targets.git
 #src-git oldpackages http://git.openwrt.org/packages.git
