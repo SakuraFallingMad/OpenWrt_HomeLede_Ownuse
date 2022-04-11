@@ -58,12 +58,12 @@ dns:
   - '[::1]:54'
 filters:
 - enabled: true
-  url: https://raw.githubusercontent.com/Cats-Team/AdRules/main/dns.txt
+  url: https://cats-team.coding.net/p/adguard/d/AdRules/git/raw/main/dns.txt
   name: AdRules (For DNS)
   id: 1649153582
 whitelist_filters:
 - enabled: true
-  url: https://raw.githubusercontent.com/Cats-Team/AdRules/main/allow.txt
+  url: https://cats-team.coding.net/p/adguard/d/AdRules/git/raw/main/hosts.txt
   name: AdRules Allowlist
   id: 1649153583
 user_rules:
