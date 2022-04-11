@@ -119,7 +119,16 @@ config server
 config server
 	option enabled '0'
 	option name 'OS-Quad9 DNS DOH'
-	option ip 'https://9.9.9.10/dns-query'
+	option ip 'https://9.9.9.11/dns-query'
+	option type 'https'
+	option server_group 'overseas'
+	option blacklist_ip '1'
+	option addition_arg '-exclude-default-group -check-edns'
+
+config server
+	option enabled '0'
+	option name 'OS-Quad101 DNS DOH'
+	option ip 'https://101.101.101.101/dns-query'
 	option type 'https'
 	option server_group 'overseas'
 	option blacklist_ip '1'
@@ -146,7 +155,16 @@ config server
 config server
 	option enabled '0'
 	option name 'OS-Quad9 DNS DOT'
-	option ip '9.9.9.10'
+	option ip '9.9.9.11'
+	option type 'tls'
+	option server_group 'overseas'
+	option blacklist_ip '1'
+	option addition_arg '-exclude-default-group -check-edns'
+
+config server
+	option enabled '0'
+	option name 'OS-Quad101 DNS DOT'
+	option ip '101.101.101.101'
 	option type 'tls'
 	option server_group 'overseas'
 	option blacklist_ip '1'
