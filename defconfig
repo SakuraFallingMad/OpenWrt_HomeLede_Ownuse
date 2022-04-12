@@ -1,8 +1,6 @@
 CONFIG_TARGET_x86=y
 CONFIG_TARGET_x86_64=y
 CONFIG_TARGET_x86_64_DEVICE_generic=y
-CONFIG_BAIDUPCS_WEB_COMPRESS_GOPROXY=y
-CONFIG_BAIDUPCS_WEB_COMPRESS_UPX=y
 CONFIG_BUILD_PATENTED=y
 CONFIG_CGROUPFS_MOUNT_KERNEL_CGROUPS=y
 CONFIG_COREMARK_NUMBER_OF_THREADS=16
@@ -397,6 +395,7 @@ CONFIG_PACKAGE_luci-app-ssr-plus_INCLUDE_Trojan=y
 CONFIG_PACKAGE_luci-app-ssr-plus_INCLUDE_V2ray_Plugin=y
 CONFIG_PACKAGE_luci-app-statistics=m
 CONFIG_PACKAGE_luci-app-strongswanInDocker=m
+CONFIG_PACKAGE_luci-app-syncthing=m
 CONFIG_PACKAGE_luci-app-transmission=m
 CONFIG_PACKAGE_luci-app-travelmate=m
 CONFIG_PACKAGE_luci-app-turboacc_INCLUDE_SHORTCUT_FE=y
@@ -447,6 +446,7 @@ CONFIG_PACKAGE_luci-i18n-ssr-mudb-server-zh-cn=m
 CONFIG_PACKAGE_luci-i18n-ssr-plus-zh-cn=m
 CONFIG_PACKAGE_luci-i18n-statistics-zh-cn=m
 CONFIG_PACKAGE_luci-i18n-strongswanInDocker-zh-cn=m
+CONFIG_PACKAGE_luci-i18n-syncthing-zh-cn=m
 CONFIG_PACKAGE_luci-i18n-transmission-zh-cn=m
 CONFIG_PACKAGE_luci-i18n-uhttpd-zh-cn=m
 CONFIG_PACKAGE_luci-i18n-unblockmusic-zh-cn=m
@@ -612,6 +612,7 @@ CONFIG_PACKAGE_strongswan-mod-xcbc=m
 CONFIG_PACKAGE_strongswan-swanctl=m
 # CONFIG_PACKAGE_subconverter is not set
 # CONFIG_PACKAGE_subweb is not set
+CONFIG_PACKAGE_syncthing=m
 CONFIG_PACKAGE_tc-mod-iptables=m
 CONFIG_PACKAGE_tc-tiny=m
 CONFIG_PACKAGE_tcping=y
