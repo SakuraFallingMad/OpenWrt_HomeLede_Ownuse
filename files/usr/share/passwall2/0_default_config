@@ -88,11 +88,11 @@ config shunt_rules 'LAN'
 config shunt_rules 'Direct'
 	option remarks 'Direct'
 	option network 'tcp,udp'
-	option domain_list 'ddns.softether-network.net
-nat-traversal.softether-network.net
-checkip.synology.com
-checkipv6.synology.com
-ddns.synology.com'
+	option domain_list 'full:checkip.synology.com
+full:checkipv6.synology.com
+full:ddns.synology.com
+domain:ddns.softether-network.net
+domain:nat-traversal.softether-network.net'
 	option ip_list '1.12.12.12
 120.53.53.53
 223.5.5.5
@@ -131,8 +131,7 @@ config shunt_rules 'ForceDirect'
 	option domain_list 'regexp:(.?)(xunlei|sandai|Thunder|XLLiveUD)(.)
 regexp:(Subject|HELO|SMTP)
 regexp:(torrent|\.torrent|peer_id=|announce|info_hash|get_peers|find_node|BitTorrent|announce_peer|protocol|announce\.php\?passkey=)
-regexp:(torrent|\.torrent|peer_id=|info_hash|get_peers|find_node|BitTorrent|announce_peer|announce\.php\?passkey=)
-regexp:ssh'
+regexp:(torrent|\.torrent|peer_id=|info_hash|get_peers|find_node|BitTorrent|announce_peer|announce\.php\?passkey=)'
 
 config shunt_rules 'AD'
 	option remarks 'AD'
@@ -177,16 +176,16 @@ geosite:tvb'
 config shunt_rules 'Proxy'
 	option remarks 'Proxy'
 	option network 'tcp,udp'
-	option domain_list 'cloudflare-dns.com
-opendns.com
-dns.google
-libredns.gr
-quad9.net
-adguard.com
-nextdns.io
-meganerd.nl
-jp.tiar.app
-moulticast.net'
+	option domain_list 'full:jp.tiar.app
+domain:adguard.com
+domain:cloudflare-dns.com
+domain:dns.google
+domain:libredns.gr
+domain:meganerd.nl
+domain:moulticast.net
+domain:nextdns.io
+domain:opendns.com
+domain:quad9.net'
 	option ip_list '1.0.0.1
 1.1.1.1
 1.1.1.2
