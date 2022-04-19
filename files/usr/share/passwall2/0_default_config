@@ -97,9 +97,11 @@ full:ddns.synology.com
 domain:ddns.softether-network.net
 domain:nat-traversal.softether-network.net'
 	option ip_list '1.12.12.12
+101.6.6.6
 120.53.53.53
 223.5.5.5
-223.6.6.6'
+223.6.6.6
+61.171.81.150'
 
 config shunt_rules 'ForceReject'
 	option remarks 'ForceReject'
