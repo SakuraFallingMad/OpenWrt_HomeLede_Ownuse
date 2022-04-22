@@ -20,6 +20,7 @@ on:
         default: 'false'
   schedule:
     - cron: 0 23 * * *
+  timeout: 600
 
 env:
   REPO_URL: https://github.com/xiaoqingfengATGH/HomeLede.git
