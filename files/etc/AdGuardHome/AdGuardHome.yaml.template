@@ -61,19 +61,9 @@ filters:
   url: https://cats-team.coding.net/p/adguard/d/AdRules/git/raw/main/dns.txt
   name: AdRules (For DNS)
   id: 1650793485
-- enabled: true
-  url: https://cats-team.coding.net/p/adguard/d/AdRules/git/raw/main/hosts.txt
-  name: AdRules (For Adaway)
-  id: 1650793486
-- enabled: true
-  url: https://cats-team.coding.net/p/adguard/d/AdRules/git/raw/main/ad-domains.txt
-  name: AdRules Ad Domains
-  id: 1650793487
 whitelist_filters:
 - enabled: true
   url: https://cats-team.coding.net/p/adguard/d/AdRules/git/raw/main/allow.txt
   name: AdRules Allowlist
   id: 1650793488
-user_rules:
-- '@@|ad.dmm$important'
 schema_version: 12
