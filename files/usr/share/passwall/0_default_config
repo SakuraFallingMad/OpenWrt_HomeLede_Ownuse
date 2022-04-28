@@ -5,7 +5,7 @@ config global
 	option tcp_node 'nil'
 	option udp_node 'nil'
 	option dns_mode 'pdnsd'
-	option dns_forward '127.0.0.1:7053'
+	option remote_dns '127.0.0.1:7053'
 	option filter_proxy_ipv6 '0'
 	option tcp_proxy_mode 'chnroute'
 	option udp_proxy_mode 'chnroute'
@@ -70,6 +70,7 @@ config global_subscribe
 	list filter_discard_list '剩余流量'
 	list filter_discard_list 'QQ群'
 	list filter_discard_list '官网'
+	list filter_discard_list '续费'
 
 config auto_switch
 	option enable '0'

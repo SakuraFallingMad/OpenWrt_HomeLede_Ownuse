@@ -19,9 +19,8 @@ config global_delay
 	option start_delay '1'
 
 config global_forwarding
-	option process '0'
-	option tcp_no_redir_ports '5223'
-	option udp_no_redir_ports '53'
+	option tcp_no_redir_ports 'disable'
+	option udp_no_redir_ports 'disable'
 	option tcp_redir_ports '22,25,53,143,465,587,853,993,995,80,443'
 	option udp_redir_ports '1:65535'
 	option accept_icmp '1'
@@ -52,6 +51,7 @@ config global_subscribe
 	list filter_discard_list '剩余流量'
 	list filter_discard_list 'QQ群'
 	list filter_discard_list '官网'
+	list filter_discard_list '续费'
 
 config auto_switch
 	option enable '0'
