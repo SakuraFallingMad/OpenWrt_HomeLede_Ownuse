@@ -35,7 +35,6 @@ CONFIG_GRUB_IMAGES=y
 CONFIG_GRUB_TITLE="HomeLede"
 CONFIG_IPTABLES_CONNLABEL=y
 CONFIG_IPTABLES_NFTABLES=y
-CONFIG_IPTGEOIP_PRESERVE=y
 CONFIG_KERNEL_BTRFS_FS_POSIX_ACL=y
 # CONFIG_KERNEL_CGROUPS is not set
 # CONFIG_KERNEL_DEVPTS_MULTIPLE_INSTANCES is not set
@@ -190,7 +189,6 @@ CONFIG_PACKAGE_iptables-mod-ipv4options=y
 CONFIG_PACKAGE_iptables-mod-led=y
 CONFIG_PACKAGE_iptables-mod-lua=y
 CONFIG_PACKAGE_iptables-mod-nat-extra=y
-CONFIG_PACKAGE_iptables-mod-nflog=y
 CONFIG_PACKAGE_iptables-mod-nfqueue=y
 CONFIG_PACKAGE_iptables-mod-physdev=y
 CONFIG_PACKAGE_iptables-mod-proto=y
@@ -198,7 +196,6 @@ CONFIG_PACKAGE_iptables-mod-rpfilter=y
 CONFIG_PACKAGE_iptables-mod-tee=y
 CONFIG_PACKAGE_iptables-mod-trace=y
 CONFIG_PACKAGE_iptables-mod-u32=y
-CONFIG_PACKAGE_iptables-mod-ulog=y
 CONFIG_PACKAGE_iptables-nft=y
 CONFIG_PACKAGE_iptgeoip=y
 CONFIG_PACKAGE_iputils-arping=y
@@ -266,7 +263,6 @@ CONFIG_PACKAGE_kmod-ipt-ipv4options=y
 CONFIG_PACKAGE_kmod-ipt-led=y
 CONFIG_PACKAGE_kmod-ipt-lua=y
 CONFIG_PACKAGE_kmod-ipt-nat-extra=y
-CONFIG_PACKAGE_kmod-ipt-nflog=y
 CONFIG_PACKAGE_kmod-ipt-nfqueue=y
 CONFIG_PACKAGE_kmod-ipt-physdev=y
 CONFIG_PACKAGE_kmod-ipt-proto=y
@@ -274,7 +270,6 @@ CONFIG_PACKAGE_kmod-ipt-raw6=y
 CONFIG_PACKAGE_kmod-ipt-rpfilter=y
 CONFIG_PACKAGE_kmod-ipt-tee=y
 CONFIG_PACKAGE_kmod-ipt-u32=y
-CONFIG_PACKAGE_kmod-ipt-ulog=y
 CONFIG_PACKAGE_kmod-iptunnel6=y
 # CONFIG_PACKAGE_kmod-ixgbevf is not set
 CONFIG_PACKAGE_kmod-l2tp-eth=y
@@ -290,7 +285,6 @@ CONFIG_PACKAGE_kmod-md-raid456=y
 # CONFIG_PACKAGE_kmod-mmc-spi is not set
 CONFIG_PACKAGE_kmod-nat46=y
 # CONFIG_PACKAGE_kmod-nf-ipvs is not set
-CONFIG_PACKAGE_kmod-nfnetlink-log=y
 CONFIG_PACKAGE_kmod-nfnetlink-queue=y
 CONFIG_PACKAGE_kmod-nft-arp=y
 CONFIG_PACKAGE_kmod-nft-bridge=y
