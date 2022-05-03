@@ -544,7 +544,6 @@ CONFIG_PACKAGE_nfs-utils=m
 CONFIG_PACKAGE_nfs-utils-libs=m
 CONFIG_PACKAGE_nft-qos=m
 CONFIG_PACKAGE_nftables-json=y
-CONFIG_PACKAGE_nftables-nojson=y
 CONFIG_PACKAGE_nginx-ssl=m
 CONFIG_PACKAGE_nginx-ssl-util=m
 CONFIG_PACKAGE_nginx-util=m
