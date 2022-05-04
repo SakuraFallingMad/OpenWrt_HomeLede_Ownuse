@@ -99,6 +99,7 @@ CONFIG_PACKAGE_ddns-scripts_no-ip_com=y
 CONFIG_PACKAGE_ddns-scripts_nsupdate=y
 CONFIG_PACKAGE_ddns-scripts_route53-v1=y
 CONFIG_PACKAGE_dns2socks=y
+CONFIG_PACKAGE_dnscrypt-proxy2=y
 CONFIG_PACKAGE_dnsmasq_full_auth=y
 CONFIG_PACKAGE_dnsmasq_full_conntrack=y
 CONFIG_PACKAGE_dnsmasq_full_dnssec=y
@@ -161,8 +162,13 @@ CONFIG_PACKAGE_iptables-mod-u32=y
 CONFIG_PACKAGE_iptables-mod-ulog=y
 CONFIG_PACKAGE_iptables-nft=y
 CONFIG_PACKAGE_iptaccount=y
+CONFIG_PACKAGE_iputils-arping=y
+CONFIG_PACKAGE_iputils-clockdiff=y
+CONFIG_PACKAGE_iputils-ping=y
+CONFIG_PACKAGE_iputils-tracepath=y
 # CONFIG_PACKAGE_iw is not set
 CONFIG_PACKAGE_iw-full=y
+CONFIG_PACKAGE_jq=y
 # CONFIG_PACKAGE_kmod-ath is not set
 # CONFIG_PACKAGE_kmod-ath10k is not set
 # CONFIG_PACKAGE_kmod-ath5k is not set
@@ -335,6 +341,7 @@ CONFIG_PACKAGE_luci-app-passwall_INCLUDE_Trojan_GO=y
 CONFIG_PACKAGE_luci-app-pppoe-relay=y
 # CONFIG_PACKAGE_luci-app-rclone_INCLUDE_rclone-ng is not set
 # CONFIG_PACKAGE_luci-app-rclone_INCLUDE_rclone-webui is not set
+CONFIG_PACKAGE_luci-app-serverchan=y
 CONFIG_PACKAGE_luci-app-socat=y
 CONFIG_PACKAGE_luci-app-softethervpn=y
 CONFIG_PACKAGE_luci-app-ssr-plus_INCLUDE_IPT2Socks=y
@@ -481,9 +488,9 @@ CONFIG_SOCAT_SSL=y
 CONFIG_TARGET_EXT4_BLOCKSIZE=4096
 CONFIG_TARGET_EXT4_BLOCKSIZE_4K=y
 CONFIG_TARGET_EXT4_RESERVED_PCT=0
+CONFIG_TARGET_IMAGES_GZIP=y
 CONFIG_TARGET_ROOTFS_EXT4FS=y
 CONFIG_TARGET_ROOTFS_PARTSIZE=2031
-CONFIG_TARGET_ROOTFS_TARGZ=y
 CONFIG_boost-compile-visibility-hidden=y
 CONFIG_boost-runtime-shared=y
 CONFIG_boost-static-and-shared-libs=y
