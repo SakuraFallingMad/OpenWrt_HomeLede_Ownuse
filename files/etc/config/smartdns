@@ -5,7 +5,7 @@ config smartdns
 	option port '6053'
 	option tcp_server '1'
 	option ipv6_server '1'
-	option dualstack_ip_selection '0'
+	option dualstack_ip_selection '1'
 	option prefetch_domain '1'
 	option serve_expired '1'
 	option redirect 'none'
