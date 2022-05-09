@@ -45,6 +45,7 @@ disablePkgsList="
 ./feeds/packages/net/microsocks 
 ./feeds/packages/net/dns2socks 
 ./feeds/luci/applications/luci-app-sqm 
+./feeds/luci/applications/luci-app-nft-qos 
 ./feeds/luci/applications/luci-app-dockerman 
 ./feeds/luci/applications/luci-app-kodexplorer 
 ./feeds/luci/applications/luci-app-ipsec-server 
@@ -56,7 +57,7 @@ disablePkgsList="
 ./feeds/luci/applications/luci-app-netdata 
 ./feeds/luci/applications/luci-app-accesscontrol 
 ./feeds/luci/collections/luci-lib-docker 
-./feeds/luci/themes/luci-theme-argon
+./feeds/luci/themes/luci-theme-argon 
 ./feeds/xiaoqingfeng/luci-theme-argon 
 "
 
