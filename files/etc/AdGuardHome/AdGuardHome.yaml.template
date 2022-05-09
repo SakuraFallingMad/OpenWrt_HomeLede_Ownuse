@@ -17,8 +17,8 @@ dns:
   - 127.0.0.1:54
   - '[::1]:54'
   bootstrap_dns:
-  - 9.9.9.11:53
-  - 8.8.8.8:53
+  - tls://1.0.0.1
+  - tls://101.101.101.101
   all_servers: false
   fastest_addr: true
   allowed_clients:
