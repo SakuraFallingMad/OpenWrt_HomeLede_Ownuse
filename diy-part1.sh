@@ -20,6 +20,9 @@
 # Add HomeLede prepareCompile.sh
 disablePkgsList="
 ./feeds/lienol/luci-app-softethervpn 
+./feeds/luci/applications/luci-app-nft-qos 
+./feeds/luci/applications/luci-app-sqm 
+./feeds/luci/applications/luci-app-serverchan 
 ./feeds/luci/themes/luci-theme-argon 
 ./feeds/packages/net/adguardhome 
 ./feeds/packages/net/dnscrypt-proxy2 
