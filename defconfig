@@ -131,15 +131,12 @@ CONFIG_PACKAGE_alsa-ucm-conf=m
 CONFIG_PACKAGE_alsa-utils=m
 CONFIG_PACKAGE_amd64-microcode=y
 CONFIG_PACKAGE_announce=y
-CONFIG_PACKAGE_ath10k-board-qca4019=y
-CONFIG_PACKAGE_ath10k-board-qca9377=y
-CONFIG_PACKAGE_ath10k-board-qca9887=y
-CONFIG_PACKAGE_ath10k-board-qca99x0=y
-CONFIG_PACKAGE_ath10k-firmware-qca4019=y
-CONFIG_PACKAGE_ath10k-firmware-qca6174=y
-CONFIG_PACKAGE_ath10k-firmware-qca9377=y
-CONFIG_PACKAGE_ath10k-firmware-qca9887=y
-CONFIG_PACKAGE_ath10k-firmware-qca99x0=y
+# CONFIG_PACKAGE_ath10k-board-qca9888 is not set
+# CONFIG_PACKAGE_ath10k-board-qca988x is not set
+# CONFIG_PACKAGE_ath10k-board-qca9984 is not set
+# CONFIG_PACKAGE_ath10k-firmware-qca9888 is not set
+# CONFIG_PACKAGE_ath10k-firmware-qca988x is not set
+# CONFIG_PACKAGE_ath10k-firmware-qca9984 is not set
 CONFIG_PACKAGE_avahi-autoipd=y
 CONFIG_PACKAGE_avahi-daemon-service-http=y
 CONFIG_PACKAGE_avahi-daemon-service-ssh=y
@@ -149,13 +146,11 @@ CONFIG_PACKAGE_avahi-utils=y
 CONFIG_PACKAGE_b43legacy-firmware=y
 CONFIG_PACKAGE_bind-client=y
 CONFIG_PACKAGE_blkid=m
-# CONFIG_PACKAGE_bnx2x-firmware is not set
 CONFIG_PACKAGE_boost=y
 CONFIG_PACKAGE_boost-date_time=m
 CONFIG_PACKAGE_boost-program_options=y
 CONFIG_PACKAGE_boost-system=y
-CONFIG_PACKAGE_brcmfmac-firmware-43430a0-sdio=y
-CONFIG_PACKAGE_brcmfmac-firmware-43602a1-pcie=m
+# CONFIG_PACKAGE_brcmfmac-firmware-43602a1-pcie is not set
 CONFIG_PACKAGE_brcmfmac-firmware-usb=y
 CONFIG_PACKAGE_brook=y
 CONFIG_PACKAGE_carl9170-firmware=y
@@ -189,6 +184,7 @@ CONFIG_PACKAGE_gre=y
 CONFIG_PACKAGE_haproxy=y
 CONFIG_PACKAGE_hostip=y
 CONFIG_PACKAGE_hysteria=y
+CONFIG_PACKAGE_intel-microcode=y
 CONFIG_PACKAGE_ip6tables-extra=y
 CONFIG_PACKAGE_ip6tables-mod-nat=y
 CONFIG_PACKAGE_ip6tables-nft=y
@@ -227,7 +223,6 @@ CONFIG_PACKAGE_kmod-ath6kl-usb=y
 CONFIG_PACKAGE_kmod-b43=y
 CONFIG_PACKAGE_kmod-b43legacy=y
 CONFIG_PACKAGE_kmod-bcma=y
-# CONFIG_PACKAGE_kmod-bnx2x is not set
 CONFIG_PACKAGE_kmod-brcmfmac=y
 CONFIG_PACKAGE_kmod-brcmsmac=y
 CONFIG_PACKAGE_kmod-brcmutil=y
