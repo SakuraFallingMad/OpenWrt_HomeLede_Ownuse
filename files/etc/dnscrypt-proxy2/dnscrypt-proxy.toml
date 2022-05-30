@@ -241,7 +241,7 @@ cert_refresh_delay = 240
 ## not be sent there. If you're using DNSCrypt or Anonymized DNS and your
 ## lists are up to date, these resolvers will not even be used.
 
-bootstrap_resolvers = ['101.6.6.6:5353', '61.171.81.150:777']
+bootstrap_resolvers = ['119.29.29.29', '223.5.5.5']
 
 
 ## Always use the bootstrap resolver before the system DNS settings.
