@@ -471,8 +471,6 @@ CONFIG_PACKAGE_snmp-utils=y
 CONFIG_PACKAGE_snmpd=y
 CONFIG_PACKAGE_snmptrapd=y
 CONFIG_PACKAGE_softethervpn-base=y
-CONFIG_PACKAGE_softethervpn-bridge=y
-CONFIG_PACKAGE_softethervpn-client=y
 CONFIG_PACKAGE_softethervpn-server=y
 # CONFIG_PACKAGE_softethervpn5-bridge is not set
 # CONFIG_PACKAGE_softethervpn5-client is not set
