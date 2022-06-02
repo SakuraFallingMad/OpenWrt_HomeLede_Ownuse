@@ -32,7 +32,7 @@ dns:
   cache_ttl_min: 2400
   cache_ttl_max: 86400
   cache_optimistic: true
-  aaaa_disabled: false
+  aaaa_disabled: true
   enable_dnssec: false
   edns_client_subnet: false
   filtering_enabled: true
