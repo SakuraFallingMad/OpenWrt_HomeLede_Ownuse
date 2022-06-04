@@ -14,6 +14,8 @@ dns:
   protection_enabled: true
   ratelimit: 0
   upstream_dns:
+  - '[/in-addr.arpa/]127.0.0.1:54'
+  - '[/ip6.arpa/][::1]:54'
   - 127.0.0.1:54
   - '[::1]:54'
   bootstrap_dns:
