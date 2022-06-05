@@ -33,6 +33,7 @@ config server
 	option type 'https'
 	option server_group 'mainland'
 	option blacklist_ip '1'
+	option no_check_certificate '0'
 	option addition_arg '-check-edns'
 
 config server
@@ -42,6 +43,7 @@ config server
 	option type 'https'
 	option server_group 'mainland'
 	option blacklist_ip '1'
+	option no_check_certificate '0'
 	option addition_arg '-check-edns'
 
 config server
@@ -51,6 +53,7 @@ config server
 	option type 'https'
 	option server_group 'mainland'
 	option blacklist_ip '1'
+	option no_check_certificate '0'
 	option addition_arg '-check-edns'
 
 config server
@@ -60,6 +63,7 @@ config server
 	option type 'https'
 	option server_group 'mainland'
 	option blacklist_ip '1'
+	option no_check_certificate '0'
 	option addition_arg '-check-edns'
 
 config server
@@ -69,6 +73,7 @@ config server
 	option type 'tls'
 	option server_group 'mainland'
 	option blacklist_ip '1'
+	option no_check_certificate '0'
 	option addition_arg '-check-edns'
 
 config server
@@ -78,6 +83,7 @@ config server
 	option type 'tls'
 	option server_group 'mainland'
 	option blacklist_ip '1'
+	option no_check_certificate '0'
 	option addition_arg '-check-edns'
 
 config server
@@ -87,6 +93,7 @@ config server
 	option type 'tls'
 	option server_group 'mainland'
 	option blacklist_ip '1'
+	option no_check_certificate '0'
 	option addition_arg '-check-edns'
 
 config server
@@ -96,6 +103,7 @@ config server
 	option type 'tls'
 	option server_group 'mainland'
 	option blacklist_ip '1'
+	option no_check_certificate '0'
 	option addition_arg '-check-edns'
 
 config server
@@ -105,6 +113,7 @@ config server
 	option type 'https'
 	option server_group 'overseas'
 	option blacklist_ip '1'
+	option no_check_certificate '0'
 	option addition_arg '-exclude-default-group -check-edns'
 
 config server
@@ -114,6 +123,7 @@ config server
 	option type 'https'
 	option server_group 'overseas'
 	option blacklist_ip '1'
+	option no_check_certificate '0'
 	option addition_arg '-exclude-default-group -check-edns'
 
 config server
@@ -123,6 +133,7 @@ config server
 	option type 'https'
 	option server_group 'overseas'
 	option blacklist_ip '1'
+	option no_check_certificate '0'
 	option addition_arg '-exclude-default-group -check-edns'
 
 config server
@@ -132,6 +143,7 @@ config server
 	option type 'https'
 	option server_group 'overseas'
 	option blacklist_ip '1'
+	option no_check_certificate '0'
 	option addition_arg '-exclude-default-group -check-edns'
 
 config server
@@ -141,6 +153,7 @@ config server
 	option type 'tls'
 	option server_group 'overseas'
 	option blacklist_ip '1'
+	option no_check_certificate '0'
 	option addition_arg '-exclude-default-group -check-edns'
 
 config server
@@ -150,6 +163,7 @@ config server
 	option type 'tls'
 	option server_group 'overseas'
 	option blacklist_ip '1'
+	option no_check_certificate '0'
 	option addition_arg '-exclude-default-group -check-edns'
 
 config server
@@ -159,6 +173,7 @@ config server
 	option type 'tls'
 	option server_group 'overseas'
 	option blacklist_ip '1'
+	option no_check_certificate '0'
 	option addition_arg '-exclude-default-group -check-edns'
 
 config server
@@ -168,6 +183,7 @@ config server
 	option type 'tls'
 	option server_group 'overseas'
 	option blacklist_ip '1'
+	option no_check_certificate '0'
 	option addition_arg '-exclude-default-group -check-edns'
 
 config server
@@ -177,6 +193,7 @@ config server
 	option type 'https'
 	option server_group 'bootstrap'
 	option blacklist_ip '1'
+	option no_check_certificate '0'
 	option addition_arg '-exclude-default-group -check-edns'
 
 config server
@@ -186,6 +203,7 @@ config server
 	option type 'https'
 	option server_group 'bootstrap'
 	option blacklist_ip '1'
+	option no_check_certificate '0'
 	option addition_arg '-exclude-default-group -check-edns'
 
 config server
@@ -195,6 +213,7 @@ config server
 	option type 'https'
 	option server_group 'bootstrap'
 	option blacklist_ip '1'
+	option no_check_certificate '0'
 	option addition_arg '-exclude-default-group -check-edns'
 
 config server
@@ -204,6 +223,7 @@ config server
 	option type 'https'
 	option server_group 'bootstrap'
 	option blacklist_ip '1'
+	option no_check_certificate '0'
 	option addition_arg '-exclude-default-group -check-edns'
 
 config server
@@ -213,6 +233,7 @@ config server
 	option type 'tls'
 	option server_group 'bootstrap'
 	option blacklist_ip '1'
+	option no_check_certificate '0'
 	option addition_arg '-exclude-default-group -check-edns'
 
 config server
@@ -222,6 +243,7 @@ config server
 	option type 'tls'
 	option server_group 'bootstrap'
 	option blacklist_ip '1'
+	option no_check_certificate '0'
 	option addition_arg '-exclude-default-group -check-edns'
 
 config server
@@ -231,6 +253,7 @@ config server
 	option type 'tls'
 	option server_group 'bootstrap'
 	option blacklist_ip '1'
+	option no_check_certificate '0'
 	option addition_arg '-exclude-default-group -check-edns'
 
 config server
@@ -240,4 +263,5 @@ config server
 	option type 'tls'
 	option server_group 'bootstrap'
 	option blacklist_ip '1'
+	option no_check_certificate '0'
 	option addition_arg '-exclude-default-group -check-edns'
