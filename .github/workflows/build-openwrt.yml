@@ -18,8 +18,8 @@ on:
         description: 'SSH connection to Actions'
         required: false
         default: 'false'
-  schedule:
-    - cron: 0 23 * * *
+  # schedule:
+  #   - cron: 0 23 * * *
 
 env:
   REPO_URL: https://github.com/xiaoqingfengATGH/HomeLede.git
@@ -77,10 +77,10 @@ jobs:
         $GITHUB_WORKSPACE/$DIY_P1_SH
 
     # - name: Update feeds
-      # run: cd openwrt && ./scripts/feeds update -a
+    #   run: cd openwrt && ./scripts/feeds update -a
 
     # - name: Install feeds
-      # run: cd openwrt && ./scripts/feeds install -a
+    #   run: cd openwrt && ./scripts/feeds install -a
 
     - name: Load custom configuration
       run: |
