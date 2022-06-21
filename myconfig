@@ -4634,7 +4634,7 @@ CONFIG_LUCI_LANG_zh-cn=y
 
 CONFIG_PACKAGE_luci-compat=y
 CONFIG_PACKAGE_luci-mod-admin-full=y
-CONFIG_PACKAGE_luci-mod-failsafe=y
+# CONFIG_PACKAGE_luci-mod-failsafe is not set
 # CONFIG_PACKAGE_luci-mod-rpc is not set
 CONFIG_PACKAGE_luci-newapi=y
 # end of 2. Modules
