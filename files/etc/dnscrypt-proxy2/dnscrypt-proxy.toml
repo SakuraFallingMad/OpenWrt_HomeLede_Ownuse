@@ -44,7 +44,7 @@ listen_addresses = ['127.0.0.1:7053', '[::1]:7053']
 
 ## Maximum number of simultaneous client connections to accept
 
-max_clients = 2000
+max_clients = 250
 
 
 ## Switch to a different system user after listening sockets have been created.
