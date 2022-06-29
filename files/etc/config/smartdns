@@ -34,7 +34,6 @@ config server
 	option server_group 'mainland'
 	option blacklist_ip '1'
 	option no_check_certificate '0'
-	option addition_arg '-check-edns'
 
 config server
 	option enabled '1'
@@ -44,7 +43,6 @@ config server
 	option server_group 'mainland'
 	option blacklist_ip '1'
 	option no_check_certificate '0'
-	option addition_arg '-check-edns'
 
 config server
 	option enabled '1'
@@ -54,7 +52,6 @@ config server
 	option server_group 'mainland'
 	option blacklist_ip '1'
 	option no_check_certificate '0'
-	option addition_arg '-check-edns'
 
 config server
 	option enabled '1'
@@ -64,7 +61,6 @@ config server
 	option server_group 'mainland'
 	option blacklist_ip '1'
 	option no_check_certificate '0'
-	option addition_arg '-check-edns'
 
 config server
 	option enabled '1'
@@ -74,7 +70,6 @@ config server
 	option server_group 'mainland'
 	option blacklist_ip '1'
 	option no_check_certificate '0'
-	option addition_arg '-check-edns'
 
 config server
 	option enabled '1'
@@ -84,7 +79,6 @@ config server
 	option server_group 'mainland'
 	option blacklist_ip '1'
 	option no_check_certificate '0'
-	option addition_arg '-check-edns'
 
 config server
 	option enabled '1'
@@ -94,7 +88,6 @@ config server
 	option server_group 'mainland'
 	option blacklist_ip '1'
 	option no_check_certificate '0'
-	option addition_arg '-check-edns'
 
 config server
 	option enabled '1'
@@ -104,7 +97,6 @@ config server
 	option server_group 'mainland'
 	option blacklist_ip '1'
 	option no_check_certificate '0'
-	option addition_arg '-check-edns'
 
 config server
 	option enabled '0'
@@ -114,7 +106,7 @@ config server
 	option server_group 'overseas'
 	option blacklist_ip '1'
 	option no_check_certificate '0'
-	option addition_arg '-exclude-default-group -check-edns'
+	option addition_arg '-exclude-default-group'
 
 config server
 	option enabled '0'
@@ -124,7 +116,7 @@ config server
 	option server_group 'overseas'
 	option blacklist_ip '1'
 	option no_check_certificate '0'
-	option addition_arg '-exclude-default-group -check-edns'
+	option addition_arg '-exclude-default-group'
 
 config server
 	option enabled '0'
@@ -134,7 +126,7 @@ config server
 	option server_group 'overseas'
 	option blacklist_ip '1'
 	option no_check_certificate '0'
-	option addition_arg '-exclude-default-group -check-edns'
+	option addition_arg '-exclude-default-group'
 
 config server
 	option enabled '0'
@@ -144,7 +136,7 @@ config server
 	option server_group 'overseas'
 	option blacklist_ip '1'
 	option no_check_certificate '0'
-	option addition_arg '-exclude-default-group -check-edns'
+	option addition_arg '-exclude-default-group'
 
 config server
 	option enabled '0'
@@ -154,7 +146,7 @@ config server
 	option server_group 'overseas'
 	option blacklist_ip '1'
 	option no_check_certificate '0'
-	option addition_arg '-exclude-default-group -check-edns'
+	option addition_arg '-exclude-default-group'
 
 config server
 	option enabled '0'
@@ -164,7 +156,7 @@ config server
 	option server_group 'overseas'
 	option blacklist_ip '1'
 	option no_check_certificate '0'
-	option addition_arg '-exclude-default-group -check-edns'
+	option addition_arg '-exclude-default-group'
 
 config server
 	option enabled '0'
@@ -174,7 +166,7 @@ config server
 	option server_group 'overseas'
 	option blacklist_ip '1'
 	option no_check_certificate '0'
-	option addition_arg '-exclude-default-group -check-edns'
+	option addition_arg '-exclude-default-group'
 
 config server
 	option enabled '0'
@@ -184,7 +176,7 @@ config server
 	option server_group 'overseas'
 	option blacklist_ip '1'
 	option no_check_certificate '0'
-	option addition_arg '-exclude-default-group -check-edns'
+	option addition_arg '-exclude-default-group'
 
 config server
 	option enabled '1'
@@ -194,7 +186,7 @@ config server
 	option server_group 'bootstrap'
 	option blacklist_ip '1'
 	option no_check_certificate '0'
-	option addition_arg '-exclude-default-group -check-edns'
+	option addition_arg '-exclude-default-group'
 
 config server
 	option enabled '1'
@@ -204,7 +196,7 @@ config server
 	option server_group 'bootstrap'
 	option blacklist_ip '1'
 	option no_check_certificate '0'
-	option addition_arg '-exclude-default-group -check-edns'
+	option addition_arg '-exclude-default-group'
 
 config server
 	option enabled '1'
@@ -214,7 +206,7 @@ config server
 	option server_group 'bootstrap'
 	option blacklist_ip '1'
 	option no_check_certificate '0'
-	option addition_arg '-exclude-default-group -check-edns'
+	option addition_arg '-exclude-default-group'
 
 config server
 	option enabled '1'
@@ -224,7 +216,7 @@ config server
 	option server_group 'bootstrap'
 	option blacklist_ip '1'
 	option no_check_certificate '0'
-	option addition_arg '-exclude-default-group -check-edns'
+	option addition_arg '-exclude-default-group'
 
 config server
 	option enabled '1'
@@ -234,7 +226,7 @@ config server
 	option server_group 'bootstrap'
 	option blacklist_ip '1'
 	option no_check_certificate '0'
-	option addition_arg '-exclude-default-group -check-edns'
+	option addition_arg '-exclude-default-group'
 
 config server
 	option enabled '1'
@@ -244,7 +236,7 @@ config server
 	option server_group 'bootstrap'
 	option blacklist_ip '1'
 	option no_check_certificate '0'
-	option addition_arg '-exclude-default-group -check-edns'
+	option addition_arg '-exclude-default-group'
 
 config server
 	option enabled '1'
@@ -254,7 +246,7 @@ config server
 	option server_group 'bootstrap'
 	option blacklist_ip '1'
 	option no_check_certificate '0'
-	option addition_arg '-exclude-default-group -check-edns'
+	option addition_arg '-exclude-default-group'
 
 config server
 	option enabled '1'
@@ -264,4 +256,4 @@ config server
 	option server_group 'bootstrap'
 	option blacklist_ip '1'
 	option no_check_certificate '0'
-	option addition_arg '-exclude-default-group -check-edns'
+	option addition_arg '-exclude-default-group'
