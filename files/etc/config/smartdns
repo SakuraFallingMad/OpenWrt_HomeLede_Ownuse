@@ -189,7 +189,7 @@ config server
 	option addition_arg '-exclude-default-group'
 
 config server
-	option enabled '1'
+	option enabled '0'
 	option name 'CN-BOOTSTRAP ALI DOH #2'
 	option ip 'https://223.6.6.6/dns-query'
 	option type 'https'
@@ -199,7 +199,7 @@ config server
 	option addition_arg '-exclude-default-group'
 
 config server
-	option enabled '1'
+	option enabled '0'
 	option name 'CN-BOOTSTRAP DNSPOD DOH #1'
 	option ip 'https://1.12.12.12/dns-query'
 	option type 'https'
@@ -209,7 +209,7 @@ config server
 	option addition_arg '-exclude-default-group'
 
 config server
-	option enabled '1'
+	option enabled '0'
 	option name 'CN-BOOTSTRAP DNSPOD DOH #2'
 	option ip 'https://120.53.53.53/dns-query'
 	option type 'https'
@@ -219,7 +219,7 @@ config server
 	option addition_arg '-exclude-default-group'
 
 config server
-	option enabled '1'
+	option enabled '0'
 	option name 'CN-BOOTSTRAP ALI DOT #1'
 	option ip '223.5.5.5'
 	option type 'tls'
@@ -229,7 +229,7 @@ config server
 	option addition_arg '-exclude-default-group'
 
 config server
-	option enabled '1'
+	option enabled '0'
 	option name 'CN-BOOTSTRAP ALI DOT #2'
 	option ip '223.6.6.6'
 	option type 'tls'
@@ -239,7 +239,7 @@ config server
 	option addition_arg '-exclude-default-group'
 
 config server
-	option enabled '1'
+	option enabled '0'
 	option name 'CN-BOOTSTRAP DNSPOD DOT #1'
 	option ip '1.12.12.12'
 	option type 'tls'
@@ -249,7 +249,7 @@ config server
 	option addition_arg '-exclude-default-group'
 
 config server
-	option enabled '1'
+	option enabled '0'
 	option name 'CN-BOOTSTRAP DNSPOD DOT #2'
 	option ip '120.53.53.53'
 	option type 'tls'
