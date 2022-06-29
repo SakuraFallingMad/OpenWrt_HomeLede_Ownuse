@@ -22,7 +22,7 @@ config smartdns
 	option seconddns_no_rule_ipset '0'
 	option seconddns_no_rule_soa '0'
 	option seconddns_no_dualstack_selection '0'
-	option seconddns_no_cache '1'
+	option seconddns_no_cache '0'
 	option force_aaaa_soa '0'
 	option coredump '0'
 
