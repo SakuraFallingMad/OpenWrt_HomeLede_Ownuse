@@ -85,8 +85,10 @@ config nodes 'myshunt'
 config shunt_rules 'LAN'
 	option remarks 'LAN'
 	option network 'tcp,udp'
-	option domain_list 'geosite:private'
-	option ip_list 'geoip:private'
+	option domain_list 'geosite:private
+'
+	option ip_list 'geoip:private
+'
 
 config shunt_rules 'Direct'
 	option remarks 'Direct'
@@ -95,13 +97,16 @@ config shunt_rules 'Direct'
 full:checkipv6.synology.com
 full:ddns.synology.com
 domain:ddns.softether-network.net
-domain:nat-traversal.softether-network.net'
+domain:nat-traversal.softether-network.net
+'
 	option ip_list '1.12.12.12
-101.6.6.6
+106.6.6.6
 120.53.53.53
+202.141.162.123
+202.141.176.93
 223.5.5.5
 223.6.6.6
-61.171.81.150'
+'
 
 config shunt_rules 'ForceReject'
 	option remarks 'ForceReject'
@@ -128,7 +133,8 @@ regexp:(\.| )so\.com
 regexp:(\.| )zhengwunet\.org
 regexp:(^.*\@)(guerrillamail|guerrillamailblock|sharklasers|grr|pokemail|spam4|bccto|chacuo|027168)\.(info|biz|com|de|net|org|me|la)
 regexp:\.minghui\.com
-regexp:\.minghui\.org'
+regexp:\.minghui\.org
+'
 
 config shunt_rules 'ForceDirect'
 	option remarks 'ForceDirect'
@@ -136,12 +142,14 @@ config shunt_rules 'ForceDirect'
 	option domain_list 'regexp:(.?)(xunlei|sandai|Thunder|XLLiveUD)(.)
 regexp:(Subject|HELO|SMTP)
 regexp:(torrent|\.torrent|peer_id=|announce|info_hash|get_peers|find_node|BitTorrent|announce_peer|protocol|announce\.php\?passkey=)
-regexp:(torrent|\.torrent|peer_id=|info_hash|get_peers|find_node|BitTorrent|announce_peer|announce\.php\?passkey=)'
+regexp:(torrent|\.torrent|peer_id=|info_hash|get_peers|find_node|BitTorrent|announce_peer|announce\.php\?passkey=)
+'
 
 config shunt_rules 'AD'
 	option remarks 'AD'
 	option network 'tcp,udp'
-	option domain_list 'geosite:category-ads-all'
+	option domain_list 'geosite:category-ads-all
+'
 
 config shunt_rules 'BT'
 	option remarks 'BT'
@@ -151,19 +159,24 @@ config shunt_rules 'BT'
 config shunt_rules 'Telegram'
 	option remarks 'Telegram'
 	option network 'tcp,udp'
-	option domain_list 'geosite:telegram'
-	option ip_list 'geoip:telegram'
+	option domain_list 'geosite:telegram
+'
+	option ip_list 'geoip:telegram
+'
 
 config shunt_rules 'YouTube'
 	option remarks 'YouTube'
 	option network 'tcp,udp'
-	option domain_list 'geosite:youtube'
+	option domain_list 'geosite:youtube
+'
 
 config shunt_rules 'Netflix'
 	option remarks 'Netflix'
 	option network 'tcp,udp'
-	option domain_list 'geosite:netflix'
-	option ip_list 'geoip:netflix'
+	option domain_list 'geosite:netflix
+'
+	option ip_list 'geoip:netflix
+'
 
 config shunt_rules 'TVB'
 	option remarks 'TVB'
@@ -176,7 +189,8 @@ geosite:hkgolden
 geosite:hkopentv
 geosite:hkt
 geosite:rthk
-geosite:tvb'
+geosite:tvb
+'
 
 config shunt_rules 'Proxy'
 	option remarks 'Proxy'
@@ -190,7 +204,8 @@ domain:meganerd.nl
 domain:moulticast.net
 domain:nextdns.io
 domain:opendns.com
-domain:quad9.net'
+domain:quad9.net
+'
 	option ip_list '1.0.0.1
 1.1.1.1
 1.1.1.2
@@ -205,13 +220,16 @@ domain:quad9.net'
 8.8.4.4
 8.8.8.8
 9.9.9.11
-9.9.9.9'
+9.9.9.9
+'
 
 config shunt_rules 'China'
 	option remarks 'China'
 	option network 'tcp,udp'
-	option domain_list 'geosite:cn'
-	option ip_list 'geoip:cn'
+	option domain_list 'geosite:cn
+'
+	option ip_list 'geoip:cn
+'
 
 config shunt_rules 'QUIC'
 	option remarks 'QUIC'
