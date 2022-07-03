@@ -14,10 +14,10 @@ dns:
   protection_enabled: true
   ratelimit: 0
   upstream_dns:
-  - '[/in-addr.arpa/]127.0.0.1:54'
-  - '[/ip6.arpa/][::1]:54'
   - '[/lan/]127.0.0.1:54'
   - '[/lan/][::1]:54'
+  - '[//]127.0.0.1:54'
+  - '[//][::1]:54'
   - 127.0.0.1:54
   - '[::1]:54'
   bootstrap_dns:
@@ -32,9 +32,9 @@ dns:
   - 192.168.0.0/16
   - ::1/128
   - fc00::/7
-  cache_size: 16384
-  cache_ttl_min: 2400
-  cache_ttl_max: 86400
+  cache_size: 4194304
+  cache_ttl_min: 0
+  cache_ttl_max: 0
   cache_optimistic: true
   aaaa_disabled: true
   enable_dnssec: false
