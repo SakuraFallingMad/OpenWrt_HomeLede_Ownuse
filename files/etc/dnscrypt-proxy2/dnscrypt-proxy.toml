@@ -67,7 +67,7 @@ ipv6_servers = false
 dnscrypt_servers = true
 
 # Use servers implementing the DNS-over-HTTPS protocol
-doh_servers = false
+doh_servers = true
 
 # Use servers implementing the Oblivious DoH protocol
 odoh_servers = false
@@ -143,7 +143,7 @@ keepalive = 30
 ## Randomly choose 1 of the fastest 2, half, n, 1 or all live servers by latency.
 ## The response quality still depends on the server itself.
 
-lb_strategy = 'ph'
+lb_strategy = 'p8'
 
 ## Set to `true` to constantly try to estimate the latency of all the resolvers
 ## and adjust the load-balancing parameters accordingly, or to `false` to disable.
@@ -680,27 +680,27 @@ blocked_ips_file = 'blocked-ips.txt'
 
   ### Anonymized DNS relays
 
-  [sources.relays]
-    urls = ['https://raw.githubusercontent.com/DNSCrypt/dnscrypt-resolvers/master/v3/relays.md', 'https://download.dnscrypt.info/resolvers-list/v3/relays.md', 'https://ipv6.download.dnscrypt.info/resolvers-list/v3/relays.md']
-    cache_file = 'relays.md'
-    minisign_key = 'RWQf6LRCGA9i53mlYecO4IzT51TGPpvWucNSCh1CBM0QTaLn73Y7GFO3'
-    refresh_delay = 72
-    prefix = ''
+  # [sources.relays]
+  #   urls = ['https://raw.githubusercontent.com/DNSCrypt/dnscrypt-resolvers/master/v3/relays.md', 'https://download.dnscrypt.info/resolvers-list/v3/relays.md', 'https://ipv6.download.dnscrypt.info/resolvers-list/v3/relays.md']
+  #   cache_file = 'relays.md'
+  #   minisign_key = 'RWQf6LRCGA9i53mlYecO4IzT51TGPpvWucNSCh1CBM0QTaLn73Y7GFO3'
+  #   refresh_delay = 72
+  #   prefix = ''
 
   ### ODoH (Oblivious DoH) servers and relays
 
-  [sources.odoh-servers]
-    urls = ['https://raw.githubusercontent.com/DNSCrypt/dnscrypt-resolvers/master/v3/odoh-servers.md', 'https://download.dnscrypt.info/resolvers-list/v3/odoh-servers.md', 'https://ipv6.download.dnscrypt.info/resolvers-list/v3/odoh-servers.md']
-    cache_file = 'odoh-servers.md'
-    minisign_key = 'RWQf6LRCGA9i53mlYecO4IzT51TGPpvWucNSCh1CBM0QTaLn73Y7GFO3'
-    refresh_delay = 24
-    prefix = ''
-  [sources.odoh-relays]
-    urls = ['https://raw.githubusercontent.com/DNSCrypt/dnscrypt-resolvers/master/v3/odoh-relays.md', 'https://download.dnscrypt.info/resolvers-list/v3/odoh-relays.md', 'https://ipv6.download.dnscrypt.info/resolvers-list/v3/odoh-relays.md']
-    cache_file = 'odoh-relays.md'
-    minisign_key = 'RWQf6LRCGA9i53mlYecO4IzT51TGPpvWucNSCh1CBM0QTaLn73Y7GFO3'
-    refresh_delay = 24
-    prefix = ''
+  # [sources.odoh-servers]
+  #   urls = ['https://raw.githubusercontent.com/DNSCrypt/dnscrypt-resolvers/master/v3/odoh-servers.md', 'https://download.dnscrypt.info/resolvers-list/v3/odoh-servers.md', 'https://ipv6.download.dnscrypt.info/resolvers-list/v3/odoh-servers.md']
+  #   cache_file = 'odoh-servers.md'
+  #   minisign_key = 'RWQf6LRCGA9i53mlYecO4IzT51TGPpvWucNSCh1CBM0QTaLn73Y7GFO3'
+  #   refresh_delay = 24
+  #   prefix = ''
+  # [sources.odoh-relays]
+  #   urls = ['https://raw.githubusercontent.com/DNSCrypt/dnscrypt-resolvers/master/v3/odoh-relays.md', 'https://download.dnscrypt.info/resolvers-list/v3/odoh-relays.md', 'https://ipv6.download.dnscrypt.info/resolvers-list/v3/odoh-relays.md']
+  #   cache_file = 'odoh-relays.md'
+  #   minisign_key = 'RWQf6LRCGA9i53mlYecO4IzT51TGPpvWucNSCh1CBM0QTaLn73Y7GFO3'
+  #   refresh_delay = 24
+  #   prefix = ''
 
   ### Quad9
 
