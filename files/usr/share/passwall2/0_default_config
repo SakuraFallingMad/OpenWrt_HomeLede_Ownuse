@@ -111,29 +111,27 @@ domain:nat-traversal.softether-network.net
 config shunt_rules 'ForceReject'
 	option remarks 'ForceReject'
 	option network 'tcp,udp'
-	option domain_list 'regexp:(.*\.||)(acl4ssr-sub)\.(github.io)
-regexp:(.*\.||)(beijingspring|chinaaffairs|chengmingmag|dafahao|dongtaiwang|epochweekly|epochtimes)\.(cn|org|com)
-regexp:(.*\.||)(beyondbenefit)\.(com)
-regexp:(.*\.||)(cloudtest)\.(cc)
-regexp:(.*\.||)(dafahao|minghui|dongtaiwang|epochtimes|ntdtv|falundafa|wujieliulan)\.(org|com|net)
-regexp:(.*\.||)(falundafa|ifjc|minghui|ntdtv|open|bannedboot|secretchina|tuidang|wujieliulan|zhuichaguoji)\.(cn|org|com)
-regexp:(.*\.||)(metatrader4|metatrader5|mql5)\.(org|com|net)
-regexp:(.*\.||)(netvigator|torproject)\.(cn|com|net|org)
-regexp:(\.| )360kan\.com
-regexp:(\.| )360safe\.com
-regexp:(\.| )360totalsecurity\.com
-regexp:(\.| )360\.(cn|com)
-regexp:(\.| )aboluowang\.com
-regexp:(\.| )gtv\.org
-regexp:(\.| )kingdomsalvation\.org
-regexp:(\.| )li-hongzhi-master\.org
-regexp:(\.| )qhimg\.com
-regexp:(\.| )qihoo\.com
-regexp:(\.| )so\.com
-regexp:(\.| )zhengwunet\.org
+	option domain_list 'regexp:(.*\.|)(acl4ssr-sub)\.(github.io)
+regexp:(.*\.|)(beijingspring|chinaaffairs|chengmingmag|dafahao|dongtaiwang|epochweekly|epochtimes)\.(cn|org|com)
+regexp:(.*\.|)(beyondbenefit)\.(com)
+regexp:(.*\.|)(cloudtest)\.(cc)
+regexp:(.*\.|)(dafahao|minghui|dongtaiwang|epochtimes|ntdtv|falundafa|wujieliulan)\.(org|com|net)
+regexp:(.*\.|)(falundafa|ifjc|minghui|ntdtv|open|bannedboot|secretchina|tuidang|wujieliulan|zhuichaguoji)\.(cn|org|com)
+regexp:(.*\.|)(metatrader4|metatrader5|mql5)\.(org|com|net)
+regexp:(.*\.|)(netvigator|torproject)\.(cn|com|net|org)
+regexp:(\.|)360kan\.com
+regexp:(\.|)360safe\.com
+regexp:(\.|)360totalsecurity\.com
+regexp:(\.|)360\.(cn|com)
+regexp:(\.|)aboluowang\.com
+regexp:(\.|)gtv\.org
+regexp:(\.|)kingdomsalvation\.org
+regexp:(\.|)li-hongzhi-master\.org
+regexp:(\.|)qhimg\.com
+regexp:(\.|)qihoo\.com
+regexp:(\.|)so\.com
+regexp:(\.|)zhengwunet\.org
 regexp:(^.*\@)(guerrillamail|guerrillamailblock|sharklasers|grr|pokemail|spam4|bccto|chacuo|027168)\.(info|biz|com|de|net|org|me|la)
-regexp:\.minghui\.com
-regexp:\.minghui\.org
 '
 
 config shunt_rules 'ForceDirect'
