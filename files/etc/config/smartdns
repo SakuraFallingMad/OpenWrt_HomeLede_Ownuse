@@ -8,10 +8,7 @@ config smartdns
 	option dualstack_ip_selection '1'
 	option prefetch_domain '1'
 	option serve_expired '1'
-	option redirect 'none'
 	option cache_size '16384'
-	option resolve_local_hostnames '1'
-	option force_aaaa_soa '0'
 	option force_https_soa '1'
 	option rr_ttl_min '2400'
 	option rr_ttl_max '86400'
@@ -25,7 +22,7 @@ config smartdns
 	option seconddns_no_rule_soa '0'
 	option seconddns_no_dualstack_selection '0'
 	option seconddns_no_cache '0'
-	option coredump '0'
+	option seconddns_force_aaaa_soa '0'
 
 config server
 	option enabled '1'
