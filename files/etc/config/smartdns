@@ -26,7 +26,7 @@ config smartdns
 
 config server
 	option enabled '1'
-	option name 'CN ALI DOH #1'
+	option name 'CN-ALI DOH #1'
 	option ip 'https://223.5.5.5/dns-query'
 	option type 'https'
 	option server_group 'mainland'
@@ -35,7 +35,7 @@ config server
 
 config server
 	option enabled '1'
-	option name 'CN ALI DOH #2'
+	option name 'CN-ALI DOH #2'
 	option ip 'https://223.6.6.6/dns-query'
 	option type 'https'
 	option server_group 'mainland'
@@ -44,7 +44,7 @@ config server
 
 config server
 	option enabled '1'
-	option name 'CN DNSPOD DOH #1'
+	option name 'CN-DNSPOD DOH #1'
 	option ip 'https://1.12.12.12/dns-query'
 	option type 'https'
 	option server_group 'mainland'
@@ -53,7 +53,7 @@ config server
 
 config server
 	option enabled '1'
-	option name 'CN DNSPOD DOH #2'
+	option name 'CN-DNSPOD DOH #2'
 	option ip 'https://120.53.53.53/dns-query'
 	option type 'https'
 	option server_group 'mainland'
@@ -62,7 +62,7 @@ config server
 
 config server
 	option enabled '1'
-	option name 'CN ALI DOT #1'
+	option name 'CN-ALI DOT #1'
 	option ip '223.5.5.5'
 	option type 'tls'
 	option server_group 'mainland'
@@ -71,7 +71,7 @@ config server
 
 config server
 	option enabled '1'
-	option name 'CN ALI DOT #2'
+	option name 'CN-ALI DOT #2'
 	option ip '223.6.6.6'
 	option type 'tls'
 	option server_group 'mainland'
@@ -80,7 +80,7 @@ config server
 
 config server
 	option enabled '1'
-	option name 'CN DNSPOD DOT #1'
+	option name 'CN-DNSPOD DOT #1'
 	option ip '1.12.12.12'
 	option type 'tls'
 	option server_group 'mainland'
@@ -89,7 +89,7 @@ config server
 
 config server
 	option enabled '1'
-	option name 'CN DNSPOD DOT #2'
+	option name 'CN-DNSPOD DOT #2'
 	option ip '120.53.53.53'
 	option type 'tls'
 	option server_group 'mainland'
