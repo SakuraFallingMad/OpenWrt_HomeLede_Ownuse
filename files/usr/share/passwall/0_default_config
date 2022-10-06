@@ -103,7 +103,6 @@ regexp:(.*\.|)(cloudtest)\.(cc)
 regexp:(.*\.|)(dafahao|minghui|dongtaiwang|epochtimes|ntdtv|falundafa|wujieliulan)\.(org|com|net)
 regexp:(.*\.|)(falundafa|ifjc|minghui|ntdtv|open|bannedboot|secretchina|tuidang|wujieliulan|zhuichaguoji)\.(cn|org|com)
 regexp:(.*\.|)(metatrader4|metatrader5|mql5)\.(org|com|net)
-regexp:(.*\.|)(netvigator|torproject)\.(cn|com|net|org)
 regexp:(\.|)360kan\.com
 regexp:(\.|)360safe\.com
 regexp:(\.|)360totalsecurity\.com
